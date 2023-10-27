@@ -8,7 +8,7 @@ import numpy as np
 import util
 from nltk.tokenize import RegexpTokenizer
 
-PRONOUNS = ['he', 'him', 'his', 'she', 'her', 'hers', 'i', 'me', 'my', 'you', 'your', 'yours', 'they', 'them', 'theirs', 'it', 'its']
+PRONOUNS = ['he', 'him', 'his', 'she', 'her', 'hers', 'i', 'me', 'my', 'you', 'your', 'yours', 'they', 'them', 'theirs', 'it', 'its', 'we', 'us', 'our', 'ours', 'myself', 'yourself', 'himself', 'herself', 'ourselves', 'themselves']
 
 """
 For each speaker, returns:
@@ -31,13 +31,16 @@ def tokenize(file_path, suppress = True):
         # tokenize without punctuation
         word_tokens = tokenizer.tokenize(speech)
         word_freq = FreqDist(word_tokens)
-        if not suppress: print(f'Only Words: {word_freq.most_common(10)}')
+        # if not suppress: print(f'Only Words: {word_freq.most_common(10)}')
 
         # pronoun tokens
         pronouns = {}
         for pronoun in PRONOUNS:
             pronouns[pronoun] = word_freq[pronoun]
-        if not suppress: print(f'Pronouns: {pronouns}')
+        # Sort the pronouns by frequency in descending order
+        top_5_pronouns = sorted(pronouns.items(), key=lambda x: x[1], reverse=True)[:5]
+        if not suppress:
+            print(f'Top 5 Most Frequent Pronouns: {top_5_pronouns}')
 
         # tokenize without punctuation, without stopwords
         tokens_nostop = [token for token in word_tokens if token not in stops]
@@ -47,7 +50,7 @@ def tokenize(file_path, suppress = True):
         # tokenize with punctuation
         all_tokens = word_tokenize(speech)
         all_freq = FreqDist(all_tokens)
-        if not suppress: print(f'With Punctuation: {all_freq.most_common(10)}')
+        # if not suppress: print(f'With Punctuation: {all_freq.most_common(10)}')
 
         speaker_items[speaker] = {'word_freq': word_freq, 'pronouns': pronouns, 'all_freq': all_freq, 'nostop_freq': nostop_freq}
 
