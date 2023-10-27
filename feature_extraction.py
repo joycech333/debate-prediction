@@ -58,5 +58,7 @@ def tokenize(file_path, suppress = True):
 
 
 if __name__ == "__main__":
-    file_path = 'data/pres/09_26_2008.txt'
-    speaker_items = tokenize(file_path, False)
+    # file_path = 'data/pres/09_26_2008.txt'
+    files = ['data/pres/09_26_2008.txt', 'data/pres/10_07_2008.txt', 'data/pres/10_15_2008.txt', 'data/vp/10_02_2008.txt']
+    for file_path in files:
+        speaker_items = tokenize(file_path, False)
