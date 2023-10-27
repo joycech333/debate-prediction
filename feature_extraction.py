@@ -7,6 +7,7 @@ from nltk.corpus import stopwords
 import numpy as np
 import util
 from nltk.tokenize import RegexpTokenizer
+import collections
 
 PRONOUNS = ['he', 'him', 'his', 'she', 'her', 'hers', 'i', 'me', 'my', 'you', 'your', 'yours', 'they', 'them', 'theirs', 'it', 'its', 'we', 'us', 'our', 'ours', 'myself', 'yourself', 'himself', 'herself', 'ourselves', 'themselves']
 
@@ -17,6 +18,7 @@ For each speaker, returns:
 - dictionary of frequencies of words + punctuation
 - dictionary of frequencies of pronouns
 """
+
 def tokenize(file_path, suppress = True):
     speaker_items = {}
     speaker_lines = util.split_speakers(file_path)
@@ -52,7 +54,7 @@ def tokenize(file_path, suppress = True):
         all_freq = FreqDist(all_tokens)
         # if not suppress: print(f'With Punctuation: {all_freq.most_common(10)}')
 
-        speaker_items[speaker] = {'word_freq': word_freq, 'pronouns': pronouns, 'all_freq': all_freq, 'nostop_freq': nostop_freq}
+        speaker_items[speaker] = {'t5pronouns': top_5_pronouns, 'word_freq': word_freq, 'pronouns': pronouns, 'all_freq': all_freq, 'nostop_freq': nostop_freq}
 
     return speaker_items
 
@@ -60,5 +62,14 @@ def tokenize(file_path, suppress = True):
 if __name__ == "__main__":
     # file_path = 'data/pres/09_26_2008.txt'
     files = ['data/pres/09_26_2008.txt', 'data/pres/10_07_2008.txt', 'data/pres/10_15_2008.txt', 'data/vp/10_02_2008.txt']
+    all_items = collections.defaultdict(dict)
     for file_path in files:
-        speaker_items = tokenize(file_path, False)
+        speaker_items = tokenize(file_path, True)
+        for speaker in speaker_items:
+            all_items[speaker].update(speaker_items[speaker])
+    
+    for speaker in all_items:
+        if speaker in ["OBAMA", "MCCAIN", "BIDEN", "PALIN"]:
+            print(f'\n{speaker}:\n{all_items[speaker]["t5pronouns"]}')
+            
+    print('\n')
