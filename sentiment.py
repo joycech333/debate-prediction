@@ -50,7 +50,10 @@ def process_debate(file_paths):
                 else:
                     neu += 1
 
-            print(speaker, "pos: " + str(pos), "neu: " + str(neu), "neg: " + str(neg))
+            # for 2008, this means the speaker was the moderator
+            if speaker not in ["OBAMA", "MCCAIN", "BIDEN", "PALIN"]:
+                continue
+            print(speaker, "pos:" + str(pos), "neu:" + str(neu), "neg:" + str(neg))
 
 
 # Specify the path to your debate text file
