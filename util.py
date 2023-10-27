@@ -6,6 +6,8 @@ import util
 util.split_speakers(file_path)
 """
 
+PRONOUNS = ['he', 'him', 'his', 'she', 'her', 'hers', 'i', 'me', 'my', 'you', 'your', 'yours', 'they', 'them', 'theirs', 'it', 'its', 'we', 'us', 'our', 'ours', 'myself', 'yourself', 'himself', 'herself', 'ourselves', 'themselves']
+
 """
 Splits the speech at a given txt file_path by speaker
 in the form of a dict:
