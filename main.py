@@ -1,14 +1,13 @@
 import numpy as np
 import csv
-
 import matplotlib.pyplot as plt
-import numpy as np
 import json
 
 # count words for an individual speech
 def count_words(speech):
     words = speech.split()
     return len(words)
+
 
 def process_debate(file_path):
     all_speakers = {}
@@ -34,16 +33,24 @@ def process_debate(file_path):
         prev_speech = speech
     return (all_speakers, times)
 
-# Specify the path to your debate text file
-file_path = '10_15_2008.txt'
 
-# Process the debate file
-speech_counts, times = process_debate(file_path)
+def main(file_path):
+    print(f"\nFile: {file_path}")
 
-# Print word counts for each participant
-for participant in speech_counts:
-    total = speech_counts[participant]
-    freq = times[participant]
-    print(f"{participant} spoke {total} words.")
-    print(f"{participant} spoke {freq} times.")
-    print(f"On average, {participant} spoke {total / freq} words per speech.")
+    # Process the debate file
+    speech_counts, times = process_debate(file_path)
+
+    # Print word counts for each participant
+    for participant in speech_counts:
+        total = speech_counts[participant]
+        freq = times[participant]
+        print(f"{participant} spoke {total} words.")
+        print(f"{participant} spoke {freq} times.")
+        print(f"On average, {participant} spoke {total / freq} words per speech.")
+
+
+if __name__ == "__main__":
+    # file_paths = ['data/pres/09_26_2008.txt']
+    file_paths = ['data/pres/09_26_2008.txt', 'data/pres/10_07_2008.txt', 'data/pres/10_15_2008.txt', 'data/vp/10_02_2008.txt']
+    for file_path in file_paths:
+        main(file_path)
