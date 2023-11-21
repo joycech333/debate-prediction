@@ -38,7 +38,7 @@ model = Word2Vec(sentences=processed_data, vector_size=100, window=2, sg=1, epoc
 word_vectors = model.wv
 
 # Get similar words to given target words (TEST THINGS HERE)
-target_words = ['economy', 'future', 'American', 'great', 'countries']
+target_words = ['economy', 'future', 'americans', 'great', 'countries']
 
 # Find similar words for each target word
 for word in target_words:
