@@ -32,13 +32,13 @@ for speaker in speaker_lines:
 processed_data = [preprocess_text(line) for line in total_lines]
 
 # Train the Word2Vec model with skip-grams
-model = Word2Vec(sentences=processed_data, vector_size=100, window=5, sg=1, epochs=50)
+model = Word2Vec(sentences=processed_data, vector_size=100, window=2, sg=1, epochs=50)
 
 # Accessing word vectors
 word_vectors = model.wv
 
 # Get similar words to given target words (TEST THINGS HERE)
-target_words = ['obama', 'economy', 'american', 'great', 'need']
+target_words = ['economy', 'future', 'American', 'great', 'countries']
 
 # Find similar words for each target word
 for word in target_words:
