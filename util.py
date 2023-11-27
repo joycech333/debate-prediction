@@ -39,9 +39,39 @@ def split_speakers(file_path):
 
     return all_speakers
 
+# clean a sentence of candidate names
+def clean_cand_names(names, split_dict):
+    for speaker in split_dict:
+        clean_sent = []
+        sentences = split_dict[speaker]
+        for sent in sentences:
+            for name in names:
+                sent = sent.replace(name, "")
+            clean_sent.append(sent)
+
+        split_dict[speaker] = clean_sent
+    return split_dict
+
+# get the data in the format required by the naive bayes classifier
+def create_data_tsv(all_dict, file_path, winner, loser):
+    file = open(file_path, "w")
+
+    for d in all_dict:
+        for speaker in d:
+            if speaker == winner:
+                for sent in d[speaker]:
+                    file.write("win" + "\t" + sent + "\n")
+            if speaker == loser:
+                for sent in d[speaker]:
+                    file.write("lose" + "\t" + sent + "\n")
+
 
 if __name__ == "__main__":
-    # file_paths = ['data/pres/09_26_2008.txt']
-    file_paths = ['data/pres/09_26_2008.txt', 'data/pres/10_07_2008.txt', 'data/pres/10_15_2008.txt', 'data/vp/10_02_2008.txt']
-    # for file_path in file_paths:
-    #     split_speakers(file_path)
+    file_paths = ['data/pres/09_26_2008.txt', 'data/pres/10_07_2008.txt', 'data/pres/10_15_2008.txt']
+    split_dicts = []
+    for file_path in file_paths:
+        split_dict = split_speakers(file_path)
+        split_dicts.append(clean_cand_names(["Obama", "McCain", "John"], split_dict))
+
+    create_data_tsv([split_dicts[0], split_dicts[1]], "data/pres/train_2008.tsv", "OBAMA", "MCCAIN")
+    create_data_tsv([split_dicts[2]], "data/pres/test_2008.tsv", "OBAMA", "MCCAIN")
