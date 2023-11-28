@@ -1,5 +1,7 @@
 import csv
+from turtle import back
 import numpy as np
+import nltk
 
 
 def load_dataset(tsv_path):
@@ -255,10 +257,53 @@ def get_top_five_naive_bayes_words(model, dictionary):
     for elem in dictionary:
         backwards_dict[dictionary[elem]] = elem
 
+    # NN: noun, JJ: adjective, anything with VB is a verb
+    words = dictionary.keys()
+    tags = nltk.pos_tag(words)
+
+    pos = {"nouns": [], "adj": [], "vb": []}
+
+    noun_indicators = []
+    adj_indicators = []
+    vb_indicators = []
+
+    for t in tags:
+        if t[1] == "NN":
+            pos["nouns"].append(t[0])
+        elif t[1] == "JJ":
+            pos["adj"].append(t[0])
+        elif "VB" in t[1]:
+            pos["vb"].append(t[0])
+
+    for ind in indicators:
+        if backwards_dict[ind[0]] in pos["nouns"]:
+            noun_indicators.append(ind)
+        elif backwards_dict[ind[0]] in pos["adj"]:
+            adj_indicators.append(ind)
+        elif backwards_dict[ind[0]] in pos["vb"]:
+            vb_indicators.append(ind)
+
+    noun_indicators.sort(key = lambda x: x[1])
+    top_noun = noun_indicators[-5:]
+    adj_indicators.sort(key = lambda x: x[1])
+    top_adj = adj_indicators[-5:]
+    vb_indicators.sort(key = lambda x: x[1])
+    top_vb = vb_indicators[-5:]
+
     result = []
+    result_noun = []
+    result_adj = []
+    result_vb = []
     for i in range(4, -1, -1):
         ind = top[i][0]
         result.append(backwards_dict[ind])
+        result_noun.append(backwards_dict[top_noun[i][0]])
+        result_adj.append(backwards_dict[top_adj[i][0]])
+        result_vb.append(backwards_dict[top_vb[i][0]])
+
+    print("noun", result_noun)
+    print("adj", result_adj)
+    print("vb", result_vb)
 
     return result
 
