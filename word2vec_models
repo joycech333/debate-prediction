@@ -1,0 +1,175 @@
+import util
+import numpy as np
+import gensim.downloader as api
+from nltk.tokenize import word_tokenize
+from nltk.corpus import stopwords
+from sklearn.linear_model import LogisticRegression
+from sklearn.ensemble import RandomForestClassifier
+# Remember to run pip install xgboost
+from xgboost import XGBClassifier
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import accuracy_score
+
+import re
+import json
+
+files = ['data/pres/09_26_2008.txt', 'data/pres/10_07_2008.txt', 'data/pres/10_15_2008.txt', 'data/vp/10_02_2008.txt']
+# Load Google's pre-trained Word2Vec model
+model = api.load("word2vec-google-news-300") 
+
+'''
+Get labels from winners file. Since this is associated with each file (debate), 
+we need to build the labels vector as we read each file from files.
+Note that this code can be integrated with the function make_speakers_dict,
+but is separate for readability.
+'''
+def get_winners(files):
+    labels = []
+    with open('data/ground_truths.json') as json_file:
+        winners = json.load(json_file)
+
+    for file_path in files:
+        speakers_lines = util.split_speakers(file_path)
+        for speaker in speakers_lines:
+            # Janky way to fix the discrepancy between file names in the path and ground_truths.json
+            winner = winners[file_path[-14:]]
+            # If this speaker is the winner of the debate, represent as a 1 in labels vector
+            if speaker.lower() == winner.lower():
+                labels.append([1])
+            else:
+                labels.append([0])
+    return np.array(labels)
+
+'''
+Takes in a single line of text, returns tokenized vector of cleaned words from line.
+Remove punctuations; numbers; English stopwords; tokenize and lowercase.
+'''
+def preprocess_text(line):
+    cleaned_line = re.sub(r'[^\w\s]', '', line)
+    cleaned_line = re.sub(r'\d+', '', cleaned_line) 
+    tokens = word_tokenize(cleaned_line.lower())
+    stop_words = set(stopwords.words('english'))
+    filtered_tokens = [word for word in tokens if word not in stop_words]
+    return filtered_tokens
+
+'''
+Takes in all debate files, returns a dictionary containing words spoken by each speaker. 
+Also returns the labels vector.
+Keys = names of speakers.
+Values = list of all tokenized & processed words from that person's speech, including duplicates
+(tokenized concatenation of all words the speaker spoke). e.g. ['word1', 'word2', 'word3']
+(Casual explanation: each speaker has one huge list of all the words they spoke)
+'''
+def make_speakers_dict(files):
+    speakers_words = {}
+
+    # Using integers as keys to allow duplicate speakers
+    i = 0
+    for file_path in files:
+        speakers_lines = util.split_speakers(file_path)
+        
+        for speaker, lines in speakers_lines.items():
+        # Need to fix this: want to make multiple instances of a speaker
+            speakers_words[i] = [(preprocess_text(line)) for line in lines]
+            i += 1
+
+    return speakers_words
+
+'''
+Test make_speakers_dict
+'''
+# dict = make_speakers_dict(files)
+# print(dict.keys())
+# print(list(dict.values())[0])
+
+'''
+Input: dictionary of tokenized speakers' words.
+Using the pre-trained Word2Vec model, get embeddings of every word for every speaker.
+Takes mean of the word embeddings to calculate feature vector for that speaker.
+Output: numpy array of feature vectors, one for each speaker. These are the Xs.
+'''
+def make_features(speakers_words):
+    vocab = list(model.index_to_key)
+    
+    features = []
+    for speaker, tokens in speakers_words.items():
+        speaker_vec = []
+        for word in tokens:
+            if word in vocab: 
+                speaker_vec.append(model[word])
+            else:
+                # This speaker word is not in the pre-train vocab
+                speaker_vec.append(np.zeros(300))
+        speaker_feature = np.mean(speaker_vec, axis=0)
+        features.append(speaker_feature)
+    return np.array(features)
+
+'''
+Test whether embed worked
+'''
+# print(make_features(make_speakers_dict(files)).shape)
+# make_features(make_speakers_dict(files))
+
+
+'''
+Perform logistic regression on the features (mean of word embeddings) and labels
+'''
+def logreg(features, labels):
+
+    # Split data into train and test sets
+    X_train, X_test, y_train, y_test = train_test_split(features, labels, test_size=0.2, random_state=42)
+
+    # Initialize and train logistic regression model
+    logistic_regression = LogisticRegression()
+    logistic_regression.fit(X_train, y_train.ravel())
+    train_acc = logistic_regression.score(X_train, y_train)
+    print(f"Logreg Train Accuracy: {train_acc}")
+
+    # Evaluate the model
+    accuracy = logistic_regression.score(X_test, y_test)
+    print(f"Logistic Regression Accuracy: {accuracy}")
+
+# features = make_features(make_speakers_dict(files))
+# labels = get_winners(files)
+# logreg(features, labels)
+
+
+'''
+XG-boost
+'''
+def xgboost(features, labels):
+
+    X_train, X_test, y_train, y_test = train_test_split(features, labels, test_size=0.2, random_state=42)
+
+    xgb_classifier = XGBClassifier(n_estimators=100, random_state=42)  # You can adjust the number of estimators as needed
+
+    xgb_classifier.fit(X_train, y_train)
+    predictions = xgb_classifier.predict(X_test)
+
+    accuracy = accuracy_score(y_test, predictions)
+    print("Accuracy:", accuracy)
+
+features = make_features(make_speakers_dict(files))
+labels = get_winners(files)
+xgboost(features, labels)
+
+'''
+Random forest
+'''
+def randomforest(features, labels):
+    X_train, X_test, y_train, y_test = train_test_split(features, labels, test_size=0.2, random_state=42)
+    random_forest = RandomForestClassifier(n_estimators=100, random_state=42)
+
+    # Train the classifier
+    random_forest.fit(X_train, y_train.ravel())
+
+    # Predict on the test set
+    predictions = random_forest.predict(X_test)
+
+    # Calculate accuracy
+    accuracy = accuracy_score(y_test, predictions)
+    print("Accuracy:", accuracy)
+
+# features = make_features(make_speakers_dict(files))
+# labels = get_winners(files)
+# randomforest(features, labels)
