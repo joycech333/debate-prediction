@@ -58,14 +58,16 @@ def generate_X_y(files, winners):
     count_matrix = count_vect.fit_transform(all_lines)
     count_array = count_matrix.toarray()
     X = pd.DataFrame(data=count_array, columns=count_vect.get_feature_names_out())
+    print(X.info())
     y = pd.DataFrame(ys)
+    print(y.info())
 
     return X, y
 
 
 def logreg(X, y):
     # split data
-    x_train, x_test, y_train, y_test = train_test_split(X, y, test_size=0.25) # , random_state=0
+    x_train, x_test, y_train, y_test = train_test_split(X, y, test_size=0.25, random_state=4) # , random_state=0
 
     # fit regression
     logisticRegr = LogisticRegression()
@@ -88,7 +90,7 @@ if __name__ == "__main__":
     logreg(X, y)
 
     X, y = generate_pronouns_y(files, winners)
-    print(X[:20])
+    # print(X[:20])
     logreg(X, y)
 
     # text = "hey I am we my me in.!they"
