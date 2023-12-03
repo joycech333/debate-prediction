@@ -1,8 +1,9 @@
 import csv
-from turtle import back
 import numpy as np
 import nltk
+from nltk.corpus import stopwords
 
+stops = stopwords.words('english')
 
 def load_dataset(tsv_path):
     """Load the spam dataset from a TSV file
@@ -49,7 +50,15 @@ def get_words(message):
 
     for m in message:
         m = m.lower()
-        if m in words:
+
+        # stripping punct made it worse
+        """
+        if m[-1] == "." or m[-1] == ",":
+            m = m[:-1]
+        """
+
+        # getting rid of stop words had no effect 
+        if m in words or m in stops:
             continue
         else:
             words.add(m)
