@@ -20,23 +20,23 @@
     "draw": False
    },
    "October_15_1976.txt": {
-    "win": ,
-    "lose": ,
+    "win": "Mondale",
+    "lose": "Dole",
     "draw": False
    },
    "October_22_1976.txt": {
-    "win": ,
-    "lose": ,
-    "draw": False
+    "win": "Ford",
+    "lose": "Carter",
+    "draw": True
    },
    "September_23_1976.txt": {
-    "win": ,
-    "lose": ,
+    "win": "Ford",
+    "lose": "Carter",
     "draw": False
    },
    "October_06_1976.txt": {
-    "win": ,
-    "lose": ,
+    "win": "Carter",
+    "lose": "Ford",
     "draw": False
    },
    "October_28_1980.txt": {
