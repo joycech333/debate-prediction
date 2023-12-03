@@ -212,5 +212,5 @@ if __name__ == "__main__":
 
     inOrder = sorted(names, key=lambda s: s[-8:])
     for f in inOrder:
-        print(f'"{f}": ,')
+        print(f'"{f}": {{\n "win": ,\n "lose": ,\n "draw": \n}},')
         
