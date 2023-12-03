@@ -1,22 +1,22 @@
 {
     "October_21_1960.txt": {
-    "win": ,
-    "lose": ,
-    "draw": False
+    "win": "Kennedy",
+    "lose": "Nixon",
+    "draw": True
    },
    "October_13_1960.txt": {
-    "win": ,
-    "lose": ,
+    "win": "Nixon",
+    "lose": "Kennedy",
     "draw": False
    },
    "September_26_1960.txt": {
-    "win": ,
-    "lose": ,
+    "win": "Kennedy",
+    "lose": "Nixon",
     "draw": False
    },
    "October_07_1960.txt": {
-    "win": ,
-    "lose": ,
+    "win": "Nixon",
+    "lose": "Kennedy",
     "draw": False
    },
    "October_15_1976.txt": {
