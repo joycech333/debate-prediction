@@ -5,18 +5,33 @@ import matplotlib.pyplot as plt
 
 model = SentenceTransformer('all-mpnet-base-v2')
 
-splits = util.split_speakers("data/transcripts/September_26_2008.txt")
-clean_splits = util.clean_cand_names(["Obama", "McCain", "John"], splits)
+splits = util.split_speakers("data/transcripts/September_26_2016.txt")
+old_splits = util.split_speakers("data/transcripts/October_13_1960.txt")
+#clean_splits = util.clean_cand_names(["Obama", "McCain", "John"], splits)
 
-sentences_obama = clean_splits["OBAMA"]
+#print(old_splits)
 
-embeddings_obama = model.encode(sentences_obama)
+kennedy_sent = []
+
+sentences_obama = old_splits["KENNEDY"]
+
+for elem in sentences_obama:
+    elem = elem.strip().split(".")
+    for sent in elem:
+        sent = sent.strip()
+        kennedy_sent.append(sent)
+
+
+
+
+embeddings_obama = model.encode(kennedy_sent)
+print(embeddings_obama.shape)
 
 pca = PCA(2)
 projected_obama = pca.fit_transform(embeddings_obama)
 print(projected_obama.shape)
 
-sentences_mccain = clean_splits["MCCAIN"]
+sentences_mccain = splits["TRUMP"]
 
 embeddings_mccain = model.encode(sentences_mccain)
 
