@@ -500,8 +500,8 @@
     "draw": False
    },
    "October_03_2012.txt": {
-    "win": ,
-    "lose": ,
+    "win": "Romney",
+    "lose": "Obama",
     "draw": False
    },
    "January_08_2012.txt": {
@@ -515,18 +515,18 @@
     "draw": False
    },
    "October_11_2012.txt": {
-    "win": ,
-    "lose": ,
+    "win": "Biden",
+    "lose": "Ryan",
     "draw": False
    },
    "October_16_2012.txt": {
-    "win": ,
-    "lose": ,
+    "win": "Obama",
+    "lose": "Romney",
     "draw": False
    },
    "October_22_2012.txt": {
-    "win": ,
-    "lose": ,
+    "win": "Obama",
+    "lose": "Romney",
     "draw": False
    },
    "January_16_2012.txt": {
