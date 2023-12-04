@@ -742,7 +742,7 @@
    "February_07_2020.txt": {
     "win": "Joe Biden",
     "lose": "",
-    "draw": True
+    "draw": False
    },
    "January_14_2020.txt": {
     "win": "Bernie Sanders",
