@@ -40,13 +40,13 @@
     "draw": False
    },
    "October_28_1980.txt": {
-    "win": ,
-    "lose": ,
+    "win": "Reagan",
+    "lose": "Carter",
     "draw": False
    },
    "September_21_1980.txt": {
-    "win": ,
-    "lose": ,
+    "win": "Reagan",
+    "lose": "Anderson",
     "draw": False
    },
    "October_11_1984.txt": {
@@ -65,23 +65,23 @@
     "draw": False
    },
    "October_13_1988.txt": {
-    "win": ,
-    "lose": ,
+    "win": "Bush",
+    "lose": "Dukakis",
     "draw": False
    },
    "October_05_1988.txt": {
-    "win": ,
-    "lose": ,
+    "win": "Bentsen",
+    "lose": "Quayle",
     "draw": False
    },
    "September_25_1988.txt": {
-    "win": ,
-    "lose": ,
-    "draw": False
+    "win": "Bush",
+    "lose": "Dukakis",
+    "draw": True
    },
    "October_11_1992.txt": {
-    "win": ,
-    "lose": ,
+    "win": "Perot",
+    "lose": "Clinton",
     "draw": False
    },
    "October_13_1992.txt": {
@@ -90,32 +90,32 @@
     "draw": False
    },
    "October_19_1992.txt": {
-    "win": ,
-    "lose": ,
+    "win": "Perot",
+    "lose": "Clinton",
     "draw": False
    },
    "October_15_1992.txt": {
-    "win": ,
-    "lose": ,
+    "win": "Clinton",
+    "lose": "Bush",
     "draw": False
    },
    "October_06_1996.txt": {
-    "win": ,
-    "lose": ,
+    "win": "CLinton",
+    "lose": "Dole",
     "draw": False
    },
    "October_16_1996.txt": {
-    "win": ,
-    "lose": ,
+    "win": "Clinton",
+    "lose": "Dole",
     "draw": False
    },
    "October_09_1996.txt": {
-    "win": ,
-    "lose": ,
+    "win": "CLinton",
+    "lose": "Dole",
     "draw": False
    },
    "November_21_1999.txt": {
-    "win": ,
+    "win": "McCain",
     "lose": ,
     "draw": False
    },
@@ -150,8 +150,8 @@
     "draw": False
    },
    "October_05_2000.txt": {
-    "win": ,
-    "lose": ,
+    "win": "Lieberman",
+    "lose": "Cheney",
     "draw": False
    },
    "January_05_2000.txt": {
@@ -165,8 +165,8 @@
     "draw": False
    },
    "October_03_2000.txt": {
-    "win": ,
-    "lose": ,
+    "win": "Gore",
+    "lose": "Bush",
     "draw": False
    },
    "January_15_2000.txt": {
@@ -185,8 +185,8 @@
     "draw": False
    },
    "October_11_2000.txt": {
-    "win": ,
-    "lose": ,
+    "win": "Bush",
+    "lose": "Gore",
     "draw": False
    },
    "February_15_2000.txt": {
@@ -200,29 +200,29 @@
     "draw": False
    },
    "October_17_2000.txt": {
-    "win": ,
-    "lose": ,
+    "win": "Bush",
+    "lose": "Gore",
     "draw": False
    },
    "October_13_2004.txt": {
-    "win": ,
-    "lose": ,
+    "win": "Kerry",
+    "lose": "Bush",
     "draw": False
    },
    "September_30_2004.txt": {
-    "win": ,
-    "lose": ,
+    "win": "Kerry",
+    "lose": "Bush",
     "draw": False
    },
    "October_05_2004.txt": {
-    "win": ,
-    "lose": ,
+    "win": "Edwards",
+    "lose": "Cheney",
     "draw": False
    },
    "October_08_2004.txt": {
-    "win": ,
-    "lose": ,
-    "draw": False
+    "win": "Kerry",
+    "lose": "Bush",
+    "draw": True
    },
    "January_22_2004.txt": {
     "win": ,
