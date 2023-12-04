@@ -420,9 +420,9 @@
     "draw": False
    },
    "November_12_2011.txt": {
-    "win": ,
-    "lose": ,
-    "draw": False
+    "win": "Romney",
+    "lose": "Gingrich",
+    "draw": True
    },
    "September_05_2011.txt": {
     "win": ,
@@ -430,48 +430,48 @@
     "draw": False
    },
    "October_18_2011.txt": {
-    "win": ,
-    "lose": ,
-    "draw": False
+    "win": "Romney",
+    "lose": "Perry",
+    "draw": True
    },
    "June_13_2011.txt": {
-    "win": ,
-    "lose": ,
+    "win": "Bachmann",
+    "lose": "",
     "draw": False
    },
    "August_11_2011.txt": {
-    "win": ,
-    "lose": ,
-    "draw": False
+    "win": "Bachmann",
+    "lose": "Romney",
+    "draw": True
    },
    "December_15_2011.txt": {
-    "win": ,
-    "lose": ,
-    "draw": False
+    "win": "Bachmann",
+    "lose": "Perry",
+    "draw": True
    },
    "September_12_2011.txt": {
-    "win": ,
-    "lose": ,
-    "draw": False
+    "win": "Romney",
+    "lose": "Gingrich",
+    "draw": True
    },
    "November_09_2011.txt": {
-    "win": ,
-    "lose": ,
+    "win": "Cain",
+    "lose": "",
     "draw": False
    },
    "September_07_2011.txt": {
-    "win": ,
-    "lose": ,
-    "draw": False
+    "win": "Perry",
+    "lose": "Romney",
+    "draw": True
    },
    "October_11_2011.txt": {
-    "win": ,
-    "lose": ,
+    "win": "Romney",
+    "lose": "",
     "draw": False
    },
    "November_22_2011.txt": {
-    "win": ,
-    "lose": ,
+    "win": "Huntsman",
+    "lose": "",
     "draw": False
    },
    "December_10_2011.txt": {
@@ -480,8 +480,8 @@
     "draw": False
    },
    "September_22_2011.txt": {
-    "win": ,
-    "lose": ,
+    "win": "Romney",
+    "lose": "",
     "draw": False
    },
    "February_22_2012.txt": {
@@ -505,13 +505,13 @@
     "draw": False
    },
    "January_08_2012.txt": {
-    "win": ,
-    "lose": ,
+    "win": "Huntsman",
+    "lose": "",
     "draw": False
    },
    "January_07_2012.txt": {
-    "win": ,
-    "lose": ,
+    "win": "Romney",
+    "lose": "",
     "draw": False
    },
    "October_11_2012.txt": {
