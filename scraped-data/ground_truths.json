@@ -240,9 +240,9 @@
     "draw": False
    },
    "August_07_2007.txt": {
-    "win": ,
-    "lose": ,
-    "draw": False
+    "win": "Clinton",
+    "lose": "Obama",
+    "draw": True
    },
    "June_05_2007.txt": {
     "win": "Romney",
@@ -250,24 +250,24 @@
     "draw": False
    },
    "December_09_2007.txt": {
-    "win": ,
-    "lose": ,
+    "win": "McCain",
+    "lose": "",
     "draw": False
    },
    "October_30_2007.txt": {
-    "win": ,
-    "lose": ,
+    "win": "Edwards",
+    "lose": "",
     "draw": False
    },
    "September_26_2007.txt": {
-    "win": ,
-    "lose": ,
+    "win": "Edwards",
+    "lose": "",
     "draw": False
    },
    "September_27_2007.txt": {
-    "win": ,
-    "lose": ,
-    "draw": False
+    "win": "Huckabee",
+    "lose": "Keyes",
+    "draw": True
    },
    "October_09_2007.txt": {
     "win": "Paul",
@@ -275,23 +275,23 @@
     "draw": False
    },
    "December_12_2007.txt": {
-    "win": ,
-    "lose": ,
+    "win": "Romney",
+    "lose": "",
     "draw": False
    },
    "December_13_2007.txt": {
-    "win": ,
-    "lose": ,
+    "win": "Edwards",
+    "lose": "",
     "draw": False
    },
    "July_23_2007.txt": {
-    "win": ,
-    "lose": ,
+    "win": "Obama",
+    "lose": "",
     "draw": False
    },
    "December_04_2007.txt": {
-    "win": ,
-    "lose": ,
+    "win": "Edwards",
+    "lose": "",
     "draw": False
    },
    "October_21_2007.txt": {
@@ -300,23 +300,23 @@
     "draw": False
    },
    "November_15_2007.txt": {
-    "win": ,
-    "lose": ,
+    "win": "Clinton",
+    "lose": "",
     "draw": False
    },
    "September_09_2007.txt": {
-    "win": ,
-    "lose": ,
+    "win": "Obama",
+    "lose": "",
     "draw": False
    },
    "June_03_2007.txt": {
-    "win": ,
-    "lose": ,
+    "win": "Edwards",
+    "lose": "",
     "draw": False
    },
    "August_19_2007.txt": {
-    "win": ,
-    "lose": ,
+    "win": "Clinton",
+    "lose": "",
     "draw": False
    },
    "August_05_2007.txt": {
@@ -325,8 +325,8 @@
     "draw": False
    },
    "May_15_2007.txt": {
-    "win": ,
-    "lose": ,
+    "win": "Paul",
+    "lose": "",
     "draw": False
    },
    "November_28_2007.txt": {
@@ -340,8 +340,8 @@
     "draw": False
    },
    "June_28_2007.txt": {
-    "win": ,
-    "lose": ,
+    "win": "Obama",
+    "lose": "",
     "draw": False
    },
    "May_03_2007.txt": {
@@ -350,73 +350,73 @@
     "draw": False
    },
    "February_26_2008.txt": {
-    "win": ,
-    "lose": ,
+    "win": "Obama",
+    "lose": "Clinton",
     "draw": False
    },
    "February_21_2008.txt": {
-    "win": ,
-    "lose": ,
+    "win": "Obama",
+    "lose": "Clinton",
     "draw": False
    },
    "January_06_2008.txt": {
-    "win": ,
-    "lose": ,
+    "win": "Romney",
+    "lose": "",
     "draw": False
    },
    "January_10_2008.txt": {
-    "win": ,
-    "lose": ,
+    "win": "McCain",
+    "lose": "",
     "draw": False
    },
    "October_07_2008.txt": {
-    "win": ,
-    "lose": ,
+    "win": "Obama",
+    "lose": "McCain",
     "draw": False
    },
    "January_24_2008.txt": {
-    "win": ,
-    "lose": ,
-    "draw": False
+    "win": "Romney",
+    "lose": "Paul",
+    "draw": True
    },
    "October_15_2008.txt": {
-    "win": ,
-    "lose": ,
+    "win": "Obama",
+    "lose": "McCain",
     "draw": False
    },
    "January_21_2008.txt": {
-    "win": ,
-    "lose": ,
-    "draw": False
+    "win": "Obama",
+    "lose": "Clinton",
+    "draw": True
    },
    "October_02_2008.txt": {
-    "win": ,
-    "lose": ,
+    "win": "Biden",
+    "lose": "Palin",
     "draw": False
    },
    "September_26_2008.txt": {
-    "win": ,
-    "lose": ,
+    "win": "Obama",
+    "lose": "McCain",
     "draw": False
    },
    "January_31_2008.txt": {
-    "win": ,
-    "lose": ,
-    "draw": False
+    "win": "Obama",
+    "lose": "Clinton",
+    "draw": True
    },
    "January_30_2008.txt": {
-    "win": ,
-    "lose": ,
-    "draw": False
+    "win": "McCain",
+    "lose": "Romney",
+    "draw": True
    },
    "April_16_2008.txt": {
-    "win": ,
-    "lose": ,
+    "win": "Clinton",
+    "lose": "Obama",
     "draw": False
    },
    "January_05_2008.txt": {
-    "win": ,
-    "lose": ,
+    "win": "Obama",
+    "lose": "",
     "draw": False
    },
    "November_12_2011.txt": {
