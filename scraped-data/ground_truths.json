@@ -485,18 +485,18 @@
     "draw": False
    },
    "February_22_2012.txt": {
-    "win": ,
-    "lose": ,
+    "win": "Romney",
+    "lose": "",
     "draw": False
    },
    "January_26_2012.txt": {
-    "win": ,
-    "lose": ,
-    "draw": False
+    "win": "Romney",
+    "lose": "Gingrich",
+    "draw": True
    },
    "January_19_2012.txt": {
-    "win": ,
-    "lose": ,
+    "win": "Santorum",
+    "lose": "",
     "draw": False
    },
    "October_03_2012.txt": {
@@ -530,13 +530,13 @@
     "draw": False
    },
    "January_16_2012.txt": {
-    "win": ,
-    "lose": ,
+    "win": "Gingrich",
+    "lose": "",
     "draw": False
    },
    "January_23_2012.txt": {
-    "win": ,
-    "lose": ,
+    "win": "Romney",
+    "lose": "",
     "draw": False
    },
    "December_15_2015.txt": {
