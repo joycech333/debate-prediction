@@ -8,7 +8,6 @@ util.split_speakers(file_path)
 import os
 import re
 import json
-import numpy
 
 PRONOUNS = ['he', 'him', 'his', 'she', 'her', 'hers', 'i', 'me', 'my', 'you', 'your', 'yours', 'they', 'them', 'theirs', 'it', 'its', 'we', 'us', 'our', 'ours', 'myself', 'yourself', 'himself', 'herself', 'ourselves', 'themselves']
 
@@ -88,7 +87,7 @@ def ys_by_speaker():
                 won = (speaker == winner or (draw and speaker == loser))
                 winners.append([won])
 
-    return numpy.ravel(winners)
+    return winners
 
 """
 Splits the speech at a given txt file_path by speaker
