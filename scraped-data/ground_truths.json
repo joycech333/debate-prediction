@@ -50,18 +50,18 @@
     "draw": False
    },
    "October_11_1984.txt": {
-    "win": "George H. W. Bush",
-    "lose": "Geraldine Ferraro",
+    "win": "Bush",
+    "lose": "Ferraro",
     "draw": True
    },
    "October_07_1984.txt": {
-    "win": "Walter Mondale",
-    "lose": "Ronald Reagan",
+    "win": "Mondale",
+    "lose": "Reagan",
     "draw": False
    },
    "October_21_1984.txt": {
-    "win": "Ronald Reagan",
-    "lose": "Walter Mondale",
+    "win": "Reagan",
+    "lose": "Mondale",
     "draw": False
    },
    "October_13_1988.txt": {
@@ -425,8 +425,8 @@
     "draw": True
    },
    "September_05_2011.txt": {
-    "win": ,
-    "lose": ,
+    "win": "Romney",
+    "lose": "",
     "draw": False
    },
    "October_18_2011.txt": {
@@ -475,8 +475,8 @@
     "draw": False
    },
    "December_10_2011.txt": {
-    "win": ,
-    "lose": ,
+    "win": "Gingrich",
+    "lose": "",
     "draw": False
    },
    "September_22_2011.txt": {
