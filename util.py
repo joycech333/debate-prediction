@@ -25,7 +25,6 @@ def get_participants():
                 for match in matches:
                     participants[file].append(match.upper())
     
-    print(participants)
     return participants
 
 PARTICIPANTS = get_participants()
@@ -35,7 +34,7 @@ Splits the speech at a given txt file_path by speaker
 in the form of a dict:
 speaker --> list of lines
 """
-def split_speakers(file_path):
+def split_speakers(file_path, escape=False):
     file = open(file_path).read()
     all_speakers = {}
     # colons denote when a speaker is speaking
@@ -45,7 +44,7 @@ def split_speakers(file_path):
     prev_speech = speeches[0]
     for speech in speeches[1:]:
         # check if word before colon is a speaker name
-        if prev_speech[-1].isupper():
+        if prev_speech and prev_speech[-1].isupper():
             speaker = prev_speech.split()[-1]
 
             lines = speech.split("\n")[:-1]
@@ -55,11 +54,16 @@ def split_speakers(file_path):
 
             for line in lines:
                 if line:
+                    if escape:
+                        participants = PARTICIPANTS[file_path.split('/')[-1]]
+                        for name in participants:
+                            line = line.replace(name, "").replace(name.title(), "")
                     all_speakers[speaker].append(line)
 
         prev_speech = speech
 
     return all_speakers
+
 
 # clean a sentence of candidate names
 def clean_cand_names(names, split_dict):
@@ -73,6 +77,7 @@ def clean_cand_names(names, split_dict):
 
         split_dict[speaker] = clean_sent
     return split_dict
+
 
 # get the data in the format required by the naive bayes classifier
 def create_data_tsv(all_dict, file_path, winner, loser):

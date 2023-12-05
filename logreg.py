@@ -46,21 +46,27 @@ def pronoun_tokenizer(text):
     return re.findall(f"{pronouns}", text)
 
 
-def generate_lines_scores(file_path, winners):
-    filename = file_path.split('/')[-1]
-    winner = winners[filename]['winner'].upper()
-    speaker_lines = util.split_speakers(file_path)
+def generate_lines_scores(filename, allWinners):
+    winner = allWinners[filename]['win'].upper()
+    loser = allWinners[filename]['lose'].upper()
+    draw = allWinners[filename]['draw']
+
+    # ignore files with no ground truth
+    if not winner:
+        return [], []
+    
+    participants = util.PARTICIPANTS[filename]
+    speaker_lines = util.split_speakers(f'scraped-data/transcripts/{filename}', True)
 
     all_lines = []
     ys = []
-    pos = []
     for speaker in speaker_lines:
         lines = speaker_lines[speaker]
 
-        # for 2008, this means the speaker was not the moderator
-        if speaker in ["OBAMA", "MCCAIN", "BIDEN", "PALIN"]:
+        if speaker.upper() in participants:
             all_lines.extend(lines)
-            ys.extend([speaker == winner] * len(lines))
+            # account for ties
+            ys.extend([speaker == winner or (draw and speaker == loser)] * len(lines))
     
     return all_lines, ys
 
@@ -69,7 +75,7 @@ def generate_pronouns_y(files, winners):
     for file_path in files:
         all_lines, ys = generate_lines_scores(file_path, winners)
         
-    count_vect = CountVectorizer(tokenizer=pronoun_tokenizer)
+    count_vect = CountVectorizer(tokenizer=pronoun_tokenizer, token_pattern=None)
     count_matrix = count_vect.fit_transform(all_lines)
     count_array = count_matrix.toarray()
     X = pd.DataFrame(data=count_array, columns=count_vect.get_feature_names_out())
@@ -85,7 +91,7 @@ def generate_pos_y(files, winners):
     for file_path in files:
         all_lines, ys = generate_lines_scores(file_path, winners)
         
-    count_vect = CountVectorizer(tokenizer=pos_tokenizer)
+    count_vect = CountVectorizer(tokenizer=pos_tokenizer, token_pattern=None)
     count_matrix = count_vect.fit_transform(all_lines)
     count_array = count_matrix.toarray()
     X = pd.DataFrame(data=count_array, columns=count_vect.get_feature_names_out())
@@ -101,7 +107,7 @@ def generate_pos_uni_y(files, winners):
     for file_path in files:
         all_lines, ys = generate_lines_scores(file_path, winners)
         
-    count_vect = CountVectorizer(tokenizer=pos_tokenizer_uni)
+    count_vect = CountVectorizer(tokenizer=pos_tokenizer_uni, token_pattern=None)
     count_matrix = count_vect.fit_transform(all_lines)
     count_array = count_matrix.toarray()
     X = pd.DataFrame(data=count_array, columns=count_vect.get_feature_names_out())
@@ -113,46 +119,56 @@ def generate_pos_uni_y(files, winners):
 
 
 # make this not just N
-def filter_pos(file_path, proper, posCode):
-    text = open(file_path).read()
+def filter_pos(file, posCode):
+    text = open(f'scraped-data/transcripts/{file}').read()
     tokens = nltk.word_tokenize(text.lower())
     pos_tags = nltk.pos_tag(tokens)
-    return [word for word, pos in pos_tags if word.upper() not in proper and (pos[0] == posCode)] #  or pos[0] == 'P'
+    return [word for word, pos in pos_tags if word.upper() not in util.PARTICIPANTS and (pos[0] == posCode)] #  or pos[0] == 'P'
 
 
 # generate X, y with just the top 5 of a certain pos (ex: t5 nouns)
 def generate_X_y_pos_5(files, winners, posCode):
     filtered_pos = []
-    for file_path in files:
-        all_lines, ys = generate_lines_scores(file_path, winners)
-        filtered_pos.extend(filter_pos(file_path, ["OBAMA", "MCCAIN", "LEHRER", "BIDEN", "PALIN", "JIM", "JOHN"], posCode))
+    all_ys = []
+    all_files = []
+    for file in files:
+        all_lines, ys = generate_lines_scores(file, winners)
+        all_files.extend(all_lines)
+        all_ys.extend(ys)
+
+        filtered_pos.extend(filter_pos(file, posCode))
         
-    print(filtered_pos[:20])
+    # print(filtered_pos[:20])
     t5tuples = nltk.FreqDist(filtered_pos).most_common(5)
     t5 = [x[0] for x in t5tuples]
     count_vect = CountVectorizer(vocabulary=t5)
-    count_matrix = count_vect.fit_transform(all_lines)
+    count_matrix = count_vect.fit_transform(all_files)
     count_array = count_matrix.toarray()
     X = pd.DataFrame(data=count_array, columns=count_vect.get_feature_names_out())
-    print(X[:20])
+    # print(X[:20])
     sums = X.sum(axis=1).replace(0, 1) # no zeros
     X = X.div(sums, axis=0) # mean across each row (each input line)
-    y = pd.DataFrame(ys)
+    y = pd.DataFrame(all_ys)
 
     return X, y
 
 
 def generate_X_y(files, winners):
-    for file_path in files:
-        all_lines, ys = generate_lines_scores(file_path, winners)
+    all_files = []
+    all_ys = []
+    for file in files:
+        # print(file)
+        all_lines, ys = generate_lines_scores(file, winners)
+        all_files.extend(all_lines)
+        all_ys.extend(ys)
         
     count_vect = CountVectorizer(stop_words='english')
-    count_matrix = count_vect.fit_transform(all_lines)
+    count_matrix = count_vect.fit_transform(all_files)
     count_array = count_matrix.toarray()
     X = pd.DataFrame(data=count_array, columns=count_vect.get_feature_names_out())
     # sums = X.sum(axis=1).replace(0, 1) # no zeros
     # normalizedX = X.div(sums, axis=0) # mean across each row (each input line)
-    y = pd.DataFrame(ys)
+    y = pd.DataFrame(all_ys)
 
     return X, y
 
@@ -167,42 +183,54 @@ def logreg(X, y):
 
     # predict
     # predictions = logisticRegr.predict(x_test)
+    print(logisticRegr.coef_)
     score = logisticRegr.score(x_test, y_test)
-    print('logreg on words:', score)
-    
-
+    print('logreg test score:', score)
 
 
 if __name__ == "__main__":
-    with open('scraped-data/ground_truths2.json') as json_file:
+    with open('scraped-data/ground_truths.json') as json_file:
         winners = json.load(json_file)
 
-    files = ['data/pres/09_26_2008.txt', 'data/pres/10_07_2008.txt', 'data/pres/10_15_2008.txt', 'data/vp/10_02_2008.txt']
+    # files = ['data/pres/09_26_2008.txt', 'data/pres/10_07_2008.txt', 'data/pres/10_15_2008.txt', 'data/vp/10_02_2008.txt']
+    files = [f.name for f in os.scandir("scraped-data/transcripts")]
 
-    # X, y = generate_X_y(files, winners)
-    # logreg(X, y)
+    print('All Logreg')
+    X, y = generate_X_y(files, winners)
+    logreg(X, y)
 
-    # X, y = generate_pronouns_y(files, winners)
-    # logreg(X, y)
+    print('Pronoun')
+    X, y = generate_pronouns_y(files, winners)
+    print(1 - y.mean())
+    print(X[:20])
+    logreg(X, y)
 
-    # X, y = generate_pos_y(files, winners)
-    # logreg(X, y)
+    print('Reg on Specific PoS (ex: Singular Noun)')
+    X, y = generate_pos_y(files, winners)
+    print(X[:20])
+    logreg(X, y)
 
-    # X, y = generate_pos_uni_y(files, winners)
-    # logreg(X, y)
+    print('Reg on PoS Family (ex: Noun)')
+    X, y = generate_pos_uni_y(files, winners)
+    print(X[:20])
+    logreg(X, y)
 
-    # print('Noun')
-    # X, y = generate_X_y_pos_5(files, winners, 'N')
-    # logreg(X, y)
+    print('Noun')
+    X, y = generate_X_y_pos_5(files, winners, 'N')
+    print(X[:20])
+    logreg(X, y)
 
-    # print('Verb')
-    # X, y = generate_X_y_pos_5(files, winners, 'V')
-    # logreg(X, y)
+    print('Verb')
+    X, y = generate_X_y_pos_5(files, winners, 'V')
+    print(X[:20])
+    logreg(X, y)
 
-    # print('Adj')
-    # X, y = generate_X_y_pos_5(files, winners, 'J')
-    # logreg(X, y)
+    print('Adj')
+    X, y = generate_X_y_pos_5(files, winners, 'J')
+    print(X[:20])
+    logreg(X, y)
 
-    # print('Adv')
-    # X, y = generate_X_y_pos_5(files, winners, 'R')
-    # logreg(X, y)
+    print('Adv')
+    X, y = generate_X_y_pos_5(files, winners, 'R')
+    print(X[:20])
+    logreg(X, y)
