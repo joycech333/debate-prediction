@@ -540,227 +540,227 @@
     "draw": "FALSE"
    },
    "December_15_2015.txt": {
-    "win": "Hillary Clinton",
+    "win": "Clinton",
     "lose": "",
     "draw": "FALSE"
    },
    "October_13_2015.txt": {
-    "win": "Bernie Sanders",
-    "lose": "Hillary Clinton, Martin O'Malley, Jim Webb",
-    "draw": "FALSE"
+    "win": "Sanders",
+    "lose": "Clinton",
+    "draw": "TRUE"
    },
    "August_06_2015.txt": {
-    "win": "Donald Trump",
+    "win": "Trump",
     "lose": "",
     "draw": "FALSE"
    },
    "November_14_2015.txt": {
     "win": "Hillary Clinton",
-    "lose": "Bernie Sanders, Martin O'Malley",
-    "draw": "FALSE"
+    "lose": "Bernie Sanders",
+    "draw": "TRUE"
    },
    "December_19_2015.txt": {
-    "win": "Marco Rubio",
+    "win": "Rubio",
     "lose": "",
     "draw": "FALSE"
    },
    "November_10_2015.txt": {
-    "win": "Hillary Clinton",
+    "win": "Clinton",
     "lose": "",
     "draw": "FALSE"
    },
    "September_16_2015.txt": {
-    "win": "Carly Fiorina",
+    "win": "Fiorina",
     "lose": "",
     "draw": "FALSE"
    },
    "October_28_2015.txt": {
-    "win": "Marco Rubio",
+    "win": "Rubio",
     "lose": "",
     "draw": "FALSE"
    },
    "September_26_2016.txt": {
-    "win": "Hillary Clinton",
+    "win": "Clinton",
     "lose": "",
     "draw": "FALSE"
    },
    "October_04_2016.txt": {
-    "win": "Mike Pence",
+    "win": "Pence",
     "lose": "",
     "draw": "FALSE"
    },
    "October_19_2016.txt": {
-    "win": "Hillary Clinton",
+    "win": "Clinton",
     "lose": "",
     "draw": "FALSE"
    },
    "February_25_2016.txt": {
-    "win": "Marco Rubio",
+    "win": "Rubio",
     "lose": "",
     "draw": "FALSE"
    },
    "February_11_2016.txt": {
-    "win": "Hillary Clinton",
+    "win": "Clinton",
     "lose": "",
     "draw": "FALSE"
    },
    "January_14_2016.txt": {
-    "win": "Donald Trump",
-    "lose": "1",
+    "win": "Trump",
+    "lose": "",
     "draw": "FALSE"
    },
    "March_03_2016.txt": {
-    "win": "Ted Cruz",
+    "win": "Cruz",
     "lose": "",
     "draw": "FALSE"
    },
    "March_09_2016.txt": {
-    "win": "Hillary Clinton",
+    "win": "Clinton",
     "lose": "",
     "draw": "FALSE"
    },
    "October_09_2016.txt": {
-    "win": "Hillary Clinton",
+    "win": "Clinton",
     "lose": "",
     "draw": "FALSE"
    },
    "February_06_2016.txt": {
-    "win": "Chris Christie",
+    "win": "Christie",
     "lose": "",
     "draw": "FALSE"
    },
    "March_10_2016.txt": {
-    "win": "Marco Rubio",
+    "win": "Rubio",
     "lose": "",
     "draw": "FALSE"
    },
    "April_14_2016.txt": {
-    "win": "Hillary Clinton",
+    "win": "Clinton",
     "lose": "",
     "draw": "FALSE"
    },
    "January_25_2016.txt": {
-    "win": "Bernie Sanders",
+    "win": "Sanders",
     "lose": "",
     "draw": "FALSE"
    },
    "March_06_2016.txt": {
-    "win": "Hillary Clinton",
+    "win": "Clinton",
     "lose": "",
     "draw": "FALSE"
    },
    "February_04_2016.txt": {
-    "win": "Hillary Clinton",
+    "win": "Clinton",
     "lose": "",
     "draw": "FALSE"
    },
    "January_17_2016.txt": {
-    "win": "Bernie Sanders",
+    "win": "Sanders",
     "lose": "",
     "draw": "FALSE"
    },
    "January_28_2016.txt": {
-    "win": "Donald Trump",
+    "win": "Trump",
     "lose": "",
     "draw": "FALSE"
    },
    "February_13_2016.txt": {
-    "win": "Marco Rubio",
+    "win": "Rubio",
     "lose": "",
     "draw": "FALSE"
    },
    "July_31_2019.txt": {
-    "win": "Julian Castro",
+    "win": "Castro",
     "lose": "",
     "draw": "FALSE"
    },
    "July_30_2019.txt": {
-    "win": "Bernie Sanders",
+    "win": "Sanders",
     "lose": "",
     "draw": "FALSE"
    },
    "December_19_2019.txt": {
-    "win": "Joe Biden",
+    "win": "Biden",
     "lose": "",
     "draw": "FALSE"
    },
    "October_15_2019.txt": {
-    "win": "Elizabeth Warren",
+    "win": "Warren",
     "lose": "",
     "draw": "FALSE"
    },
    "November_20_2019.txt": {
-    "win": "Pete Buttigieg",
+    "win": "Buttigieg",
     "lose": "",
     "draw": "FALSE"
    },
    "June_26_2019.txt": {
-    "win": "Julian Castro",
+    "win": "Castro",
     "lose": "",
     "draw": "FALSE"
    },
    "June_27_2019.txt": {
-    "win": "Kamala Harris",
+    "win": "Harris",
     "lose": "",
     "draw": "FALSE"
    },
    "September_12_2019.txt": {
-    "win": "Elizabeth Warren",
+    "win": "Warren",
     "lose": "",
     "draw": "FALSE"
    },
    "September_29_2020.txt": {
-    "win": "Joe Biden",
+    "win": "Biden",
     "lose": "",
     "draw": "FALSE"
    },
    "February_19_2020.txt": {
-    "win": "Bernie Sanders",
+    "win": "Sanders",
     "lose": "",
     "draw": "FALSE"
    },
    "October_22_2020.txt": {
-    "win": "Joe Biden",
+    "win": "Biden",
     "lose": "",
     "draw": "FALSE"
    },
    "October_07_2020.txt": {
-    "win": "Mike Pence",
+    "win": "Pence",
     "lose": "",
     "draw": "FALSE"
    },
    "March_15_2020.txt": {
-    "win": "Joe Biden",
+    "win": "Biden",
     "lose": "",
     "draw": "FALSE"
    },
    "February_25_2020.txt": {
-    "win": "Elizabeth Warren",
+    "win": "Warren",
     "lose": "",
     "draw": "FALSE"
    },
    "February_07_2020.txt": {
-    "win": "Joe Biden",
+    "win": "Biden",
     "lose": "",
     "draw": "FALSE"
    },
    "January_14_2020.txt": {
-    "win": "Bernie Sanders",
-    "lose": "Pete Buttigieg",
+    "win": "Sanders",
+    "lose": "Buttigieg",
     "draw": "TRUE"
    },
    "November_08_2023.txt": {
-    "win": "Donald Trump",
+    "win": "Trump",
     "lose": "",
     "draw": "FALSE"
    },
    "August_23_2023.txt": {
-    "win": "Mike Pence",
+    "win": "Pence",
     "lose": "",
     "draw": "FALSE"
    },
    "September_27_2023.txt": {
-    "win": "Nikki Haley",
+    "win": "Haley",
     "lose": "",
     "draw": "FALSE"
    }
