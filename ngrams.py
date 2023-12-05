@@ -10,8 +10,8 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.naive_bayes import GaussianNB
 from sklearn.feature_extraction.text import CountVectorizer
-from sklearn.model_selection import train_test_split
-from sklearn.metrics import accuracy_score
+from sklearn.model_selection import cross_val_score
+from sklearn.model_selection import KFold
 from sklearn.feature_extraction.text import TfidfTransformer
 
 files = ['data/pres/09_26_2008.txt', 'data/pres/10_07_2008.txt', 'data/pres/10_15_2008.txt', 'data/vp/10_02_2008.txt']
@@ -66,11 +66,8 @@ for file_path in files:
 ngram_range = (3, 3)  # Specifies trigrams
 count_vectorizer = CountVectorizer(ngram_range=ngram_range)
 
-# Create train/test split here from all_transcripts
 labels = get_winners(files)
-train_transcripts, test_transcripts, y_train, y_test = train_test_split(all_transcripts, labels, test_size=0.2, random_state=42)
-X_train = count_vectorizer.fit_transform(train_transcripts).toarray()
-X_test = count_vectorizer.transform(test_transcripts).toarray()
+X = count_vectorizer.fit_transform(all_transcripts).toarray()
 
 '''
 Naive Bayes
@@ -78,16 +75,14 @@ Naive Bayes
 # def naivebayes(features, labels):
 
 nb_classifier = GaussianNB()
-nb_classifier.fit(X_train, y_train)
 
-# Predict on the training set
-predictions_train = nb_classifier.predict(X_train)
-# Calculate accuracy for training set
-accuracy_train = accuracy_score(y_train, predictions_train)
-print("Training Accuracy:", accuracy_train)
+# Define the number of folds
+num_folds = 10
 
-# Predict on the test set
-predictions_test = nb_classifier.predict(X_test)
-# Calculate accuracy for test set
-accuracy_test = accuracy_score(y_test, predictions_test)
-print("Test Accuracy:", accuracy_test)
+# Perform 10-fold cross-validation and calculate accuracy
+kfold = KFold(n_splits=num_folds, shuffle=True, random_state=42)
+accuracy = cross_val_score(nb_classifier, X, labels, cv=kfold, scoring='accuracy')
+
+# Print the accuracy for each fold and the mean accuracy
+print("Accuracy for each fold:", accuracy)
+print("Mean accuracy:", accuracy.mean())
