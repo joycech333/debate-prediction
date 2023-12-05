@@ -1,4 +1,5 @@
 import util
+import os
 import numpy as np
 import gensim.downloader as api
 from nltk.tokenize import word_tokenize
@@ -13,7 +14,7 @@ from sklearn.model_selection import KFold
 import re
 import json
 
-files = ['data/pres/09_26_2008.txt', 'data/pres/10_07_2008.txt', 'data/pres/10_15_2008.txt', 'data/vp/10_02_2008.txt']
+files = [f.name for f in os.scandir("scraped-data/transcripts")]
 # Load Google's pre-trained Word2Vec model
 model = api.load("word2vec-google-news-300") 
 
