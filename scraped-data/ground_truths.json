@@ -85,8 +85,8 @@
     "draw": "FALSE"
    },
    "October_13_1992.txt": {
-    "win": "",
-    "lose": "",
+    "win": "Quayle",
+    "lose": "Gore",
     "draw": "FALSE"
    },
    "October_19_1992.txt": {
@@ -100,7 +100,7 @@
     "draw": "FALSE"
    },
    "October_06_1996.txt": {
-    "win": "CLinton",
+    "win": "Clinton",
     "lose": "Dole",
     "draw": "FALSE"
    },
@@ -145,7 +145,7 @@
     "draw": "FALSE"
    },
    "January_26_2000.txt": {
-    "win": "",
+    "win": "Bush",
     "lose": "",
     "draw": "FALSE"
    },
@@ -155,12 +155,12 @@
     "draw": "FALSE"
    },
    "January_05_2000.txt": {
-    "win": "",
+    "win": "Gore",
     "lose": "",
     "draw": "FALSE"
    },
    "March_02_2000.txt": {
-    "win": "",
+    "win": "Bush",
     "lose": "",
     "draw": "FALSE"
    },
@@ -170,17 +170,17 @@
     "draw": "FALSE"
    },
    "January_15_2000.txt": {
-    "win": "",
+    "win": "Bush",
     "lose": "",
     "draw": "FALSE"
    },
    "January_06_2000.txt": {
-    "win": "",
+    "win": "Bush",
     "lose": "",
     "draw": "FALSE"
    },
    "January_07_2000.txt": {
-    "win": "",
+    "win": "Bush",
     "lose": "",
     "draw": "FALSE"
    },
@@ -190,12 +190,12 @@
     "draw": "FALSE"
    },
    "February_15_2000.txt": {
-    "win": "",
+    "win": "Bush",
     "lose": "",
     "draw": "FALSE"
    },
    "January_10_2000.txt": {
-    "win": "",
+    "win": "Bush",
     "lose": "",
     "draw": "FALSE"
    },
