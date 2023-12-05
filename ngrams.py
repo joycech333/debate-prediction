@@ -57,7 +57,7 @@ num_folds = 10
 
 # Perform 10-fold cross-validation and calculate accuracy
 kfold = KFold(n_splits=num_folds, shuffle=True, random_state=42)
-accuracy = cross_val_score(nb_classifier, X, labels, cv=kfold, scoring='accuracy')
+accuracy = cross_val_score(nb_classifier, X, np.ravel(labels), cv=kfold, scoring='accuracy')
 
 # Print the accuracy for each fold and the mean accuracy
 print("Accuracy for each fold:", accuracy)
