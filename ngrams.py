@@ -1,4 +1,5 @@
 import util
+import os
 import numpy as np
 import re
 import json
@@ -14,7 +15,7 @@ from sklearn.model_selection import cross_val_score
 from sklearn.model_selection import KFold
 from sklearn.feature_extraction.text import TfidfTransformer
 
-files = ['data/pres/09_26_2008.txt', 'data/pres/10_07_2008.txt', 'data/pres/10_15_2008.txt', 'data/vp/10_02_2008.txt']
+files = [f.name for f in os.scandir("scraped-data/transcripts")]
 
 '''
 Get labels from winners file. Since this is associated with each file (debate), 
