@@ -120,27 +120,27 @@
     "draw": "FALSE"
    },
    "December_13_1999.txt": {
-    "win": "",
-    "lose": "",
-    "draw": "FALSE"
+    "win": "Bush",
+    "lose": "McCain",
+    "draw": "TRUE"
    },
    "December_02_1999.txt": {
-    "win": "",
+    "win": "Bush",
     "lose": "",
     "draw": "FALSE"
    },
    "October_28_1999.txt": {
-    "win": "",
+    "win": "McCain",
     "lose": "",
     "draw": "FALSE"
    },
    "December_06_1999.txt": {
-    "win": "",
-    "lose": "",
+    "win": "Bush",
+    "lose": "McCain",
     "draw": "FALSE"
    },
    "October_22_1999.txt": {
-    "win": "",
+    "win": "McCain",
     "lose": "",
     "draw": "FALSE"
    },
@@ -225,12 +225,12 @@
     "draw": "TRUE"
    },
    "January_22_2004.txt": {
-    "win": "",
+    "win": "Kerry",
     "lose": "",
     "draw": "FALSE"
    },
    "January_29_2004.txt": {
-    "win": "",
+    "win": "Kerry",
     "lose": "",
     "draw": "FALSE"
    },
