@@ -1,12 +1,11 @@
 Participants:
-Senator Sam Brownback,
-former Virginia Gov. James Gilmore
-former New York City mayor Rudy Giuliani,
+Senator Sam Brownback (),
+former Virginia Gov. James Gilmore ()
+former New York City mayor Rudy Giuliani (),
 Rep. Duncan Hunter (CA),
-former Arkansas Gov. Mike Huckabee,
+former Arkansas Gov. Mike Huckabee (),
 Sen. John McCain (AZ),
 Rep. Ron Paul (TX),
-former Massachusetts Gov. Mitt Romney,
+former Massachusetts Gov. Mitt Romney (),
 Rep. Tom Tancredo (CO), and
-former Wisconsin Gov. Tommy Thompson
-Moderator: Wolf Blitzer, CNN
+former Wisconsin Gov. Tommy Thompson ()

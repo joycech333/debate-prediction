@@ -1,1 +1,3 @@
-PARTICIPANTS:Former Secretary of State Hillary Clinton; andSenator Bernie Sanders (VT);
+PARTICIPANTS:
+Former Secretary of State Hillary Clinton ();
+andSenator Bernie Sanders (VT);

@@ -1,1 +1,1 @@
-PARTICIPANTS:Senator Ted Cruz (TX);Governor John Kasich (OH);Senator Marco Rubio (FL); andDonald Trump;
+PARTICIPANTS:Senator Ted Cruz (TX);Governor John Kasich (OH);Senator Marco Rubio (FL); andDonald Trump ();

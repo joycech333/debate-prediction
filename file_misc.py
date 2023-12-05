@@ -1,10 +1,16 @@
 import os
 import json
+import re
 
-with open('scraped-data/ground_truths.json', 'rt') as f:
-    with open('scraped-data/ground_truths2.json', 'w') as fout:
-        for line in f:
-            fout.write(line.replace('True', '\"TRUE\"').replace('False', '\"FALSE\"').replace(": ,", ": \"\","))
+test = "this is the candidate firstname lastname (CLOFORIH) heyshdufh sudhfusdf)."
+match = re.findall(r'\b(\w+)\s*\(', test)
+if match:
+    print(match)
+
+# with open('scraped-data/ground_truths.json', 'rt') as f:
+#     with open('scraped-data/ground_truths2.json', 'w') as fout:
+#         for line in f:
+#             fout.write(line.replace('True', '\"TRUE\"').replace('False', '\"FALSE\"').replace(": ,", ": \"\","))
 
 # with open('scraped-data/ground_truths.json', 'r+') as f:
 #     for line in f:

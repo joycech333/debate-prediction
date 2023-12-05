@@ -1,1 +1,7 @@
-ANNOUNCER: This is a CNN Election 2000 special presentation: "The Arizona Republican Primary Debate." Presidential candidates take questions from reporters and from one another in a key primary state.
+PARTICIPANTS:
+GARY BAUER (R)
+GOV. GEORGE W. BUSH (R-TX)
+SEN. ORRIN HATCH (R-UT)
+SEN. JOHN MCCAIN (R-AZ)
+ALAN KEYES (R)
+STEVE FORBES (R)

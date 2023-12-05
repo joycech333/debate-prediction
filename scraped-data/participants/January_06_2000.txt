@@ -1,1 +1,1 @@
-PARTICIPANTS:Gary Bauer;Governor George W. Bush (TX);Steve Forbes;Senator Orrin Hatch (UT);Former Ambassador Alan Keyes; andSenator John McCain (AZ)
+PARTICIPANTS:Gary Bauer ();Governor George W. Bush (TX);Steve Forbes;Senator Orrin Hatch (UT);Former Ambassador Alan Keyes (); andSenator John McCain (AZ)

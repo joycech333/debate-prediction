@@ -5,8 +5,30 @@ import util
 ...
 util.split_speakers(file_path)
 """
+import os
+import re
 
 PRONOUNS = ['he', 'him', 'his', 'she', 'her', 'hers', 'i', 'me', 'my', 'you', 'your', 'yours', 'they', 'them', 'theirs', 'it', 'its', 'we', 'us', 'our', 'ours', 'myself', 'yourself', 'himself', 'herself', 'ourselves', 'themselves']
+
+"""
+Generates a dict of file --> set of participants.
+"""
+def get_participants():
+    files = [f.name for f in os.scandir("scraped-data/participants")]
+    participants = {}
+    for file in files:
+        path = f'scraped-data/participants/{file}'
+        participants[file] = []
+        with open(path) as f:
+            for line in f:
+                matches = re.findall(r'\b(\w+)\s*\(', line)
+                for match in matches:
+                    participants[file].append(match.upper())
+    
+    print(participants)
+    return participants
+
+PARTICIPANTS = get_participants()
 
 """
 Splits the speech at a given txt file_path by speaker
@@ -67,11 +89,14 @@ def create_data_tsv(all_dict, file_path, winner, loser):
 
 
 if __name__ == "__main__":
-    file_paths = ['data/pres/09_26_2008.txt', 'data/pres/10_07_2008.txt', 'data/pres/10_15_2008.txt']
-    split_dicts = []
-    for file_path in file_paths:
-        split_dict = split_speakers(file_path)
-        split_dicts.append(clean_cand_names(["Obama", "McCain", "John"], split_dict))
+    # file_paths = ['data/pres/09_26_2008.txt', 'data/pres/10_07_2008.txt', 'data/pres/10_15_2008.txt']
+    # split_dicts = []
+    # for file_path in file_paths:
+    #     split_dict = split_speakers(file_path)
+    #     split_dicts.append(clean_cand_names(["Obama", "McCain", "John"], split_dict))
 
-    create_data_tsv([split_dicts[0], split_dicts[1]], "data/pres/train_2008.tsv", "OBAMA", "MCCAIN")
-    create_data_tsv([split_dicts[2]], "data/pres/test_2008.tsv", "OBAMA", "MCCAIN")
+    # create_data_tsv([split_dicts[0], split_dicts[1]], "data/pres/train_2008.tsv", "OBAMA", "MCCAIN")
+    # create_data_tsv([split_dicts[2]], "data/pres/test_2008.tsv", "OBAMA", "MCCAIN")
+
+    # print(PARTICIPANTS)
+    pass
