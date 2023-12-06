@@ -2,93 +2,62 @@ from nltk.sentiment.vader import SentimentIntensityAnalyzer
 from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import train_test_split
 import numpy as np
+import util
+import os
+from sklearn.model_selection import KFold, cross_val_score
 
 def process_debate(file_paths):
     X = []
     y = []
     for file_path in file_paths:
-        print()
-        print(file_path)
-        all_speakers = {}
+        file_date = file_path[25:]
+        print(file_date)
 
-        file = open(file_path).read()
-        # colons denote when a speaker is speaking
-        speeches = file.split(":")
-
-        # loop through all the split text
-        prev_speech = speeches[0]
-        for speech in speeches[1:]:
-            # check if word before colon is a speaker name
-            if prev_speech[-1].isupper():
-                speaker = prev_speech.split()[-1]
-
-                lines = speech.split("\n")[:-1]
-                
-                if speaker not in all_speakers:
-                    all_speakers[speaker] = []
-
-                for line in lines:
-                    all_speakers[speaker].append(line)
-
-            prev_speech = speech
-
+        all_speakers = util.split_speakers(file_path)
 
         for speaker in all_speakers:
-            # for 2008, this means the speaker was the moderator
-            if speaker not in ["OBAMA", "MCCAIN", "BIDEN", "PALIN"]:
+            debate_cands = util.PARTICIPANTS[file_date]
+
+            # this means the speaker was the moderator
+            if speaker not in debate_cands:
                 continue
             sentences = all_speakers[speaker]
 
+            debate_winners = [util.WINNERS[file_date]["win"].upper()]
+            
+            if util.WINNERS[file_date]["draw"] == "TRUE":
+                debate_winners.append(util.WINNERS[file_date]["lose"].upper())
+
             label = 0
-            if speaker == "OBAMA" or speaker == "BIDEN":
+            if speaker in debate_winners:
                 label = 1
 
-            pos = 0
-            neu = 0
-            neg = 0
+            cur_sentiment = 0
             for sentence in sentences:
                 sid = SentimentIntensityAnalyzer()
                 ss = sid.polarity_scores(sentence)
-                temp = []
-                for k in sorted(ss):
-                    temp.append(ss[k])
-                # understanding compound: https://towardsdatascience.com/social-media-sentiment-analysis-in-python-with-vader-no-training-required-4bc6a21e87b8
-                compound = temp[0]
-                X.append(compound)
-                y.append(label)
+                
+                compound = ss["compound"]
+                cur_sentiment += compound
 
-                if compound <= -0.05:
-                    neg += 1
-                elif compound >= 0.05:
-                    pos += 1
-                else:
-                    neu += 1
-
-            
-            print(speaker, "pos:" + str(pos), "neu:" + str(neu), "neg:" + str(neg))
+            X.append(cur_sentiment / len(sentences))
+            y.append(label)
 
     return X, y
 
+files = [f.name for f in os.scandir("scraped-data/transcripts")]
+#files = ["September_26_2008.txt", "November_28_2007.txt", "September_25_1988.txt", "September_16_2015.txt", "April_26_2007.txt", "October_06_1976.txt"]
 
-# Specify the path to your debate text file
-file_paths = ['scraped-data/transcripts/September_26_2008.txt', 'scraped-data/transcripts/October_07_2008.txt', 'scraped-data/transcripts/October_15_2008.txt', 'scraped-data/transcripts/October_02_2008.txt']
+full_paths = [f'scraped-data/transcripts/{file}' for file in files]
 
 # Process the debate file
-X, y = process_debate(file_paths)
-print(len(X))
-print(len(y))
+X, y = process_debate(full_paths)
 
-# split data
-x_train, x_test, y_train, y_test = train_test_split(X, y, test_size=0.25, random_state=0) # , random_state=0
+K = 10
 
-x_train= np.reshape(x_train, (-1, 1))
-x_test= np.reshape(x_test, (-1, 1))
-
-# fit regression
+k_folds = KFold(n_splits = K)
 logisticRegr = LogisticRegression()
-logisticRegr.fit(x_train, y_train)
+scores = cross_val_score(logisticRegr,  np.reshape(X, (-1, 1)), y, cv = k_folds)
+print(scores)
+print(scores.mean())
 
-# predict
-# predictions = logisticRegr.predict(x_test)
-score = logisticRegr.score(x_test, y_test)
-print('logreg on words:', score)
