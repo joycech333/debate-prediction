@@ -1,6 +1,5 @@
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
 from sklearn.linear_model import LogisticRegression
-from sklearn.model_selection import train_test_split
 import numpy as np
 import util
 import os
@@ -57,7 +56,7 @@ K = 10
 
 k_folds = KFold(n_splits = K)
 logisticRegr = LogisticRegression()
-scores = cross_val_score(logisticRegr,  np.reshape(X, (-1, 1)), y, cv = k_folds)
+scores = cross_val_score(logisticRegr, np.reshape(X, (-1, 1)), y, cv = k_folds)
 print(scores)
 print(scores.mean())
 
