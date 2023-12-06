@@ -66,6 +66,28 @@ def generate_ys_per_line():
 
     return all_ys
 
+def ys_by_speaker():
+    winners = []
+    for filename in FILES:
+        winner = WINNERS[filename]['win'].upper()
+        loser = WINNERS[filename]['lose'].upper()
+        draw = WINNERS[filename]['draw']
+
+        # ignore files with no ground truth
+        if not winner:
+            continue
+        
+        participants = PARTICIPANTS[filename]
+        speaker_lines = split_speakers(f'scraped-data/transcripts/{filename}', True)
+
+        for speaker in speaker_lines:
+
+            if speaker.upper() in participants:
+                # account for ties
+                won = (speaker == winner or (draw and speaker == loser))
+                winners.append([won])
+
+    return winners
 
 """
 Splits the speech at a given txt file_path by speaker
