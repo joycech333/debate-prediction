@@ -1,0 +1,131 @@
+import util
+from gensim.models import KeyedVectors
+import numpy as np
+import gensim.downloader as api
+from nltk.tokenize import word_tokenize
+from nltk.corpus import stopwords
+from sklearn.linear_model import LogisticRegression
+from sklearn.ensemble import RandomForestClassifier
+# Remember to run pip install xgboost
+from xgboost import XGBClassifier
+from sklearn.model_selection import cross_val_score
+from sklearn.model_selection import KFold
+from gensim.models import Word2Vec
+from gensim.utils import simple_preprocess
+import nltk
+import os
+import re
+nltk.download('punkt')  # Ensure you've downloaded the punkt tokenizer
+
+# Sample debate transcripts (replace this with your actual debate transcripts)
+files = [f.name for f in os.scandir("scraped-data/transcripts")]
+
+'''
+Takes in a single line of text, returns tokenized vector of cleaned words from line.
+Remove punctuations; numbers; English stopwords; tokenize and lowercase.
+'''
+def preprocess_text(line):
+    cleaned_line = re.sub(r'[^\w\s]', '', line)
+    cleaned_line = re.sub(r'\d+', '', cleaned_line) 
+    tokens = word_tokenize(cleaned_line.lower())
+    stop_words = set(stopwords.words('english'))
+    filtered_tokens = [word for word in tokens if word not in stop_words]
+    return filtered_tokens
+
+# We want speech level splits: use split_speakers
+def tokenized_small_speeches(files):
+    tokenized_input = []
+    for file_path in files:
+        speaker_dict = util.split_speakers(file_path)
+        for _, lines in speaker_dict:
+            [tokenized_input.append(preprocess_text(line)) for line in lines]
+
+# Tokenize and preprocess the transcripts
+# tokenized_transcripts = [preprocess_text(transcript) for transcript in transcripts]
+
+# Train the Word2Vec model
+model = Word2Vec(sentences=tokenized_small_speeches(files), vector_size=100, window=5, min_count=1, workers=4)
+
+'''
+Takes in all debate files, returns a dictionary containing words spoken by each speaker. 
+Keys = names of speakers.
+Values = list of all tokenized & processed words from that person's speech, including duplicates
+(tokenized concatenation of all words the speaker spoke). e.g. ['word1', 'word2', 'word3']
+(Casual explanation: each speaker has one huge list of all the words they spoke)
+'''
+def make_speakers_dict(files):
+    speakers_words = {}
+
+    # Using integers as keys to allow duplicate speakers
+    i = 0
+    for file_path in files:
+        participants = util.PARTICIPANTS[file_path]
+        speakers_lines = util.split_speakers(f'scraped-data/transcripts/{file_path}', True)
+        
+        for speaker, lines in speakers_lines.items():
+            if speaker.upper() in participants:
+                word_tokens = []
+                for line in lines:
+                    word_tokens.extend(preprocess_text(line))
+                speakers_words[i] = word_tokens
+                i += 1
+
+    return speakers_words
+
+'''
+Input: dictionary of tokenized speakers' words.
+Using the pre-trained Word2Vec model, get embeddings of every word for every speaker.
+Takes mean of the word embeddings to calculate feature vector for that speaker.
+Output: numpy array of feature vectors, one for each speaker. These are the Xs.
+'''
+def make_features(speakers_words):
+    vocab = list(model.index_to_key)
+    
+    features = []
+    for speaker, tokens in speakers_words.items():
+        speaker_vec = []
+        for word in tokens:
+            if word in vocab: 
+                speaker_vec.append(model[word])
+            else:
+                # This speaker word is not in the pre-train vocab
+                speaker_vec.append(np.zeros(300))
+        speaker_feature = np.mean(speaker_vec, axis=0)
+        features.append(speaker_feature)
+    return features
+
+'''
+Test whether embed worked
+'''
+# print(make_features(make_speakers_dict(files)).shape)
+# make_features(make_speakers_dict(files))
+
+'''
+Run models
+'''
+# # THIS LINE IS CAUSING ERROR: inhomogeneous shape
+features = make_features(make_speakers_dict(files))
+labels = np.array(util.ys_by_speaker())
+model = LogisticRegression()
+# model = XGBClassifier(n_estimators=100, random_state=42)
+# model = RandomForestClassifier(n_estimators=100, random_state=42)
+
+def cross_val_accuracy(features, labels, model):
+
+    # Perform 10-fold cross-validation
+    cv_scores = cross_val_score(model, features, labels, cv=10)
+
+    # Print accuracy for each fold
+    print("Accuracy for each fold:", cv_scores)
+
+    # Calculate mean accuracy across folds
+    mean_accuracy = np.mean(cv_scores)
+    print(f"Mean Accuracy: {mean_accuracy}")
+
+cross_val_accuracy(features, labels, model)
+
+# Save the trained model to disk
+# model.save("debate_word2vec.model")
+
+# To load the trained model later:
+# model = Word2Vec.load("debate_word2vec.model")
