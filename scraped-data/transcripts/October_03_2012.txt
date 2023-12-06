@@ -8,9 +8,9 @@ There is a noise exception right now, though, as we welcome President Obama and 
 
 National Economy
 
-Mr. Lehrer. Gentlemen, welcome to you both. Let's start the economy, segment one, and let's begin with jobs. What are the major differences between the two of you about how you would go about creating new jobs? You have 2 minutes—each of you have 2 minutes to start. A coin toss has determined, Mr. President, you go first.
+Mr. LEHRER: Gentlemen, welcome to you both. Let's start the economy, segment one, and let's begin with jobs. What are the major differences between the two of you about how you would go about creating new jobs? You have 2 minutes—each of you have 2 minutes to start. A coin toss has determined, Mr. President, you go first.
 
-The President. Well, thank you very much, Jim, for this opportunity. I want to thank Governor Romney, and the University of Denver for your hospitality.
+OBAMA: Well, thank you very much, Jim, for this opportunity. I want to thank Governor Romney, and the University of Denver for your hospitality.
 
 There are a lot of points I want to make tonight, but the most important one is that 20 years ago, I became the luckiest man on Earth because Michelle Obama agreed to marry me. [Laughter] And so I just want to wish, sweetie, you happy anniversary and let you know that a year from now we will not be celebrating it in front of 40 million people. [Laughter]
 
@@ -22,9 +22,9 @@ Governor Romney has a perspective that says if we cut taxes skewed towards the w
 
 Now, it ultimately is going to be up to the voters—to you—which path we should take. Are we going to double down on the top-down economic policies that helped to get us into this mess? Or do we embrace a new economic patriotism that says America does best when the middle class does best? And I'm looking forward to having that debate.
 
-Mr. Lehrer. Governor Romney, 2 minutes.
+Mr. LEHRER: Governor Romney, 2 minutes.
 
-Republican Presidential Nominee W. Mitt Romney. Thank you, Jim. It's an honor to be here with you, and I appreciate the chance to be with the President. I'm pleased to be at the University of Denver, I appreciate their welcome, and also the Presidential Commission on these debates.
+Republican Presidential Nominee W. Mitt ROMNEY: Thank you, Jim. It's an honor to be here with you, and I appreciate the chance to be with the President. I'm pleased to be at the University of Denver, I appreciate their welcome, and also the Presidential Commission on these debates.
 
 And congratulations to you, Mr. President, on your anniversary. I'm sure this was the most romantic place you could imagine, here with me. So I—[Laughter]—congratulations.
 
@@ -38,9 +38,9 @@ Now, I'm concerned that the path that we're on has just been unsuccessful. The P
 
 Education/Tax Reform/Energy
 
-Mr. Lehrer. Mr. President, please respond directly to what the Governor just said about trickle down—his trickle-down approach, as he said yours is.
+Mr. LEHRER: Mr. President, please respond directly to what the Governor just said about trickle down—his trickle-down approach, as he said yours is.
 
-The President. Well, let me talk specifically about what I think we need to do. First, we've got to improve our education system. And we've made enormous progress drawing on ideas both from Democrats and Republicans that are already starting to show gains in some of the toughest-to-deal-with schools.
+OBAMA: Well, let me talk specifically about what I think we need to do. First, we've got to improve our education system. And we've made enormous progress drawing on ideas both from Democrats and Republicans that are already starting to show gains in some of the toughest-to-deal-with schools.
 
 We've got a program called Race to the Top that has prompted reforms in 46 States around the country, raising standards, improving how we train teachers. So now I want to hire another hundred thousand new math and science teachers and create 2 million more slots in our community colleges so that people can get trained for the jobs that are out there right now. And I want to make sure that we keep tuition low for our young people.
 
@@ -54,9 +54,9 @@ And this is where there's a difference, because Governor Romney's central econom
 
 National Economy/Job Training/Tax Reform/Energy
 
-Mr. Lehrer. Both of you have spoken about a lot of different things. And we're going to try to get through them in as specific a way as we possibly can. But first, Governor Romney, do you have a question that you'd like to ask the President directly about something he just said?
+Mr. LEHRER: Both of you have spoken about a lot of different things. And we're going to try to get through them in as specific a way as we possibly can. But first, Governor Romney, do you have a question that you'd like to ask the President directly about something he just said?
 
-Gov. Romney. Well, sure, I'd like to clear up the record and go through piece by piece. First of all, I don't have a $5 trillion tax cut. I don't have a tax cut of the scale that you're talking about. My view is that we ought to provide tax relief to people in the middle class. But I'm not going to reduce the share of taxes paid by high-income people. High-income people are doing just fine in this economy. They'll do fine whether you're President or I am.
+Gov. ROMNEY: Well, sure, I'd like to clear up the record and go through piece by piece. First of all, I don't have a $5 trillion tax cut. I don't have a tax cut of the scale that you're talking about. My view is that we ought to provide tax relief to people in the middle class. But I'm not going to reduce the share of taxes paid by high-income people. High-income people are doing just fine in this economy. They'll do fine whether you're President or I am.
 
 The people who are having a hard time right now are middle-income Americans. Under the President's policies, middle-income Americans have been buried. They're just being crushed. Middle-income Americans have seen their income come down by $4,300. This is a tax in and of itself. I'll call it the economy tax. It's been crushing.
 
@@ -74,9 +74,9 @@ And finally, with regards to that tax cut, look, I'm not looking to cut massive 
 
 Tax Relief/Tax Reform
 
-Mr. Lehrer. Mr. President.
+Mr. LEHRER: Mr. President.
 
-The President. Well, I think—let's talk about taxes because I think it's instructive. Now, 4 years ago when I stood on this stage, I said that I would cut taxes for middle class families, and that's exactly what I did. We cut taxes for middle class families by about $3,600.
+OBAMA: Well, I think—let's talk about taxes because I think it's instructive. Now, 4 years ago when I stood on this stage, I said that I would cut taxes for middle class families, and that's exactly what I did. We cut taxes for middle class families by about $3,600.
 
 And the reason is because I believe that we do best when the middle class is doing well. And by giving them those tax cuts, they had a little more money in their pocket, and so maybe they can buy a new car. They are certainly in a better position to weather the extraordinary recession that we went through. They can buy a computer for their kid who is going off to college, which means they're spending more money, businesses have more customers, businesses make more profits and then hire more workers.
 
@@ -88,21 +88,21 @@ And that's why independent studies looking at this said the only way to meet Gov
 
 Now, that's not my analysis. That's the analysis of economists who have looked at this. And that kind of top-down economics, where folks at the top are doing well, so the average person making 3 million bucks is getting a $250,000 tax break, while middle class families are burdened further, that's not what I believe is a recipe for economic growth.
 
-Mr. Lehrer. All right, what is the difference? Let's just stay on taxes for a——
+Mr. LEHRER: All right, what is the difference? Let's just stay on taxes for a——
 
-Gov. Romney. But I get—right, right.
+Gov. ROMNEY: But I get—right, right.
 
-Mr. Lehrer. Let's just stay on taxes for a moment here.
+Mr. LEHRER: Let's just stay on taxes for a moment here.
 
-Gov. Romney. Yes. Well, but virtually——
+Gov. ROMNEY: Yes. Well, but virtually——
 
-Mr. Lehrer. What is the difference?
+Mr. LEHRER: What is the difference?
 
-Gov. Romney. ——virtually everything he just said about my tax plan is inaccurate.
+Gov. ROMNEY: ——virtually everything he just said about my tax plan is inaccurate.
 
-Mr. Lehrer. All right. Go ahead.
+Mr. LEHRER: All right. Go ahead.
 
-Gov. Romney. So if the tax plan he described were a tax plan I was asked to support, I'd say, absolutely not. I'm not looking for a $5 trillion tax cut. What I've said is, I won't put in place a tax cut that adds to the deficit. That's part one. So there's no economist can say Mitt Romney's tax plan adds $5 trillion if I say I will not add to the deficit with my tax plan.
+Gov. ROMNEY: So if the tax plan he described were a tax plan I was asked to support, I'd say, absolutely not. I'm not looking for a $5 trillion tax cut. What I've said is, I won't put in place a tax cut that adds to the deficit. That's part one. So there's no economist can say Mitt Romney's tax plan adds $5 trillion if I say I will not add to the deficit with my tax plan.
 
 Number two, I will not reduce the share paid by high-income individuals. I know that you and your running mate keep saying that, and I know it's a popular thing to say with a lot of people, but it's just not the case. Look, I've got five boys. I'm used to people saying something that's not always true, but just keep on repeating it and ultimately hoping I'll believe it. [Laughter] But that is not the case, all right? I will not reduce the taxes paid by high-income Americans.
 
@@ -112,15 +112,15 @@ But let's get to the bottom line. That is, I want to bring down rates. I want to
 
 For me, this is about jobs.
 
-Mr. Lehrer. All right, that's where we started.
+Mr. LEHRER: All right, that's where we started.
 
-Mr. Romney. This is about getting jobs for the American people.
+Mr. ROMNEY: This is about getting jobs for the American people.
 
 Tax Reform/Small-Business Promotion
 
-Mr. Lehrer. Yes. Do you challenge what the Governor just said about his own plan?
+Mr. LEHRER: Yes. Do you challenge what the Governor just said about his own plan?
 
-The President. Well, for 18 months, he's been running on this tax plan. And now, 5 weeks before the election, he's saying that his big, bold idea is "never mind." And the fact is that if you are lowering the rates the way you described, Governor, then it is not possible to come up with enough deductions and loopholes that only affect high-income individuals to avoid either raising the deficit or burdening the middle class. It's math. It's arithmetic.
+OBAMA: Well, for 18 months, he's been running on this tax plan. And now, 5 weeks before the election, he's saying that his big, bold idea is "never mind." And the fact is that if you are lowering the rates the way you described, Governor, then it is not possible to come up with enough deductions and loopholes that only affect high-income individuals to avoid either raising the deficit or burdening the middle class. It's math. It's arithmetic.
 
 Now, Governor Romney and I do share a deep interest in encouraging small-business growth. So at the same time that my tax plan has already lowered taxes for 98 percent of families, I also lowered taxes for small business 18 times. And what I want to do is continue the tax rates—the tax cuts that we put into place for small businesses and families.
 
@@ -130,79 +130,79 @@ And we do have a difference, though, when it comes to definitions of small busin
 
 And that kind of approach, I believe, will not grow our economy, because the only way to pay for it without either burdening the middle class or blowing up our deficit is to make drastic cuts in things like education, making sure that we are continuing to invest in basic science and research—all the things that are helping America grow. And I think that would be a mistake.
 
-Mr. Lehrer. All right.
+Mr. LEHRER: All right.
 
-Gov. Romney. Jim, let me just come back on that point, which is these——
+Gov. ROMNEY: Jim, let me just come back on that point, which is these——
 
-Mr. Lehrer. Just for the record——
+Mr. LEHRER: Just for the record——
 
-Gov. Romney. ——small businesses we're talking about——
+Gov. ROMNEY: ——small businesses we're talking about——
 
-Mr. Lehrer. Excuse me, just so everybody understands, we're way over our first 15 minutes.
+Mr. LEHRER: Excuse me, just so everybody understands, we're way over our first 15 minutes.
 
-Gov. Romney. It's fun, isn't it?
+Gov. ROMNEY: It's fun, isn't it?
 
-Mr. Lehrer. It's okay. It's great.
+Mr. LEHRER: It's okay. It's great.
 
-The President. That's okay.
+OBAMA: That's okay.
 
-Mr. Lehrer. Great, no problem. As long as you all don't have a problem, I don't have a problem.
+Mr. LEHRER: Great, no problem. As long as you all don't have a problem, I don't have a problem.
 
-Gov. Romney. That's good.
+Gov. ROMNEY: That's good.
 
 Small-Business Promotion/Tax Reform/Job Creation
 
-Mr. Lehrer. Because we're still on the economy. We're going to come back to taxes, and we're going to move on to the deficit and a lot of other things too. But go ahead, sir.
+Mr. LEHRER: Because we're still on the economy. We're going to come back to taxes, and we're going to move on to the deficit and a lot of other things too. But go ahead, sir.
 
-Gov. Romney. You bet. President, you're—Mr. President, you're absolutely right, which is that with regards to 97 percent of the businesses are not taxed at the 35-percent tax rate, they're taxed at a lower rate. But those businesses that are in the last 3 percent of businesses happen to employ half—half—of all the people who work in small business. Those are the businesses that employ one-quarter of all the workers in America. And your plan is to take their tax rate from 35 percent to 40 percent.
+Gov. ROMNEY: You bet. President, you're—Mr. President, you're absolutely right, which is that with regards to 97 percent of the businesses are not taxed at the 35-percent tax rate, they're taxed at a lower rate. But those businesses that are in the last 3 percent of businesses happen to employ half—half—of all the people who work in small business. Those are the businesses that employ one-quarter of all the workers in America. And your plan is to take their tax rate from 35 percent to 40 percent.
 
 Now, I talked to a guy who has a very small business. He's in the electronics business in St. Louis. He has four employees. He said he and his son calculated how much they pay in taxes: Federal income tax, Federal payroll tax, State income tax, State sales tax, State property tax, gasoline tax. It added up to well over 50 percent of what they earned. And your plan is to take the tax rate on successful small businesses from 35 percent to 40 percent. The National Federation of Independent Businesses has said that will cost 700,000 jobs.
 
 I don't want to cost jobs. My priority is jobs. And so what I do is I bring down the tax rates, lower deductions and exemptions, the same idea behind Bowles-Simpson, by the way—get the rates down, lower deductions and exemptions to create more jobs—because there's nothing better for getting us to a balanced budget than having more people working, earning more money, paying more taxes. That's by far the most effective and efficient way to get this budget balanced.
 
-The President. Jim, I—you may want to move on to another topic, but I would just say this to the American people: If you believe that we can cut taxes by $5 trillion and add $2 trillion in additional spending that the military is not asking for—$7 trillion—just to give you a sense, over 10 years, that's more than our entire defense budget—and you think that by closing loopholes and deductions for the well-to-do, somehow you will not end up picking up the tab, then Governor Romney's plan may work for you.
+OBAMA: Jim, I—you may want to move on to another topic, but I would just say this to the American people: If you believe that we can cut taxes by $5 trillion and add $2 trillion in additional spending that the military is not asking for—$7 trillion—just to give you a sense, over 10 years, that's more than our entire defense budget—and you think that by closing loopholes and deductions for the well-to-do, somehow you will not end up picking up the tab, then Governor Romney's plan may work for you.
 
 But I think math, common sense, and our history shows us that's not a recipe for job growth. Look, we've tried this; we've tried both approaches. The approach that Governor Romney is talking about is the same sales pitch that was made in 2001 and 2003. And we ended up with the slowest job growth in 50 years. We ended up moving from surplus to deficits, and it all culminated in the worst financial crisis since the Great Depression.
 
 Bill Clinton tried the approach that I'm talking about. We created 23 million new jobs. We went from deficit to surplus. And businesses did very well. So in some ways we've got some data on which approach is more likely to create jobs and opportunity for Americans. And I believe that the economy works best when middle class families are getting tax breaks so that they've got some money in their pockets and those of us who have done extraordinarily well because of this magnificent country that we live in, that we can afford to do a little bit more to make sure we're not blowing up the deficit.
 
-Gov. Romney. Jim, the President began this segment, so I think I get the last word. So I'm going to take it.
+Gov. ROMNEY: Jim, the President began this segment, so I think I get the last word. So I'm going to take it.
 
-Mr. Lehrer. Well, you're going to get the first part in the next segment.
+Mr. LEHRER: Well, you're going to get the first part in the next segment.
 
-Gov. Romney. Well, but he gets the first word of that segment. I get the last word of that segment. Well, I hope. Let me just make this comment.
+Gov. ROMNEY: Well, but he gets the first word of that segment. I get the last word of that segment. Well, I hope. Let me just make this comment.
 
-The President. He can have them, he can have them. Go ahead. [Laughter]
+OBAMA: He can have them, he can have them. Go ahead. [Laughter]
 
-Mr. Lehrer. That's not how it works.
+Mr. LEHRER: That's not how it works.
 
-The President. Go ahead. [Laughter]
+OBAMA: Go ahead. [Laughter]
 
-Gov. Romney. Let me repeat what I said.
+Gov. ROMNEY: Let me repeat what I said.
 
-The President. All right.
+OBAMA: All right.
 
-Gov. Romney. I'm not in favor of a $5 trillion tax cut. That's not my plan. My plan is not to put in place any tax cut that will add to the deficit. That's point one. So you may keep referring to it as a $5 trillion tax cut, but that's not my plan.
+Gov. ROMNEY: I'm not in favor of a $5 trillion tax cut. That's not my plan. My plan is not to put in place any tax cut that will add to the deficit. That's point one. So you may keep referring to it as a $5 trillion tax cut, but that's not my plan.
 
-The President. Okay.
+OBAMA: Okay.
 
-Gov. Romney. Number two, let's look at history. My plan is not like anything that's been tried before. My plan is to bring down rates, but also bring down deductions and exemptions and credits at the same time so the revenue stays in, but that we bring down rates to get more people working. My priority is putting people back to work in America. They're suffering in this country.
+Gov. ROMNEY: Number two, let's look at history. My plan is not like anything that's been tried before. My plan is to bring down rates, but also bring down deductions and exemptions and credits at the same time so the revenue stays in, but that we bring down rates to get more people working. My priority is putting people back to work in America. They're suffering in this country.
 
 And we talk about evidence. Look at the evidence of the last 4 years. It's absolutely extraordinary. We've got 23 million people out of work or stopped looking for work in this country.
 
-Mr. Lehrer. All right.
+Mr. LEHRER: All right.
 
-Gov. Romney. It's just—we've got—when the President took office, 32 million people on food stamps, 47 million on food stamps today; economic growth this year slower than last year and last year slower than the year before. Going forward with the status quo is not going to cut it for the American people who are struggling today.
+Gov. ROMNEY: It's just—we've got—when the President took office, 32 million people on food stamps, 47 million on food stamps today; economic growth this year slower than last year and last year slower than the year before. Going forward with the status quo is not going to cut it for the American people who are struggling today.
 
-Mr. Lehrer. All right, let's talk specifics. We're still on the economy. This is theoretically now a second segment, still on the economy, and specifically on what to do about the Federal deficit, the Federal debt. And the question—you each have 2 minutes on this. And Governor Romney, you go first because the President went first on segment one.
+Mr. LEHRER: All right, let's talk specifics. We're still on the economy. This is theoretically now a second segment, still on the economy, and specifically on what to do about the Federal deficit, the Federal debt. And the question—you each have 2 minutes on this. And Governor Romney, you go first because the President went first on segment one.
 
-Gov. Romney. You bet.
+Gov. ROMNEY: You bet.
 
 Deficit and National Debt/Spending Cuts
 
-Mr. Lehrer. And the question is this: What are the differences between the two of you as to how you would go about tackling the deficit problem in this country?
+Mr. LEHRER: And the question is this: What are the differences between the two of you as to how you would go about tackling the deficit problem in this country?
 
-Gov. Romney. Well, good. I'm glad you raised that, and it's a critical issue. I think it's not just an economic issue. I think it's a moral issue. I think it's frankly not moral for my generation to keep spending massively more than we take in, knowing those burdens are going to passed on to the next generation, and they're going to be paying the interest and the principal all their lives. And the amount of debt we're adding, at a trillion a year, is simply not moral.
+Gov. ROMNEY: Well, good. I'm glad you raised that, and it's a critical issue. I think it's not just an economic issue. I think it's a moral issue. I think it's frankly not moral for my generation to keep spending massively more than we take in, knowing those burdens are going to passed on to the next generation, and they're going to be paying the interest and the principal all their lives. And the amount of debt we're adding, at a trillion a year, is simply not moral.
 
 So how do we deal with it? Well, mathematically, there are three ways that you can cut a deficit. One, of course, is to raise taxes. Number two is to cut spending. And number three is to grow the economy, because if more people work in a growing economy, they're paying taxes and you can get the job done that way.
 
@@ -210,9 +210,9 @@ The President would prefer raising taxes. I understand. The problem with raising
 
 What things would I cut from spending? Well, first of all, I will eliminate all programs by this test if they don't pass it: Is the program so critical it's worth borrowing money from China to pay for it? And if not, I'll get rid of it. Obamacare is on my list. I apologize, Mr. President. I use that term with all respect.
 
-The President. I like it.
+OBAMA: I like it.
 
-Gov. Romney. Good. Okay, good. So I'll get rid of that. I'm sorry, Jim, I'm going to stop the subsidy to PBS. I'm going to stop other things. I like PBS. I love Big Bird. I actually like you too. But I'm not going to keep on spending money on things to borrow money from China to pay for it. That's number one.
+Gov. ROMNEY: Good. Okay, good. So I'll get rid of that. I'm sorry, Jim, I'm going to stop the subsidy to PBS. I'm going to stop other things. I like PBS. I love Big Bird. I actually like you too. But I'm not going to keep on spending money on things to borrow money from China to pay for it. That's number one.
 
 Number two, I'll take programs that are currently good programs, but, I think, could be run more efficiently at the State level and send them to the State.
 
@@ -220,9 +220,9 @@ Number three, I'll make Government more efficient. We're going to cut back the n
 
 This is the approach we have to take to get America to a balanced budget. The President said he'd cut the deficit in half. Unfortunately, he doubled it. Trillion-dollar deficits for the last 4 years. The President has put in place as much public debt—almost as much debt held by the public as all prior Presidents combined.
 
-Mr. Lehrer. Mr. President, 2 minutes.
+Mr. LEHRER: Mr. President, 2 minutes.
 
-The President. When I walked into the Oval Office I had more than a trillion-dollar deficit greeting me, and we know where it came from: two wars that were paid for on a credit card, two tax cuts that were not paid for, and a whole bunch of programs that were not paid for, and then a massive economic crisis.
+OBAMA: When I walked into the Oval Office I had more than a trillion-dollar deficit greeting me, and we know where it came from: two wars that were paid for on a credit card, two tax cuts that were not paid for, and a whole bunch of programs that were not paid for, and then a massive economic crisis.
 
 And despite that, what we've said is, yes, we had to take some initial emergency measures to make sure we didn't slip into a Great Depression, but what we've also said is, let's make sure that we are cutting out those things that are not helping us grow. So 77 Government programs, everything from aircrafts that the Air Force had ordered, but weren't working very well, 18 Government programs for education that were well intentioned, but weren't helping kids learn.
 
@@ -234,35 +234,35 @@ Governor Romney earlier mentioned the Bowles-Simpson Commission. Well, that's ho
 
 When Governor Romney stood on a stage with other Republican candidates for the nomination, and he was asked, would you take $10 of spending cuts for just $1 of revenue? And he said no. Now, if you take such an unbalanced approach, then that means you are going to be gutting our investments in schools and education. It means that——
 
-Mr. Lehrer. Simpson-Bowles——
+Mr. LEHRER: Simpson-Bowles——
 
-The President. Governor Romney talked about Medicaid and how we could send it back to the States, but effectively, this means a 30-percent cut in the primary program we help for seniors who are in nursing homes, for kids who are with disabilities. And that is not a right strategy for us to move forward.
+OBAMA: Governor Romney talked about Medicaid and how we could send it back to the States, but effectively, this means a 30-percent cut in the primary program we help for seniors who are in nursing homes, for kids who are with disabilities. And that is not a right strategy for us to move forward.
 
-Mr. Lehrer. Mr. President, sorry. Way over the 2 minutes.
+Mr. LEHRER: Mr. President, sorry. Way over the 2 minutes.
 
-The President. Sorry.
+OBAMA: Sorry.
 
 National Commission on Fiscal Responsibility and Reform/Deficit and National Debt
 
-Mr. Lehrer. Governor, what about Simpson-Bowles? Will you support Simpson-Bowles?
+Mr. LEHRER: Governor, what about Simpson-Bowles? Will you support Simpson-Bowles?
 
-Gov. Romney. Simpson-Bowles, the President should have grabbed that.
+Gov. ROMNEY: Simpson-Bowles, the President should have grabbed that.
 
-Mr. Lehrer. No, I mean do you support Simpson-Bowles?
+Mr. LEHRER: No, I mean do you support Simpson-Bowles?
 
-Gov. Romney. I have my own plan. It's not the same as Simpson-Bowles. But in my view, the President should have grabbed it. If you wanted to make some adjustments to it, take it, go to Congress, fight for it.
+Gov. ROMNEY: I have my own plan. It's not the same as Simpson-Bowles. But in my view, the President should have grabbed it. If you wanted to make some adjustments to it, take it, go to Congress, fight for it.
 
-The President. That's what we've done, made some adjustments to it, and we're putting it forward before Congress right now, a $4 trillion plan——
+OBAMA: That's what we've done, made some adjustments to it, and we're putting it forward before Congress right now, a $4 trillion plan——
 
-Gov. Romney. But you've been President 4 years——
+Gov. ROMNEY: But you've been President 4 years——
 
-The President. ——of balanced——
+OBAMA: ——of balanced——
 
-Gov. Romney. You've been President 4 years.
+Gov. ROMNEY: You've been President 4 years.
 
-The President. Right.
+OBAMA: Right.
 
-Gov. Romney. You said you'd cut the deficit in half. It's now 4 years later; we still have trillion-dollar deficits. The CBO says we'll have a trillion-dollar deficit each of the next 4 years. If you're reelected, we'll get to a trillion-dollar debt. But you have said before you'd cut the deficit in half. And this four—I love this idea of $4 trillion in cuts: You found $4 trillion of ways to reduce or to get closer to a balanced budget, except we still show trillion-dollar deficits every year. That doesn't get the job done.
+Gov. ROMNEY: You said you'd cut the deficit in half. It's now 4 years later; we still have trillion-dollar deficits. The CBO says we'll have a trillion-dollar deficit each of the next 4 years. If you're reelected, we'll get to a trillion-dollar debt. But you have said before you'd cut the deficit in half. And this four—I love this idea of $4 trillion in cuts: You found $4 trillion of ways to reduce or to get closer to a balanced budget, except we still show trillion-dollar deficits every year. That doesn't get the job done.
 
 Let me come back and say, why is that I don't want to raise taxes? Why don't I want to raise taxes on people? And actually you said it. Back in 2010, you said, look, I'm going to extend the tax policies that we have. Now, I'm not going to raise taxes on anyone because when the economy is growing slow like this, when we're in recession, you shouldn't raise taxes on anyone. Well, the economy is still growing slow. As a matter of fact, it's growing much more slowly now than when you made that statement. And so if you believe the same thing, you just don't want to raise taxes on people.
 
@@ -270,35 +270,35 @@ And the reality is, it's not just wealthy people—you mentioned Donald Trump—
 
 I'll make one more point.
 
-Mr. Lehrer. Let's let him answer the taxes thing for a moment.
+Mr. LEHRER: Let's let him answer the taxes thing for a moment.
 
-Gov. Romney. Okay.
+Gov. ROMNEY: Okay.
 
-Mr. Lehrer. Mr. President.
+Mr. LEHRER: Mr. President.
 
-The President. Well, we've had this discussion before——
+OBAMA: Well, we've had this discussion before——
 
 Balancing Tax Reform and Spending Cuts/Oil Industry Subsidies/Corporate Tax Deductions
 
-Mr. Lehrer. No, about the idea that in order to reduce the deficit, there has to be revenue in addition to cuts.
+Mr. LEHRER: No, about the idea that in order to reduce the deficit, there has to be revenue in addition to cuts.
 
-The President. Right. There has to be revenue in addition to cuts. Now, Governor Romney has ruled out revenue. He's ruled out revenue.
+OBAMA: Right. There has to be revenue in addition to cuts. Now, Governor Romney has ruled out revenue. He's ruled out revenue.
 
-Mr. Lehrer. Is that—that's true, right?
+Mr. LEHRER: Is that—that's true, right?
 
-Gov. Romney. Absolutely.
+Gov. ROMNEY: Absolutely.
 
-Mr. Lehrer. Completely?
+Mr. LEHRER: Completely?
 
-Gov. Romney. Look, the revenue I get is by more people working, getting higher pay, paying more taxes. That's how we get growth and how we balance the budget. But the idea of taxing people more, putting more people out of work, you'll never get there. You never balance the budget by raising taxes. Spain—Spain spends 42 percent of their total economy on government.
+Gov. ROMNEY: Look, the revenue I get is by more people working, getting higher pay, paying more taxes. That's how we get growth and how we balance the budget. But the idea of taxing people more, putting more people out of work, you'll never get there. You never balance the budget by raising taxes. Spain—Spain spends 42 percent of their total economy on government.
 
-Mr. Lehrer. Okay.
+Mr. LEHRER: Okay.
 
-Gov. Romney. We're now spending 42 percent of our economy on Government. I don't want to go down the path to Spain. I want to go down the path of growth that puts Americans to work with more money coming in because they're working.
+Gov. ROMNEY: We're now spending 42 percent of our economy on Government. I don't want to go down the path to Spain. I want to go down the path of growth that puts Americans to work with more money coming in because they're working.
 
-Mr. Lehrer. Yes, but, Mr. President, you're saying in order to get the job done, it's got to be balanced.
+Mr. LEHRER: Yes, but, Mr. President, you're saying in order to get the job done, it's got to be balanced.
 
-The President. If we're serious, we've got to take a balanced, responsible approach. And by the way, this is not just when it comes to individual taxes. Let's talk about corporate taxes. Now, I've identified areas where we can right away make a change that I believe would actually help the economy. The oil industry gets $4 billion a year in corporate welfare. Basically, they get deductions that those small businesses that Governor Romney refers to, they don't get. Now, does anybody think that ExxonMobil needs some extra money when they're making money every time you go to the pump?
+OBAMA: If we're serious, we've got to take a balanced, responsible approach. And by the way, this is not just when it comes to individual taxes. Let's talk about corporate taxes. Now, I've identified areas where we can right away make a change that I believe would actually help the economy. The oil industry gets $4 billion a year in corporate welfare. Basically, they get deductions that those small businesses that Governor Romney refers to, they don't get. Now, does anybody think that ExxonMobil needs some extra money when they're making money every time you go to the pump?
 
 Why wouldn't we want to eliminate that? Why wouldn't we eliminate tax breaks for corporate jets? My attitude is, if you got a corporate jet, you can probably afford to pay full freight, not get a special break for it.
 
@@ -310,29 +310,29 @@ And so budgets reflect choices. Ultimately, we're going to have to make some dec
 
 As I indicated before, when you talk about shifting Medicaid to States, we're talking about potentially a 30-percent cut in Medicaid over time. Now, that may not seem like a big deal when it just is paper—numbers on a sheet of paper. But if we're talking about a family who's got an autistic kid and is depending on that Medicaid, that's a big problem. And Governors are creative, there's no doubt about it. But they're not creative enough to make up for 30 percent of revenue on something like Medicaid. What ends up happening is some people end up not getting help.
 
-Gov. Romney. Jim, let's—we've gone on a lot of topics there. And so it's going to take a minute to go from Medicaid to schools——
+Gov. ROMNEY: Jim, let's—we've gone on a lot of topics there. And so it's going to take a minute to go from Medicaid to schools——
 
-The President. Go ahead.
+OBAMA: Go ahead.
 
 Energy Sector Subsidies/Corporate Tax Rates/Medicaid
 
-Mr. Lehrer. Come back to Medicaid, yes.
+Mr. LEHRER: Come back to Medicaid, yes.
 
-Gov. Romney. ——to oil to tax breaks and companies going overseas. So let's go through them one by one.
+Gov. ROMNEY: ——to oil to tax breaks and companies going overseas. So let's go through them one by one.
 
 First of all, the Department of Energy has said the tax break for oil companies is $2.8 billion a year. And it's actually an accounting treatment, as you know, that's been in place for a hundred years. Now——
 
-The President. It's time to end it.
+OBAMA: It's time to end it.
 
-Gov. Romney. And in 1 year, you provided $90 billion in breaks to the green energy world. Now, I like green energy as well, but that's about 50 years' worth of what oil and gas receives. And you say Exxon and Mobil; actually, those $2.8 billion goes largely to small companies, to drilling operators and so forth.
+Gov. ROMNEY: And in 1 year, you provided $90 billion in breaks to the green energy world. Now, I like green energy as well, but that's about 50 years' worth of what oil and gas receives. And you say Exxon and Mobil; actually, those $2.8 billion goes largely to small companies, to drilling operators and so forth.
 
 But you know if we get that tax rate from 35 percent down to 25 percent, why, that $2.8 billion is on the table. Of course, it's on the table. That's probably not going to survive if you get that rate down to 25 percent. But don't forget, you put $90 billion—like 50 years' worth of breaks—into solar and wind: to Solyndra and Fisker and Tesla and Ener1. I mean, I had a friend who said you don't just pick the winners and losers, you pick the losers. All right? So this is not the kind of policy you want to have if you want to get America energy secure.
 
 The second topic, which is you said you get a deduction for taking a plant overseas, look, I've been in business for 25 years. I have no idea what you're talking about. I maybe need to get a new accountant.
 
-Mr. Lehrer. Let's just——
+Mr. LEHRER: Let's just——
 
-Gov. Romney. But the idea that you get a break for shipping jobs overseas is simply not the case. What we do have right now is a setting where I'd like to bring money from overseas back to this country.
+Gov. ROMNEY: But the idea that you get a break for shipping jobs overseas is simply not the case. What we do have right now is a setting where I'd like to bring money from overseas back to this country.
 
 And finally, Medicaid to States, I'm not quite sure where that came in except this, which is, I would like to take the Medicaid dollars that go to States and say to a State, you're going to get what you got last year plus inflation, plus 1 percent. And then, you're going to manage your care for your poor in the way you think best.
 
@@ -340,15 +340,15 @@ And I remember as a Governor, when this idea was floated by Tommy Thompson, the 
 
 So let States—one of the magnificent things about this country is the whole idea that States are the laboratories of democracy. Don't have the Federal Government tell everybody what kind of training programs they have to have and what kind of Medicaid they have to have. Let States do this. And by the way, if a State gets in trouble, well, we could step in and see if we could find a way to help them.
 
-Mr. Lehrer. Let's go. Two seconds——
+Mr. LEHRER: Let's go. Two seconds——
 
-Gov. Romney. But the right approach is one which relies on the brilliance of our people and States, not the Federal Government.
+Gov. ROMNEY: But the right approach is one which relies on the brilliance of our people and States, not the Federal Government.
 
 Social Security/Medicare
 
-Mr. Lehrer. Two seconds and we're going on, still on the economy, but another part of it. All right, this is segment three, the economy. Entitlements, first answer goes to you, two minutes, Mr. President. Do you see a major difference between the two of you on Social Security?
+Mr. LEHRER: Two seconds and we're going on, still on the economy, but another part of it. All right, this is segment three, the economy. Entitlements, first answer goes to you, two minutes, Mr. President. Do you see a major difference between the two of you on Social Security?
 
-The President. I suspect that on Social Security we've got a somewhat similar position. Social Security is structurally sound. It's going to have to be tweaked the way it was by Ronald Reagan and Speaker—Democratic Speaker Tip O'Neill. But it is—the basic structure is sound.
+OBAMA: I suspect that on Social Security we've got a somewhat similar position. Social Security is structurally sound. It's going to have to be tweaked the way it was by Ronald Reagan and Speaker—Democratic Speaker Tip O'Neill. But it is—the basic structure is sound.
 
 But I want to talk about the values behind Social Security and Medicare and then talk about Medicare because that's the big driver of our deficits right now.
 
@@ -360,9 +360,9 @@ So my approach is to say, how do we strengthen the system over the long term. An
 
 So the way for us to deal with Medicare in particular is to lower health care costs. When it comes to Social Security, as I said, you don't need a major structural change in order to make sure that Social Security is there for the future.
 
-Mr. Lehrer. We'll follow up on this. First, Governor Romney, you have 2 minutes on Social Security and entitlements.
+Mr. LEHRER: We'll follow up on this. First, Governor Romney, you have 2 minutes on Social Security and entitlements.
 
-Gov. Romney. Well, Jim, our seniors depend on these programs, and I know any time we talk about entitlements people become concerned that something is going to happen that's going to change their life for the worse. And the answer is, neither the President, nor I are proposing any changes for any current retirees or near-retirees, either to Social Security or Medicare. So if you're 60 or around 60 or older, you don't need to listen any further.
+Gov. ROMNEY: Well, Jim, our seniors depend on these programs, and I know any time we talk about entitlements people become concerned that something is going to happen that's going to change their life for the worse. And the answer is, neither the President, nor I are proposing any changes for any current retirees or near-retirees, either to Social Security or Medicare. So if you're 60 or around 60 or older, you don't need to listen any further.
 
 But for younger people, we need to talk about what changes are going to be occurring—oh, I just thought about one, and that is, in fact, I was wrong when I said the President isn't proposing any changes for current retirees. In fact, he is on Medicare. On Social Security, he's not. But on Medicare, for current retirees, he's cutting $716 billion from the program. Now, he says by not overpaying hospitals and providers. Actually, just going to them and saying we're going to reduce the rates you get paid across the board, everybody is going to get a lower rate, that's not just going after places where there's abuse. That's saying, we're cutting the rates. Some 15 percent of hospitals and nursing homes say they won't take any more Medicare patients under that scenario. We also have 50 percent of doctors who say they won't take more Medicare patients.
 
@@ -374,21 +374,21 @@ And with regards to young people coming along, I've got proposals to make sure M
 
 Health Care for Senior Citizens/Medicare
 
-Mr. Lehrer. Mr. President.
+Mr. LEHRER: Mr. President.
 
-The President. First of all, I think it's important for Governor Romney to present this plan that he says will only affect folks in the future. And the essence of the plan is that you would turn Medicare into a voucher program. It's called premium support, but it's understood to be a voucher program. His running mate——
+OBAMA: First of all, I think it's important for Governor Romney to present this plan that he says will only affect folks in the future. And the essence of the plan is that you would turn Medicare into a voucher program. It's called premium support, but it's understood to be a voucher program. His running mate——
 
-Mr. Lehrer. And you don't support that?
+Mr. LEHRER: And you don't support that?
 
-The President. I don't. And let me explain why.
+OBAMA: I don't. And let me explain why.
 
-Gov. Romney. Again, that's for future people, right——
+Gov. ROMNEY: Again, that's for future people, right——
 
-The President. I understand.
+OBAMA: I understand.
 
-Gov. Romney. ——not for current retirees.
+Gov. ROMNEY: ——not for current retirees.
 
-The President. So if you're 54 or 55, you might want to listen, because this will affect you.
+OBAMA: So if you're 54 or 55, you might want to listen, because this will affect you.
 
 The idea, which was originally presented by Congressman Ryan, your running mate, is that we would give a voucher to seniors and they could go out in the private marketplace and buy their own health insurance. The problem is that because the voucher wouldn't necessarily keep up with health care inflation, it was estimated that this would cost the average senior about $6,000 a year.
 
@@ -398,17 +398,17 @@ So I don't think vouchers are the right way to go. And this is not my—only my 
 
 And ironically, if you repeal Obamacare—and I have become fond of this term, Obamacare—[Laughter]—if you repeal it, what happens is those seniors right away are going to be paying $600 more in prescription care. They're now going to have to be paying copays for basic checkups that can keep them healthier. And the primary beneficiary of that repeal are insurance companies that are estimated to gain billions of dollars back when they aren't making seniors any healthier. And I don't think that's the right approach when it comes to making sure that Medicare is stronger over the long term.
 
-Mr. Lehrer. We'll talk about—specifically about health care in a moment. But what—do you support the voucher system, Governor?
+Mr. LEHRER: We'll talk about—specifically about health care in a moment. But what—do you support the voucher system, Governor?
 
-Gov. Romney. What I support is no change for current retirees and near-retirees to Medicare. And the President supports taking $716 billion out of that program.
+Gov. ROMNEY: What I support is no change for current retirees and near-retirees to Medicare. And the President supports taking $716 billion out of that program.
 
-Mr. Lehrer. What about the voucher——
+Mr. LEHRER: What about the voucher——
 
-Gov. Romney. So that's number one.
+Gov. ROMNEY: So that's number one.
 
-Mr. Lehrer. All right.
+Mr. LEHRER: All right.
 
-Gov. Romney. Number two is, for people coming along that are young, what I'd do to make sure that we can keep Medicare in place for them is to allow them either to choose the current Medicare program or a private plan, their choice. They get to—and they'll have at least two plans that will be entirely at no cost to them. So they don't have to pay additional money, no additional $6,000; that's not going to happen. They'll have at least two plans.
+Gov. ROMNEY: Number two is, for people coming along that are young, what I'd do to make sure that we can keep Medicare in place for them is to allow them either to choose the current Medicare program or a private plan, their choice. They get to—and they'll have at least two plans that will be entirely at no cost to them. So they don't have to pay additional money, no additional $6,000; that's not going to happen. They'll have at least two plans.
 
 And by the way, if the Government can be as efficient as the private sector and offer premiums that are as low as the private sector, people will be happy to get traditional Medicare. Or they'll be able to get a private plan. I know my own view is, I'd rather have a private plan. I'd just as soon not have the Government telling me what kind of health care I get. I'd rather be able to have an insurance company. If I don't like them, I can get rid of them and find a different insurance company. But people will make their own choice.
 
@@ -416,107 +416,107 @@ The other thing we have to do to save Medicare, we have to have the benefits hig
 
 That's the plan that I put forward. And by the way, the idea came not even from Paul Ryan or Senator Wyden, who is a coauthor of the bill with Paul Ryan in the Senate, but also it came from Bill Clinton's Chief of Staff. This is an idea that's been around a long time, which is saying, hey, let's see if we can't get competition into the Medicare world so that people can get the choice of different plans at lower cost, better quality. I believe in competition.
 
-Mr. Lehrer. Okay.
+Mr. LEHRER: Okay.
 
-The President. Jim, if I can just respond very quickly. First of all, every study has shown that Medicare has lower administrative costs than private insurance does, which is why seniors are generally pretty happy with it. And private insurers have to make a profit. Nothing wrong with that, that's what they do. And so you've got higher administrative costs, plus profit on top of that, and if you are going to save any money through what Governor Romney is proposing, what has to happen is, is that the money has to come from somewhere.
+OBAMA: Jim, if I can just respond very quickly. First of all, every study has shown that Medicare has lower administrative costs than private insurance does, which is why seniors are generally pretty happy with it. And private insurers have to make a profit. Nothing wrong with that, that's what they do. And so you've got higher administrative costs, plus profit on top of that, and if you are going to save any money through what Governor Romney is proposing, what has to happen is, is that the money has to come from somewhere.
 
 And when you move to a voucher system, you are putting seniors at the mercy of those insurance companies. And over time, if traditional Medicare has decayed or fallen apart, then they're stuck. And this is the reason why AARP has said that your plan would weaken Medicare substantially, and that's why they were supportive of the approach that we took.
 
 One last point I want to make: We do have to lower the cost of health care, not just in Medicare, but——
 
-Mr. Lehrer. We'll talk about that in a minute.
+Mr. LEHRER: We'll talk about that in a minute.
 
-The President. ——but overall.
+OBAMA: ——but overall.
 
-Mr. Lehrer. Okay.
+Mr. LEHRER: Okay.
 
-The President. And so——
+OBAMA: And so——
 
-Gov. Romney. That's a big topic. Can we stay on Medicare?
+Gov. ROMNEY: That's a big topic. Can we stay on Medicare?
 
-The President. Oh, is that a separate topic?
+OBAMA: Oh, is that a separate topic?
 
-Mr. Lehrer. Yes, we're going to—yes, I want to get to it.
+Mr. LEHRER: Yes, we're going to—yes, I want to get to it.
 
-The President. I'm sorry.
+OBAMA: I'm sorry.
 
-Mr. Lehrer. But all I want to do is very quickly——
+Mr. LEHRER: But all I want to do is very quickly——
 
-Gov. Romney. Let's get back to Medicare.
+Gov. ROMNEY: Let's get back to Medicare.
 
-Mr. Lehrer. ——before we leave the economy——
+Mr. LEHRER: ——before we leave the economy——
 
-Gov. Romney. Let's get back to Medicare.
+Gov. ROMNEY: Let's get back to Medicare.
 
-Mr. Lehrer. No, no, no——
+Mr. LEHRER: No, no, no——
 
-Gov. Romney. The President said that the Government can provide the service at lower cost and without a profit.
+Gov. ROMNEY: The President said that the Government can provide the service at lower cost and without a profit.
 
-Mr. Lehrer. All right.
+Mr. LEHRER: All right.
 
-Gov. Romney. If that's the case, then it will always be the best product that people can purchase. But my experience——
+Gov. ROMNEY: If that's the case, then it will always be the best product that people can purchase. But my experience——
 
-Mr. Lehrer. Wait a minute, Governor. Wait——
+Mr. LEHRER: Wait a minute, Governor. Wait——
 
-Gov. Romney. ——my experience is, the private sector typically is able to provide a better product at a lower cost.
+Gov. ROMNEY: ——my experience is, the private sector typically is able to provide a better product at a lower cost.
 
-Mr. Lehrer. Can we—can the two of you agree that the voters have a choice, a clear choice between the two of you on Medicare?
+Mr. LEHRER: Can we—can the two of you agree that the voters have a choice, a clear choice between the two of you on Medicare?
 
-Gov. Romney. Absolutely.
+Gov. ROMNEY: Absolutely.
 
-The President. Yes.
+OBAMA: Yes.
 
-Gov. Romney. Absolutely.
+Gov. ROMNEY: Absolutely.
 
-The President. Absolutely.
+OBAMA: Absolutely.
 
 Federal Regulations/Dodd-Frank Wall Street Reform and Consumer Protection Act
 
-Mr. Lehrer. All right. So to finish quickly, briefly on the economy, what is your view about the level of Federal regulation of the economy right now? Is there too much? And in your case, Mr. President, is there—should there be more? Beginning with you—this is not a new 2-minute segment. Just start, and we'll go for a few minutes, and then we're going to go to health care, okay?
+Mr. LEHRER: All right. So to finish quickly, briefly on the economy, what is your view about the level of Federal regulation of the economy right now? Is there too much? And in your case, Mr. President, is there—should there be more? Beginning with you—this is not a new 2-minute segment. Just start, and we'll go for a few minutes, and then we're going to go to health care, okay?
 
-Gov. Romney. Regulation is essential. You can't have a free market work if you don't have regulation. As a businessperson, I had to have—I needed to know the regulations. I needed them there. You couldn't have people opening up banks in their garage and making loans. I mean, you have to have regulations so that you can have an economy work. Every free economy has good regulation. At the same time, regulation can become excessive.
+Gov. ROMNEY: Regulation is essential. You can't have a free market work if you don't have regulation. As a businessperson, I had to have—I needed to know the regulations. I needed them there. You couldn't have people opening up banks in their garage and making loans. I mean, you have to have regulations so that you can have an economy work. Every free economy has good regulation. At the same time, regulation can become excessive.
 
-Mr. Lehrer. Is it successing now, do you think?
+Mr. LEHRER: Is it successing now, do you think?
 
-Gov. Romney. Well, in some places, yes——
+Gov. ROMNEY: Well, in some places, yes——
 
-Mr. Lehrer. Like where? Let me know. Give me——
+Mr. LEHRER: Like where? Let me know. Give me——
 
-Gov. Romney. ——other places, no. It can become out of date. And what's happened with some of the legislation that's been passed during the President's term, you've seen regulation become excessive, and it's hurt the economy.
+Gov. ROMNEY: ——other places, no. It can become out of date. And what's happened with some of the legislation that's been passed during the President's term, you've seen regulation become excessive, and it's hurt the economy.
 
 Let me give you an example. Dodd-Frank was passed, and it includes within it a number of provisions that I think has some unintended consequences that are harmful to the economy. One is it designates a number of banks as "too big to fail," and they're effectively guaranteed by the Federal Government. This is the biggest kiss that's been given to New York banks I've ever seen.
 
-The President. No.
+OBAMA: No.
 
-Gov. Romney. This is an enormous boon for them. There have been 122 community and small banks have closed since Dodd-Frank. So there's one example.
+Gov. ROMNEY: This is an enormous boon for them. There have been 122 community and small banks have closed since Dodd-Frank. So there's one example.
 
 Here's another. In Dodd-Frank, it says if——
 
-Mr. Lehrer. You want to repeal Dodd-Frank?
+Mr. LEHRER: You want to repeal Dodd-Frank?
 
-Gov. Romney. Well, I would repeal the—and replace it. We're not going to get rid of all regulation. You have to have regulation——
+Gov. ROMNEY: Well, I would repeal the—and replace it. We're not going to get rid of all regulation. You have to have regulation——
 
-Mr. Lehrer. Okay. All right.
+Mr. LEHRER: Okay. All right.
 
-Gov. Romney. ——and there are some parts of Dodd-Frank that make all the sense in the world. You need transparency. You need to have leverage limits for institutional——
+Gov. ROMNEY: ——and there are some parts of Dodd-Frank that make all the sense in the world. You need transparency. You need to have leverage limits for institutional——
 
-Mr. Lehrer. Well, there's a specific——
+Mr. LEHRER: Well, there's a specific——
 
-Gov. Romney. But let's mention——
+Gov. ROMNEY: But let's mention——
 
-Mr. Lehrer. Let's get to the—excuse me——
+Mr. LEHRER: Let's get to the—excuse me——
 
-Gov. Romney. Let me mention the other one. Let's talk the other big one—the big one.
+Gov. ROMNEY: Let me mention the other one. Let's talk the other big one—the big one.
 
-Mr. Lehrer. No, no, let's not.
+Mr. LEHRER: No, no, let's not.
 
-Gov. Romney. Okay.
+Gov. ROMNEY: Okay.
 
 Dodd-Frank Wall Street Reform and Consumer Protection Act/Home Loan Industry
 
-Mr. Lehrer. Let's let him respond to this specific on Dodd-Frank and what the Governor just said.
+Mr. LEHRER: Let's let him respond to this specific on Dodd-Frank and what the Governor just said.
 
-The President. Well, I think this is a great example. The reason we have been in such a enormous economic crisis was prompted by reckless behavior across the board. Now, it wasn't just on Wall Street. You had loan officers were—that were giving loans and mortgages that really shouldn't have been given because the folks didn't qualify. You had people who were borrowing money to buy a house that they couldn't afford. You had credit agencies that were stamping these as A1, great investments when they weren't. But you also had banks making money hand over fist, churning out products that the bankers themselves didn't even understand, in order to make big profits, but knowing that it made the entire system vulnerable.
+OBAMA: Well, I think this is a great example. The reason we have been in such a enormous economic crisis was prompted by reckless behavior across the board. Now, it wasn't just on Wall Street. You had loan officers were—that were giving loans and mortgages that really shouldn't have been given because the folks didn't qualify. You had people who were borrowing money to buy a house that they couldn't afford. You had credit agencies that were stamping these as A1, great investments when they weren't. But you also had banks making money hand over fist, churning out products that the bankers themselves didn't even understand, in order to make big profits, but knowing that it made the entire system vulnerable.
 
 So what did we do? We stepped in and had the toughest reforms on Wall Street since the 1930s. We said you've got—banks, you've got to raise your capital requirements. You can't engage in some of this risky behavior that is putting Main Street at risk. We're going to make sure that you've got to have a living will so we can know how you're going to wind things down if you make a bad bet so we don't have other taxpayer bailouts.
 
@@ -524,29 +524,29 @@ In the meantime, by the way, we also made sure that all the help that we provide
 
 Now, Governor Romney has said he wants to repeal Dodd-Frank, and I appreciate—and it appears we've got some agreement that a marketplace, to work, has to have some regulation. But in the past, Governor Romney has said he just wants to repeal Dodd-Frank. Roll it back. And so the question is, does anybody out there think that the big problem we had is that there was too much oversight and regulation of Wall Street? Because if you do, then Governor Romney is your candidate. But that's not——
 
-Gov. Romney. Sorry, Jim——
+Gov. ROMNEY: Sorry, Jim——
 
-The President. ——what I believe.
+OBAMA: ——what I believe.
 
-Gov. Romney. ——but that's just not the facts. Look, we have to have regulation on Wall Street. That's why I'd have regulation. But I wouldn't designate five banks as "too big to fail" and give them a blank check. That's one of the unintended consequences of Dodd-Frank. It wasn't thought through properly. We need to get rid of that provision because it's killing regional and small banks. They're getting hurt.
+Gov. ROMNEY: ——but that's just not the facts. Look, we have to have regulation on Wall Street. That's why I'd have regulation. But I wouldn't designate five banks as "too big to fail" and give them a blank check. That's one of the unintended consequences of Dodd-Frank. It wasn't thought through properly. We need to get rid of that provision because it's killing regional and small banks. They're getting hurt.
 
 Let me mention another regulation in Dodd-Frank. You say we were giving mortgages to people who weren't qualified. That's exactly right. It's one of the reasons for the great financial calamity we had. And so Dodd-Frank correctly says we need to have qualified mortgages, and if you give a mortgage that's not qualified, there are big penalties—except they didn't ever go on to define what a qualified mortgage was.
 
-Mr. Lehrer. All right——
+Mr. LEHRER: All right——
 
-Gov. Romney. It's been 2 years. We don't know what a qualified mortgage is yet.
+Gov. ROMNEY: It's been 2 years. We don't know what a qualified mortgage is yet.
 
 So banks are reluctant to make loans, mortgages. Try and get a mortgage these days. It's hurt the housing market, because Dodd-Frank didn't anticipate putting in place the kinds of regulations you have to have. It's not that Dodd-Frank always was wrong with too much regulation. Sometimes, they didn't come out with a clear regulation.
 
-Mr. Lehrer. Okay——
+Mr. LEHRER: Okay——
 
-Gov. Romney. I will make sure we don't hurt the functioning of our marketplace and our businesses, because I want to bring back housing and get good jobs.
+Gov. ROMNEY: I will make sure we don't hurt the functioning of our marketplace and our businesses, because I want to bring back housing and get good jobs.
 
 Patient Protection and Affordable Care Act
 
-Mr. Lehrer. All right. I think we have another clear difference between the two of you. Now let's move to health care, where I know there is a clear difference—[Laughter]—and that has to do with the Affordable Care Act—Obamacare. And it's a 2-minute new segment, and that means 2 minutes each. And you go first, Governor Romney. You want it repealed. You want the Affordable Care Act repealed. Why?
+Mr. LEHRER: All right. I think we have another clear difference between the two of you. Now let's move to health care, where I know there is a clear difference—[Laughter]—and that has to do with the Affordable Care Act—Obamacare. And it's a 2-minute new segment, and that means 2 minutes each. And you go first, Governor ROMNEY: You want it repealed. You want the Affordable Care Act repealed. Why?
 
-Gov. Romney. I sure do. Well, in part it comes, again, from my experience. I was in New Hampshire; a woman came to me and she said, look, I can't afford insurance for myself or my son. I met a couple in Appleton, Wisconsin, and they said, we're thinking of dropping our insurance; we can't afford it. And the number of small businesses I've gone to that are saying they're dropping insurance because they can't afford it—the cost of health care is just prohibitive, and we've got to deal with cost.
+Gov. ROMNEY: I sure do. Well, in part it comes, again, from my experience. I was in New Hampshire; a woman came to me and she said, look, I can't afford insurance for myself or my son. I met a couple in Appleton, Wisconsin, and they said, we're thinking of dropping our insurance; we can't afford it. And the number of small businesses I've gone to that are saying they're dropping insurance because they can't afford it—the cost of health care is just prohibitive, and we've got to deal with cost.
 
 And unfortunately, when you look at Obamacare, the Congressional Budget Office has said it will cost $2,500 a year more than traditional insurance. So it's adding to cost. And as a matter of fact, when the President ran for office, he said that by this year he would have brought down the cost of insurance for each family by $2,500 a family. Instead, it's gone up by that amount. So it's expensive. Expensive things hurt families. So that's one reason I don't want it.
 
@@ -558,9 +558,9 @@ Fourth, there was a survey done of small businesses across the country. It said,
 
 And the best course for health care is to do what we did in my State: craft a plan at the State level that fits the needs of the State, and then let's focus on getting the cost down for people rather than raising it with a $2,500 additional premium.
 
-Mr. Lehrer. Mr. President, the argument against repeal.
+Mr. LEHRER: Mr. President, the argument against repeal.
 
-The President. Well, 4 years ago when I was running for office, I was traveling around and having those same conversations that Governor Romney talks about. And it wasn't just that small businesses were seeing costs skyrocket and they couldn't get affordable coverage even if they wanted to provide it to their employees. It wasn't just that this was the biggest driver of our Federal deficit, our overall health care cost. But it was families who were worried about going bankrupt if they got sick—millions of families all across the country.
+OBAMA: Well, 4 years ago when I was running for office, I was traveling around and having those same conversations that Governor Romney talks about. And it wasn't just that small businesses were seeing costs skyrocket and they couldn't get affordable coverage even if they wanted to provide it to their employees. It wasn't just that this was the biggest driver of our Federal deficit, our overall health care cost. But it was families who were worried about going bankrupt if they got sick—millions of families all across the country.
 
 If they had a preexisting condition, they might not be able to get coverage at all. If they did have coverage, insurance companies might impose an arbitrary limit. And so, as a consequence, they're paying their premiums; somebody gets really sick; lo and behold, they don't have enough money to pay the bills because the insurance companies say that they've hit the limit.
 
@@ -572,25 +572,25 @@ Now, the last point I'd make before——
 
 Massachusetts Health Care Reform/Bipartisanship/Medicare/Patient Protection and Affordable Care Act
 
-Mr. Lehrer. Two minutes is up, sir.
+Mr. LEHRER: Two minutes is up, sir.
 
-The President. No, I think—I had 5 seconds before you interrupted me, was—[Laughter]. The irony is that we've seen this model work really well in Massachusetts, because Governor Romney did a good thing, working with Democrats in the State to set up what is essentially the identical model. And as consequence, people are covered there. It hasn't destroyed jobs. And as a consequence, we now have a system in which we have the opportunity to start bringing down costs, as opposed to just leaving millions of people out in the cold.
+OBAMA: No, I think—I had 5 seconds before you interrupted me, was—[Laughter]. The irony is that we've seen this model work really well in Massachusetts, because Governor Romney did a good thing, working with Democrats in the State to set up what is essentially the identical model. And as consequence, people are covered there. It hasn't destroyed jobs. And as a consequence, we now have a system in which we have the opportunity to start bringing down costs, as opposed to just leaving millions of people out in the cold.
 
-Mr. Lehrer. Your 5 seconds went away a long time ago. [Laughter]
+Mr. LEHRER: Your 5 seconds went away a long time ago. [Laughter]
 
-The President. That I admit. [Laughter]
+OBAMA: That I admit. [Laughter]
 
-Mr. Lehrer. All right, Governor, tell the President directly why you think what he just said is wrong about Obamacare.
+Mr. LEHRER: All right, Governor, tell the President directly why you think what he just said is wrong about Obamacare.
 
-Gov. Romney. Well, I did with my first statement——
+Gov. ROMNEY: Well, I did with my first statement——
 
-The President. You did.
+OBAMA: You did.
 
-Gov. Romney. ——but I'll go on.
+Gov. ROMNEY: ——but I'll go on.
 
-The President. Please elaborate. [Laughter]
+OBAMA: Please elaborate. [Laughter]
 
-Gov. Romney. I'll elaborate, exactly right. First of all, I like the way we did it in Massachusetts. I like the fact that in my State, we had Republicans and Democrats come together and work together. What you did instead was to push through a plan without a single Republican vote. As a matter of fact, when Massachusetts did something quite extraordinary—elected a Republican Senator—to stop Obamacare, you pushed it through anyway. So entirely on a partisan basis, instead of bringing America together and having a discussion on this important topic, you pushed through something that you and Nancy Pelosi and Harry Reid thought was the best answer and drove it through.
+Gov. ROMNEY: I'll elaborate, exactly right. First of all, I like the way we did it in Massachusetts. I like the fact that in my State, we had Republicans and Democrats come together and work together. What you did instead was to push through a plan without a single Republican vote. As a matter of fact, when Massachusetts did something quite extraordinary—elected a Republican Senator—to stop Obamacare, you pushed it through anyway. So entirely on a partisan basis, instead of bringing America together and having a discussion on this important topic, you pushed through something that you and Nancy Pelosi and Harry Reid thought was the best answer and drove it through.
 
 What we did in a legislature 87-percent Democrat, we worked together. Two hundred legislators in my legislature; only two voted against the plan by the time we were finished.
 
@@ -600,7 +600,7 @@ Right now the CBO says up to 20 million people will lose their insurance as Obam
 
 So, for those reasons—for the tax, for Medicare, for this board, and for people losing their insurance—this is why the American people don't want Medicare—don't want Obamacare. It's why Republicans said, do not do this. And the Republicans had a—had the plan. They put a plan out. They put a plan, a bipartisan plan. It was swept aside. I think something this big, this important, has to be done on a bipartisan basis. And we have to have a President who can reach across the aisle and fashion important legislation with the input from both parties.
 
-The President. Governor Romney said this has to be done on a bipartisan basis. This was a bipartisan idea. In fact, it was a Republican idea. And Governor Romney, at the beginning of this debate, wrote and said, what we did in Massachusetts could be a model for the Nation.
+OBAMA: Governor Romney said this has to be done on a bipartisan basis. This was a bipartisan idea. In fact, it was a Republican idea. And Governor Romney, at the beginning of this debate, wrote and said, what we did in Massachusetts could be a model for the Nation.
 
 And I agree that the Democratic legislators in Massachusetts might have given some advice to Republicans in Congress about how to cooperate, but the fact of the matter is we used the same advisers, and they say it's the same plan.
 
@@ -616,27 +616,27 @@ Let me make one last point. Governor Romney says we should replace it—I'm just
 
 Health Care Reform/Patient Protection and Affordable Care Act/Preexisting Medical Conditions
 
-Mr. Lehrer. Let's let the Governor explain what you would do if Obamacare is repealed. How would you replace it? What do you have in mind?
+Mr. LEHRER: Let's let the Governor explain what you would do if Obamacare is repealed. How would you replace it? What do you have in mind?
 
-Gov. Romney. Well, actually, it's a lengthy description, but number one, preexisting conditions are covered under my plan. Number two, young people are able to stay on their family plan. That's already offered in the private marketplace. You don't have the Government mandate that for that to occur.
+Gov. ROMNEY: Well, actually, it's a lengthy description, but number one, preexisting conditions are covered under my plan. Number two, young people are able to stay on their family plan. That's already offered in the private marketplace. You don't have the Government mandate that for that to occur.
 
 But let's come back to something the President and I agree on, which is the key task we have in health care is to get the cost down so it's more affordable for families. And then he has as a model for doing that a board of people at the Government—an unelected board, appointed board—who are going to decide what kind of treatments you ought to have.
 
-The President. No, that's not——
+OBAMA: No, that's not——
 
-Gov. Romney. In my opinion, the Government is not effective in bringing down the cost of almost anything. As a matter of fact, free people and free enterprises trying to find ways to do things better are able to be more effective in bringing down the costs than the Government will ever be.
+Gov. ROMNEY: In my opinion, the Government is not effective in bringing down the cost of almost anything. As a matter of fact, free people and free enterprises trying to find ways to do things better are able to be more effective in bringing down the costs than the Government will ever be.
 
 Your example of the Cleveland Clinic is my case in point, along with several others I could describe. This is the private market. These are small—these are enterprises competing with each other, learning how to do better and better jobs.
 
 I used to consult to businesses—excuse me, to hospitals and to health care providers. I was astonished at the creativity and innovation that exists in the American people. In order to bring the cost of health care down, we don't need to have a board of 15 people telling us what kinds of treatments we should have. We instead need to put insurance plans, providers, hospitals, doctors on target such that they have an incentive, as you say, performance pay, for doing an excellent job for keeping costs down. And that's happening; Intermountain Healthcare does it superbly well.
 
-The President. They do.
+OBAMA: They do.
 
-Gov. Romney. Mayo Clinic is doing it superbly well, Cleveland Clinic, others.
+Gov. ROMNEY: Mayo Clinic is doing it superbly well, Cleveland Clinic, others.
 
 But the right answer is not to have the Federal Government take over health care and start mandating to the providers across America, telling a patient and a doctor what kind of treatment they can have. That's the wrong way to go. The private market and individual responsibility always work best.
 
-The President. Let me just point out, first of all, this board that we're talking about can't make decisions about what treatments are given. That's explicitly prohibited in the law.
+OBAMA: Let me just point out, first of all, this board that we're talking about can't make decisions about what treatments are given. That's explicitly prohibited in the law.
 
 But let's go back to what Governor Romney indicated, that under his plan, he would be able to cover people with preexisting conditions. Well actually, Governor, that isn't what your plan does. What your plan does is to duplicate what's already the law, which says if you are out of health insurance for 3 months, then you can end up getting continuous coverage and an insurance company can't deny you if you've—if it's been under 90 days.
 
@@ -646,19 +646,19 @@ But when Governor Romney says that he'll replace it with something, but can't de
 
 And at some point, I think the American people have to ask themselves, is the reason that Governor Romney is keeping all these plans to replace secret because they're too good? Is it because that somehow middle class families are going to benefit too much from them? No. The reason is because when we reform Wall Street, when we tackle the problem of preexisting conditions then—these are tough problems, and we've got to make choices——
 
-Mr. Lehrer. All right. Let's——
+Mr. LEHRER: All right. Let's——
 
-The President. ——and the choices we've made have been ones that ultimately are benefiting middle class families all across the country.
+OBAMA: ——and the choices we've made have been ones that ultimately are benefiting middle class families all across the country.
 
-Mr. Lehrer. We're going to move to——
+Mr. LEHRER: We're going to move to——
 
-Gov. Romney. No, I have to respond to that——
+Gov. ROMNEY: No, I have to respond to that——
 
-Mr. Lehrer. Well, but——
+Mr. LEHRER: Well, but——
 
 Tax Reform/Preexisting Medical Conditions
 
-Gov. Romney. ——which is, my experience as a Governor is if I come in and lay down a piece of legislation and say it's my way or the highway, I don't get a lot done. What I do is the same way that Tip O'Neill and Ronald Reagan worked together some years ago. When Ronald Reagan ran for office, he laid out the principles that he was going to foster. He said he was going to lower tax rates. He said he was going to broaden the base. You've said the same thing; you're going to simplify the Tax Code, broaden the base.
+Gov. ROMNEY: ——which is, my experience as a Governor is if I come in and lay down a piece of legislation and say it's my way or the highway, I don't get a lot done. What I do is the same way that Tip O'Neill and Ronald Reagan worked together some years ago. When Ronald Reagan ran for office, he laid out the principles that he was going to foster. He said he was going to lower tax rates. He said he was going to broaden the base. You've said the same thing; you're going to simplify the Tax Code, broaden the base.
 
 Those are my principles. I want to bring down the tax burden on middle-income families, and I'm going to work together with Congress to say, okay, what are the various ways we can bring down deductions, for instance. One way, for instance, would be to have a single number—make up a number—$25,000, $50,000—anybody could have deductions up to that amount. And then, that number disappears for high income people. That's one way one could do it.
 
@@ -668,11 +668,11 @@ And with regards to health care, you had remarkable details with regards to my p
 
 Role of the Federal Government
 
-Mr. Lehrer. That is a terrific segue to our next segment, and it's the role of Government. And let's see, role of Government, and it is—you are first on this, Mr. President.
+Mr. LEHRER: That is a terrific segue to our next segment, and it's the role of Government. And let's see, role of Government, and it is—you are first on this, Mr. President.
 
 And the question is this: Do you believe—both of you, but you have the first 2 minutes on this, Mr. President—do you believe there's a fundamental difference between the two of you as to how you view the mission of the Federal Government?
 
-The President. Well, I definitely think there are differences. The first role of the Federal Government is to keep the American people safe. That's its most basic function. And as Commander in Chief, that is something that I have worked on and thought about every single day that I've been in the Oval Office.
+OBAMA: Well, I definitely think there are differences. The first role of the Federal Government is to keep the American people safe. That's its most basic function. And as Commander in Chief, that is something that I have worked on and thought about every single day that I've been in the Oval Office.
 
 But I also believe that Government has the capacity—the Federal Government—has the capacity to help open up opportunity and create ladders of opportunity and to create frameworks where the American people can succeed. Look, the genius of America is the free enterprise system and freedom and the fact that people can go out there and start a business, work on an idea, make their own decisions. But as Abraham Lincoln understood, there are also some things we do better together.
 
@@ -684,9 +684,9 @@ But what I've also said is, let's hire another 100,000 math and science teachers
 
 I do, because I think that that is the kind of investment where the Federal Government can help. It can't do it all, but it can make a difference. And as a consequence, we'll have a better trained workforce, and that will create jobs because companies want to locate in places where we've got a skilled workforce.
 
-Mr. Lehrer. Two minutes, Governor, on the role of Government. Your view?
+Mr. LEHRER: Two minutes, Governor, on the role of Government. Your view?
 
-Gov. Romney. Well, first, I love great schools. Massachusetts, our schools are ranked number 1 of all 50 States. And the key to great schools—great teachers. So I reject the idea that I don't believe in great teachers or more teachers. Every school district, every State should make that decision on their own.
+Gov. ROMNEY: Well, first, I love great schools. Massachusetts, our schools are ranked number 1 of all 50 States. And the key to great schools—great teachers. So I reject the idea that I don't believe in great teachers or more teachers. Every school district, every State should make that decision on their own.
 
 The role of Government: Look behind us—the Constitution and the Declaration of Independence. The role of Government is to promote and protect the principles of those documents. First, life and liberty: We have a responsibility to protect the lives and liberties of our people, and that means a military second to none. I do not believe in cutting our military. I believe in maintaining the strength of America's military.
 
@@ -698,51 +698,51 @@ And the proof of that is 23 million people out of work. The proof of that is one
 
 Federal Role in Education/Education Reform/Community Colleges/Student Loan Programs
 
-Mr. Lehrer. All right, let's go through some specifics in terms of what—how each of you views the role of Government. How do—education: Does the Federal Government have a responsibility to improve the quality of public education in America?
+Mr. LEHRER: All right, let's go through some specifics in terms of what—how each of you views the role of Government. How do—education: Does the Federal Government have a responsibility to improve the quality of public education in America?
 
-Gov. Romney. Well, the primary responsibility for education is, of course, at the State and local level. But the Federal Government also can play a very important role. And I agree with Secretary Arne Duncan, he's—some ideas he's put forward on Race to the Top—not all of them, but some of them I agree with and congratulate him for pursuing that. The Federal Government can get local and State schools to do a better job.
+Gov. ROMNEY: Well, the primary responsibility for education is, of course, at the State and local level. But the Federal Government also can play a very important role. And I agree with Secretary Arne Duncan, he's—some ideas he's put forward on Race to the Top—not all of them, but some of them I agree with and congratulate him for pursuing that. The Federal Government can get local and State schools to do a better job.
 
 My own view, by the way, is I've added to that. I happen to believe—I want the kids that are getting Federal dollars from IDEA or title I—these are disabled kids or poor kids—or lower income kids, rather—I want them to be able to go to the school of their choice. So all Federal funds, instead of going to the State or to the school district, I'd have go, if you will, follow the child and let the parent and the child decide where to send their student.
 
-Mr. Lehrer. How do you see the Federal Government's responsibility to, as I say, to improve the quality of public education in this country?
+Mr. LEHRER: How do you see the Federal Government's responsibility to, as I say, to improve the quality of public education in this country?
 
-The President. Well, as I've indicated, I think that it has a significant role to play. Through our Race to the Top program, we've worked with Republican and Democratic Governors to initiate major reforms, and they're having an impact right now.
+OBAMA: Well, as I've indicated, I think that it has a significant role to play. Through our Race to the Top program, we've worked with Republican and Democratic Governors to initiate major reforms, and they're having an impact right now.
 
-Mr. Lehrer. Do you think you have a difference with your views and those of Governor Romney on—about education and the Federal Government?
+Mr. LEHRER: Do you think you have a difference with your views and those of Governor Romney on—about education and the Federal Government?
 
-The President. This is where budgets matter, because budgets reflect choices. So when Governor Romney indicates that he wants to cut taxes and potentially benefit folks like me and him, and to pay for it we're having to initiate significant cuts in Federal support for education, that makes a difference.
+OBAMA: This is where budgets matter, because budgets reflect choices. So when Governor Romney indicates that he wants to cut taxes and potentially benefit folks like me and him, and to pay for it we're having to initiate significant cuts in Federal support for education, that makes a difference.
 
 His running mate, Congressman Ryan, put forward a budget that reflects many of the principles that Governor Romney's talked about. And it wasn't very detailed—this seems to be a trend—but what it did do is to, if you extrapolated how much money we're talking about, you'd look at cutting the education budget by up to 20 percent.
 
 When it comes to community colleges, we are seeing great work done out there all over the country because we have the opportunity to train people for jobs that exist right now. And one of the things, I suspect, Governor Romney and I probably agree on is getting businesses to work with community colleges so that they're setting up their training programs——
 
-Mr. Lehrer. Do you agree, Governor?
+Mr. LEHRER: Do you agree, Governor?
 
-The President. Let me just finish the point.
+OBAMA: Let me just finish the point.
 
-Gov. Romney. Oh, sure. Oh, yes. It's, by the way, going very well in my State, by the way. Yes.
+Gov. ROMNEY: Oh, sure. Oh, yes. It's, by the way, going very well in my State, by the way. Yes.
 
-The President. I suspect it will be a small agreement. The—where they're partnering so that they're designing training programs and people who are going through them know that there's a job waiting for them if they complete it.
+OBAMA: I suspect it will be a small agreement. The—where they're partnering so that they're designing training programs and people who are going through them know that there's a job waiting for them if they complete it.
 
-Mr. Lehrer. Okay, now——
+Mr. LEHRER: Okay, now——
 
-The President. That makes a big difference, but that requires some Federal support.
+OBAMA: That makes a big difference, but that requires some Federal support.
 
 Let me just use—say one final example. When it comes to making college affordable, whether it's 2-year or 4-year, one of the things that I did as President was we were sending $60 billion to banks and lenders as middlemen for the student loan program, even though the loans were guaranteed so there was no risk for the banks or the lenders. But they were taking billions out of the system. And we said why not cut out the middleman? And as a consequence, what we've been able to do is to provide millions more students assistance, lower or keep low interest rates on student loans.
 
 And this is an example of where our priorities make a difference. Governor Romney, I genuinely believe, cares about education, but when he tells a student that you should borrow money from your parents to go to college, that indicates the degree to which there may not be as much of a focus on the fact that folks like myself, folks like Michelle, kids probably who attend University of Denver just don't have that option. And for us to be able to make sure that they've got that opportunity and they can walk through that door, that is vitally important—not just to those kids; it's how we're going to grow this economy over the long term.
 
-Mr. Lehrer. We're running out of time, gentlemen——
+Mr. LEHRER: We're running out of time, gentlemen——
 
-Gov. Romney. Jim, Jim——
+Gov. ROMNEY: Jim, Jim——
 
 Energy Sector Subsidies/Education Reform
 
-Mr. Lehrer. ——so I think you have a chance—yes, respond to that. Yes, sir, Governor.
+Mr. LEHRER: ——so I think you have a chance—yes, respond to that. Yes, sir, Governor.
 
-The President. Yes, he has a chance.
+OBAMA: Yes, he has a chance.
 
-Gov. Romney. Mr. President, you're entitled, as the President, to your own airplane and to your own house, but not to your own facts—[Laughter]—all right? I'm not going to cut education funding. I don't have any plan to cut education funding. And grants that go to people going to college I'm planning on continuing to grow, so I'm not planning on making changes there.
+Gov. ROMNEY: Mr. President, you're entitled, as the President, to your own airplane and to your own house, but not to your own facts—[Laughter]—all right? I'm not going to cut education funding. I don't have any plan to cut education funding. And grants that go to people going to college I'm planning on continuing to grow, so I'm not planning on making changes there.
 
 But you make a very good point, which is that the place you put your money makes a pretty clear indication of where your heart is. You put $90 billion into green jobs. And I—look, I'm all in favor of green energy. Ninety billion—that would have hired 2 million teachers. Ninety billion dollars. And these businesses, many of them have gone out of business. I think about half of them—of the ones that have been invested in have gone out of business. A number of them happen to be owned by people who were contributors to your campaigns.
 
@@ -752,33 +752,33 @@ Let's grade them. I propose we grade our schools so parents know which schools a
 
 And by the way, I've had that experience. I don't just talk about it. I've been there. Massachusetts schools are ranked number one in the Nation. This is not because I didn't have commitment to education. It's because I care about education for all of our kids.
 
-Mr. Lehrer. All right, gentlemen——
+Mr. LEHRER: All right, gentlemen——
 
-The President. Jim, I——
+OBAMA: Jim, I——
 
-Mr. Lehrer. Excuse me, one second.
+Mr. LEHRER: Excuse me, one second.
 
-The President. Look——
+OBAMA: Look——
 
-Mr. Lehrer. Excuse me, sir. We've got—we barely have 3 minutes left. I'm not going to grade the two of you and say your answers have been too long or I've done a poor job——
+Mr. LEHRER: Excuse me, sir. We've got—we barely have 3 minutes left. I'm not going to grade the two of you and say your answers have been too long or I've done a poor job——
 
-The President. You've done a great job, Jim.
+OBAMA: You've done a great job, Jim.
 
 Role of the Federal Government/Bipartisanship/Presidential Leadership
 
-Mr. Lehrer. Oh, well, no. But the fact is, Government—the role of Government and governing—we've lost a pod, in other words. So we only have 3 minutes left in the debate before we go to your closing statements. And so I want to ask, finally, here—and remember, we've got 3 minutes total time here. And the question is this: Many of the legislative functions of the Federal Government right now are in a state of paralysis as a result of partisan gridlock. If elected, in your case—if reelected, in your case—what would you do about that? Governor?
+Mr. LEHRER: Oh, well, no. But the fact is, Government—the role of Government and governing—we've lost a pod, in other words. So we only have 3 minutes left in the debate before we go to your closing statements. And so I want to ask, finally, here—and remember, we've got 3 minutes total time here. And the question is this: Many of the legislative functions of the Federal Government right now are in a state of paralysis as a result of partisan gridlock. If elected, in your case—if reelected, in your case—what would you do about that? Governor?
 
-Gov. Romney. Jim, I had the great experience—it didn't seem like it at the time—of being elected in a State where my legislature was 87-percent Democrat. And that meant I figured out, from day one I had to get along and I had to work across the aisle to get anything done. We drove our schools to be number one in the Nation. We cut taxes 19 times.
+Gov. ROMNEY: Jim, I had the great experience—it didn't seem like it at the time—of being elected in a State where my legislature was 87-percent Democrat. And that meant I figured out, from day one I had to get along and I had to work across the aisle to get anything done. We drove our schools to be number one in the Nation. We cut taxes 19 times.
 
-Mr. Lehrer. What would you do as President?
+Mr. LEHRER: What would you do as President?
 
-Gov. Romney. As President, I will sit down on day one—actually, the day after I get elected, I'll sit down with leaders, the Democratic leaders as well as Republican leaders, and continue—as we did in my State—we met every Monday for a couple hours, talked about the issues and the challenges in our State in that case. We have to work on a collaborative basis, not because we're going to compromise our principle, but because there's common ground.
+Gov. ROMNEY: As President, I will sit down on day one—actually, the day after I get elected, I'll sit down with leaders, the Democratic leaders as well as Republican leaders, and continue—as we did in my State—we met every Monday for a couple hours, talked about the issues and the challenges in our State in that case. We have to work on a collaborative basis, not because we're going to compromise our principle, but because there's common ground.
 
 And the challenges America faces right now—look, the reason I'm in this race is there are people that are really hurting today in this country. And we face—this deficit could crush the future generations. What's happening in the Middle East; there are developments around the world that are of real concern. And Republicans and Democrats both love America, but we need to have leadership, leadership in Washington that will actually bring people together and get the job done and could not care less if it's a Republican or a Democrat. I've done it before. I'll do it again.
 
-Mr. Lehrer. Mr. President.
+Mr. LEHRER: Mr. President.
 
-The President. Well, first of all, I think Governor Romney is going to have a busy first day, because he's also going to repeal Obamacare, which will not be very popular among Democrats as you're sitting down with them. [Laughter]
+OBAMA: Well, first of all, I think Governor Romney is going to have a busy first day, because he's also going to repeal Obamacare, which will not be very popular among Democrats as you're sitting down with them. [Laughter]
 
 But look, my philosophy has been, I will take ideas from everybody—Democrat or Republican—as long as they're advancing the cause of making middle class families stronger and giving ladders of opportunity to the middle class. That's how we cut taxes for middle class families and small businesses. That's how we cut a trillion dollars of spending that wasn't advancing that cause. That's how we signed three trade deals into law that are helping us to double our exports and sell more American products around the world.
 
@@ -788,15 +788,15 @@ So we've seen progress even under Republican control of the House of Representat
 
 And yes, we had some fights between me and the Republicans when they fought back against us reining in the excesses of Wall Street? Absolutely, because that was a fight that needed to be had. When we were fighting about whether or not we were going to make sure that Americans had more security with their health insurance and they said no? Yes, that was a fight that we needed to have.
 
-Jim Lehrer. All right——
+Jim LEHRER: All right——
 
-The President. And so part of leadership and governing is both saying what it is that you are for, but also being willing to say no to some things. And I've got to tell you, Governor Romney, when it comes to his own party during the course of this campaign, has not displayed that willingness to say no to some of the more extreme parts of his party.
+OBAMA: And so part of leadership and governing is both saying what it is that you are for, but also being willing to say no to some things. And I've got to tell you, Governor Romney, when it comes to his own party during the course of this campaign, has not displayed that willingness to say no to some of the more extreme parts of his party.
 
 Closing Statements
 
-Mr. Lehrer. That brings us to closing statements. There was a coin toss. Governor Romney, you won the toss and you elected to go last. So you have a closing 2 minutes, Mr. President.
+Mr. LEHRER: That brings us to closing statements. There was a coin toss. Governor Romney, you won the toss and you elected to go last. So you have a closing 2 minutes, Mr. President.
 
-The President. Well, Jim, I want to thank you. And I want to thank Governor Romney, because I think this was a terrific debate and I very much appreciate it. And I want to thank the University of Denver.
+OBAMA: Well, Jim, I want to thank you. And I want to thank Governor Romney, because I think this was a terrific debate and I very much appreciate it. And I want to thank the University of Denver.
 
 Four years ago, we were going through a major crisis. And yet my faith and confidence in the American future is undiminished. And the reason is because of its people. Because of the woman I met in North Carolina who decided at 55 to go back to school because she wanted to inspire her daughter and now has a job from that new training that she's gotten. Because of a company in Minnesota who was willing to give up salaries and perks for their executives to make sure that they didn't lay off workers during a recession. The autoworkers that you meet in Toledo or Detroit take such pride in building the best cars in the world, not just because of a paycheck, but because it gives them that sense of pride that they're helping to build America.
 
@@ -804,9 +804,9 @@ And so the question now is, how do we build on those strengths? And everything t
 
 Four years ago, I said that I'm not a perfect man and I wouldn't be a perfect President. And that's probably a promise that Governor Romney thinks I've kept. [Laughter] But I also promised that I'd fight every single day on behalf of the American people and the middle class and all those who are striving to get into the middle class. I've kept that promise. And if you'll vote for me, then I promise I'll fight just as hard in a second term.
 
-Mr. Lehrer. Governor Romney, your 2-minute closing.
+Mr. LEHRER: Governor Romney, your 2-minute closing.
 
-Gov. Romney. Thank you, Jim and Mr. President. And thank you for tuning in this evening.
+Gov. ROMNEY: Thank you, Jim and Mr. President. And thank you for tuning in this evening.
 
 This is a—this is an important election, and I'm concerned about America. I'm concerned about the direction America has been taking over the last 4 years. I know this is bigger than an election about the two of us as individuals. It's bigger than our respective parties. It's an election about the course of America: what kind of America do you want to have for yourself and for your children.
 
@@ -822,6 +822,6 @@ And finally, military. If the President's reelected, you'll see dramatic cuts to
 
 Thank you, Jim.
 
-Mr. Lehrer. Thank you, Governor. Thank you, Mr. President.
+Mr. LEHRER: Thank you, Governor. Thank you, Mr. President.
 
-The next debate will be the Vice Presidential event on Thursday, October 11, at Centre College in Danville, Kentucky. For now, from the University of Denver, I'm Jim Lehrer. Thank you, and good night.
+The next debate will be the Vice Presidential event on Thursday, October 11, at Centre College in Danville, Kentucky. For now, from the University of Denver, I'm Jim LEHRER: Thank you, and good night.

@@ -1,4 +1,4 @@
-JUDY WOODRUFF, CNN ANCHOR: Thank you for joining us. Tonight we hope to give voters here in Arizona and all across the nation their best opportunity yet to compare the six Republican candidates for president and their specific views on the issues.
+JUDY WOODRUFF: Thank you for joining us. Tonight we hope to give voters here in Arizona and all across the nation their best opportunity yet to compare the six Republican candidates for president and their specific views on the issues.
 We are in the spectacular 70-year-old Orpheum Theater. Built for vaudeville performances and movies, it is now a performing arts center. More than 1,300 people are in the audience here; they were invited by the Arizona Republican Party.
 Now, there will be three parts to this debate. In the first, part I will question the candidates along with my colleagues, CNN's White House Correspondent John King and CNN's Senior Political Correspondent Candy Crowley.
 Later, for the first time in this Republican presidential race, the candidates will have a chance to question one another. And they will give brief closing comments.
@@ -6,8 +6,8 @@ Now to the candidates: former Reagan administration official Gary Bauer; Texas G
 (APPLAUSE)
 Now, the candidates were introduced in the order in which they will take our questions based on a draw that was conducted earlier. My CNN colleagues and I will focus our questions on three issues which are important to the public and the presidency: raising and educating children; taxes and government spending; and international affairs and national security.
 Now, the candidates did not know until just now which issues would be addressed. They will be questioned individually on each of those topics and have one minute to respond. Now, Candy Crowley has the first question for Gary Bauer on the subject of raising and educating children.
-CANDY CROWLEY, CNN CORRESPONDENT: Good evening, Mr. Bauer.
-GARY BAUER (R), PRESIDENTIAL CANDIDATE: Hi, Candy.
+CANDY CROWLEY: Good evening, Mr. Bauer.
+GARY BAUER: Hi, Candy.
 CROWLEY: There was another school shooting today...
 BAUER: Yes.
 CROWLEY: ... this time in Oklahoma. What I'd like to know is, on the first day of a Bauer administration, what is the first concrete step you would take to immediately make the nation's schools safer?
@@ -18,8 +18,8 @@ So Candy, as a start, when I'm president, there won't be anymore Nazi salutes in
 (APPLAUSE)
 WOODRUFF: Thank you, Mr. Bauer.
 John?
-JOHN KING, CNN CORRESPONDENT: Governor Bush, while you echo the overwhelming majority of Republicans in saying that most education decisions should be made at the state and local level, you would mandate federal testing, cut off federal funds to schools that didn't make the grade, and tie other strings to the federal money that goes to the states. Isn't this very similar to the current administration approach that so many Republicans, including many of your colleagues here, say is the wrong way for the federal government to be involved in education?
-GOV. GEORGE W. BUSH (R-TX), PRESIDENTIAL CANDIDATE: It's not even close to what President Clinton thinks. I've got a record of reform in the state of Texas, and I'm going to take that to the White House. I believe that if the federal government spends money, say on the poorest of the poor children, we need to ask a simple question: What are the results? What are the results? Are the children learning? And if they are, we ought to give bonuses to schools for the poorest of the poor. But if they're not -- if the poorest of the poor remain in trap schools, that money that would go to the school should go to the parent so the parent gets to make a different choice.
+JOHN KING: Governor Bush, while you echo the overwhelming majority of Republicans in saying that most education decisions should be made at the state and local level, you would mandate federal testing, cut off federal funds to schools that didn't make the grade, and tie other strings to the federal money that goes to the states. Isn't this very similar to the current administration approach that so many Republicans, including many of your colleagues here, say is the wrong way for the federal government to be involved in education?
+GOV. GEORGE W. BUSH: It's not even close to what President Clinton thinks. I've got a record of reform in the state of Texas, and I'm going to take that to the White House. I believe that if the federal government spends money, say on the poorest of the poor children, we need to ask a simple question: What are the results? What are the results? Are the children learning? And if they are, we ought to give bonuses to schools for the poorest of the poor. But if they're not -- if the poorest of the poor remain in trap schools, that money that would go to the school should go to the parent so the parent gets to make a different choice.
 I don't believe in national testing. I believe that local folks ought to develop their own tests and their own standards, because I strongly believe in local control of schools.
 I also believe in charter schools. I believe in education savings accounts, to give parents a $5,000 per year contribution, to be able to save for their children. Now my plan says less power in Washington, not more.
 WOODRUFF: Thank you, Governor.
@@ -27,7 +27,7 @@ WOODRUFF: Thank you, Governor.
 And once again, we would ask the audience to hold your applause. We know you all have favorites, and we like that. But we want to -- we do...
 (LAUGHTER)
 Senator Hatch, in that connection, you support voucher programs, which of course, would provide government money for parents to send their children to the school of their choice. But even the most generous voucher program would only provide a fraction of what it costs to go to a private school. Doesn't this mean parents with limited means still won't have the ability to send their children to the best schools?
-SEN. ORRIN HATCH (R-UT), PRESIDENTIAL CANDIDATE: Well, no. There are a lot of those vouchers that raise enough money. A lot of these private schools, a lot of these religious schools, a lot of the parochial schools, even some of the professional schools, sometimes they can take care of it for what the voucher will be. And many of these parents would pay the extra if they could.
+SEN. ORRIN HATCH: Well, no. There are a lot of those vouchers that raise enough money. A lot of these private schools, a lot of these religious schools, a lot of the parochial schools, even some of the professional schools, sometimes they can take care of it for what the voucher will be. And many of these parents would pay the extra if they could.
 For instance, take the District of Columbia. There's a federal system, if you ever saw one. They spend $11,000 per pupil, and those are the kids who are getting the worst education in the country. The federal government spends 7 percent of the money for education in this country, and demands 50 percent of the paperwork -- 49 million man/woman hours.
 I have to say, the best thing we can do is provide a means where these kids in the inner city, that are not getting a good education, their parents know they're not getting a good education, to walk. Now if the moneys aren't enough, we should raise them so that they can be enough.
 And I believe in that. I really believe that if we do that the public schools themselves -- Elaine and I sent all of our kids to public schools -- we went to public schools. We're proud of it. And public schools are great. But when they're not working, those kids ought to have a chance to walk, and the voucher system will give them that chance.
@@ -36,7 +36,7 @@ Candy.
 CROWLEY: Senator McCain, welcome. You've said a number of times that no good teacher should be paid less than a bad senator.
 (LAUGHTER)
 In January, senators will be making over $140,000 a year. Now without getting into the question of whether there are any bad senators, how could you pay anything even close to that? Who would fund anything even close to that for the good teachers?
-SEN. JOHN MCCAIN (R-AZ), PRESIDENTIAL CANDIDATE: You know, I that I would never allege that there are any bad senators. I win Miss Congeniality every year, as you know, in the Senate.
+SEN. JOHN MCCAIN: You know, I that I would never allege that there are any bad senators. I win Miss Congeniality every year, as you know, in the Senate.
 (LAUGHTER)
 Connie -- Candy, they may not need as much money as a $140,000 a year. Perhaps Senators don't need as much as $140,000 a year.
 (APPLAUSE)
@@ -55,7 +55,7 @@ WOODRUFF: Thank you, Mr. Keyes.
 (APPLAUSE)
 WOODRUFF: Mr. Forbes, while we're discussing children, six years ago Congress passed a measure to give short, unpaid leave to parents of newborn children or adopted children. This has been very popular; at least 20 million Americans have taken advantage of this.
 Now President Clinton proposes to expand this program by allowing states to use unemployment benefits to provide some paid time off for parents who otherwise couldn't afford to stop working. My question is: Do low income parents deserve this kind of time off with their families?
-STEVE FORBES (R), PRESIDENTIAL CANDIDATE: You're absolutely right, Judy. All parents deserve time and all parents should have the opportunity to spend more time with their children. But credits from Washington, raiding unemployment funds is not going to do the job.
+STEVE FORBES: You're absolutely right, Judy. All parents deserve time and all parents should have the opportunity to spend more time with their children. But credits from Washington, raiding unemployment funds is not going to do the job.
 The real way you give parents freedom is first let them keep more of what they earn in the first place. They shouldn't have to have an accountant to figure out what tax credits they qualify for. They should have it in their paycheck.
 Also too, I believe that as Alan and others have pointed out, we need to have parents have control of the schools so that they can go to schools where schools can have flexibility in terms of the time the children spend there.
 So the combination of genuine tax reform, where parents can make quality of life decisions, allowing parents to choose schools that work best for their children -- that's the way to move forward instead of micromanaging with credits from Washington, D.C. Trust us, not Washington.
