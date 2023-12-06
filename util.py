@@ -38,6 +38,23 @@ PARTICIPANTS = get_participants()
 WINNERS = get_winners()
 FILES = [f.name for f in os.scandir("scraped-data/transcripts")]
 
+def split_by_era():
+    pre2000 = []
+    early2000 = []
+    post2010 = []
+
+    for f in FILES:
+        year = int(f[-8:-4])
+
+        if year <= 2000:
+            pre2000.append(f)
+        elif year <= 2010:
+            early2000.append(f)
+        else:
+            post2010.append(f)
+
+    return pre2000, early2000, post2010
+
 
 # be careful and make sure your X's generate with the exact same number of rows (exception handling)
 def generate_ys_per_line():

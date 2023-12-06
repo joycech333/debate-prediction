@@ -319,6 +319,8 @@ def get_top_five_naive_bayes_words(model, dictionary):
 
 def main():
     #files = ["September_26_2008.txt", "November_28_2007.txt", "September_25_1988.txt", "September_16_2015.txt", "April_26_2007.txt"]
+
+    """
     files = [f.name for f in os.scandir("scraped-data/transcripts")]
     full_paths = [f'scraped-data/transcripts/{file}' for file in files]
 
@@ -361,7 +363,55 @@ def main():
         print('The top 5 indicative words for Naive Bayes are: ', top_5_words)
 
     print("all accuracies", accuracy, sum(accuracy) / len(accuracy))
-    
+    """
+
+    era1, era2, era3 = util.split_by_era()
+
+    for era in [era1, era2, era3]:
+        full_paths = [f'scraped-data/transcripts/{file}' for file in era]
+
+        print("DATA SIZE", len(full_paths))
+
+        accuracy = []
+
+        K = 10
+
+        test_size = len(full_paths) // K
+
+        for i in range(K):
+
+            testing = full_paths[i * test_size:i * test_size + test_size]
+            print(i * test_size, i * test_size + test_size)
+            training = [p for p in full_paths if p not in testing]
+
+            just_participants = util.create_data_tsv(training, "data/nb/train.csv")
+            util.create_data_tsv(testing, "data/nb/test.csv")
+            train_messages, train_labels = load_dataset('data/nb/train.csv')
+            test_messages, test_labels = load_dataset('data/nb/test.csv')
+
+            dictionary = create_dictionary(train_messages, just_participants)
+
+            print('Size of dictionary: ', len(dictionary))
+            
+            train_matrix = transform_text(train_messages, dictionary)
+
+            test_matrix = transform_text(test_messages, dictionary)
+
+            naive_bayes_model = fit_naive_bayes_model(train_matrix, train_labels)
+            
+            naive_bayes_predictions = predict_from_naive_bayes_model(naive_bayes_model, test_matrix)
+
+            naive_bayes_accuracy = np.mean(naive_bayes_predictions == test_labels)
+            accuracy.append(naive_bayes_accuracy)
+
+            print('Naive Bayes had an accuracy of {} on the testing set'.format(naive_bayes_accuracy))
+            
+            top_5_words = get_top_five_naive_bayes_words(naive_bayes_model, dictionary)
+
+            print('The top 5 indicative words for Naive Bayes are: ', top_5_words)
+
+        print("all accuracies", accuracy, sum(accuracy) / len(accuracy))
+
 
 if __name__ == "__main__":
     main()
