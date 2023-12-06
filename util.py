@@ -83,6 +83,7 @@ def generate_ys_per_line():
 
     return all_ys
 
+
 def ys_by_speaker():
     winners = []
     for filename in FILES:
@@ -106,10 +107,13 @@ def ys_by_speaker():
 
     return winners
 
+
 """
 Splits the speech at a given txt file_path by speaker
 in the form of a dict:
 speaker --> list of lines
+
+To get all lines for a speaker into a single string, can do '\n'.join(speakers[speaker])
 """
 def split_speakers(file_path, escape=False):
     file = open(file_path).read()
