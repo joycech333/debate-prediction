@@ -5,3 +5,6 @@ data/.DS_Store
 data
 
 __pycache__
+
+ex_tfidf.py
+uciml_spam.csv
