@@ -140,17 +140,44 @@ def clean_cand_names(names, split_dict):
 
 
 # get the data in the format required by the naive bayes classifier
-def create_data_tsv(all_dict, file_path, winner, loser):
-    file = open(file_path, "w")
+def create_data_tsv(file_paths, out_file):
+    file = open(out_file, "w")
 
-    for d in all_dict:
-        for speaker in d:
-            if speaker == winner:
-                for sent in d[speaker]:
-                    file.write("win" + "\t" + sent + "\n")
-            if speaker == loser:
-                for sent in d[speaker]:
-                    file.write("lose" + "\t" + sent + "\n")
+    just_participants = set()
+
+    for file_path in file_paths:
+        file_date = file_path[25:]
+
+        all_speakers = split_speakers(file_path)
+
+        for speaker in all_speakers:
+            debate_cands = PARTICIPANTS[file_date]
+
+            just_participants.update(debate_cands)
+
+            # this means the speaker was the moderator
+            if speaker not in debate_cands:
+                continue
+            sentences = all_speakers[speaker]
+
+            debate_winners = [WINNERS[file_date]["win"].upper()]
+            
+            if WINNERS[file_date]["draw"] == "TRUE":
+                debate_winners.append(WINNERS[file_date]["lose"].upper())
+
+            full_speech = ""
+            if speaker in debate_winners:
+                for sent in sentences:
+                    full_speech += " " + sent
+                    
+                file.write("win" + "\t" + full_speech + "\n")
+            else:
+                for sent in sentences:
+                    full_speech += sent
+                    
+                file.write("lose" + "\t" + full_speech + "\n")
+
+    return just_participants
 
 
 if __name__ == "__main__":
