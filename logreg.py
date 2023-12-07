@@ -55,8 +55,8 @@ def generate_lines_scores_speaker(filename, allWinners):
     draw = allWinners[filename]['draw']
 
     # ignore files with no ground truth
-    if not winner:
-        return [], []
+    # if not winner:
+    #     return [], []
     
     participants = util.PARTICIPANTS[filename]
     speaker_lines = util.split_speakers(f'scraped-data/transcripts/{filename}', True)
@@ -111,7 +111,8 @@ def generate_pronouns_y_speaker(files, winners):
     count_matrix = count_vect.fit_transform(all_Xs)
     count_array = count_matrix.toarray()
     X = pd.DataFrame(data=count_array, columns=count_vect.get_feature_names_out())
-    sums = X.sum(axis=1).replace(0, 1) # no zeros
+    # sums = X.sum(axis=1).replace(0, 1) # no zeros
+    sums = pd.read_csv('xys/sum_per_row.csv').to_numpy()
     normalizedX = X.div(sums, axis=0) # mean across each row (each input line)
     y = pd.DataFrame(all_ys)
 
@@ -150,7 +151,8 @@ def generate_pos_y_speaker(files, winners):
     count_matrix = count_vect.fit_transform(all_Xs)
     count_array = count_matrix.toarray()
     X = pd.DataFrame(data=count_array, columns=count_vect.get_feature_names_out())
-    sums = X.sum(axis=1).replace(0, 1) # no zeros
+    # sums = X.sum(axis=1).replace(0, 1) # no zeros
+    sums = pd.read_csv('xys/sum_per_row.csv').to_numpy()
     X = X.div(sums, axis=0) # mean across each row (each input line)
     y = pd.DataFrame(all_ys)
 
@@ -190,7 +192,8 @@ def generate_pos_uni_y_speaker(files, winners):
     count_matrix = count_vect.fit_transform(all_Xs)
     count_array = count_matrix.toarray()
     X = pd.DataFrame(data=count_array, columns=count_vect.get_feature_names_out())
-    sums = X.sum(axis=1).replace(0, 1) # no zeros
+    # sums = X.sum(axis=1).replace(0, 1) # no zeros
+    sums = pd.read_csv('xys/sum_per_row.csv').to_numpy()
     X = X.div(sums, axis=0) # mean across each row (each input line)
     y = pd.DataFrame(all_ys)
 
@@ -237,14 +240,15 @@ def generate_X_y_pos_5_speaker(files, winners, posCode):
         filtered_pos.extend(filter_pos(file, posCode))
         
     # print(filtered_pos[:20])
-    t5tuples = nltk.FreqDist(filtered_pos).most_common(5)
+    t5tuples = nltk.FreqDist(filtered_pos).most_common(10)
     t5 = [x[0] for x in t5tuples]
     count_vect = CountVectorizer(vocabulary=t5)
     count_matrix = count_vect.fit_transform(all_files)
     count_array = count_matrix.toarray()
     X = pd.DataFrame(data=count_array, columns=count_vect.get_feature_names_out())
     # print(X[:20])
-    sums = X.sum(axis=1).replace(0, 1) # no zeros
+    # sums = X.sum(axis=1).replace(0, 1) # no zeros
+    sums = pd.read_csv('xys/sum_per_row.csv').to_numpy()
     X = X.div(sums, axis=0) # mean across each row (each input line)
     y = pd.DataFrame(all_ys)
 
@@ -297,7 +301,6 @@ def generate_X_y(files, winners):
 
     return X, y
 
-
 # generate Xs and ys, one row per speaker per debate
 def generate_X_y_speaker(files, winners):
     all_Xs = []
@@ -312,6 +315,8 @@ def generate_X_y_speaker(files, winners):
     count_array = count_matrix.toarray()
     X = pd.DataFrame(data=count_array, columns=count_vect.get_feature_names_out())
     sums = X.sum(axis=1).replace(0, 1) # no zeros
+    # sumDf = pd.DataFrame(sums)
+    # sumDf.to_csv('xys/sum_per_row.csv', index=False)
     X = X.div(sums, axis=0) # mean across each row (each input line)
     y = pd.DataFrame(all_ys)
 
@@ -356,12 +361,18 @@ if __name__ == "__main__":
         winners = json.load(json_file)
 
     # files = ['data/pres/09_26_2008.txt', 'data/pres/10_07_2008.txt', 'data/pres/10_15_2008.txt', 'data/vp/10_02_2008.txt']
-    files = [f.name for f in os.scandir("scraped-data/transcripts")]
+    # files = [f.name for f in os.scandir("scraped-data/transcripts")]
+    files = util.FILES
+
+    print(util.PARTICIPANTS)
+
+    X, y = generate_X_y_speaker(files, winners)
+    print(1 - y.mean())
 
     # y = pd.read_csv('xys/y_per_speaker.csv')
     # print(1 - y.mean())
     # print('All Logreg by Line')
-    # X, y = generate_X_y(files, winners)
+    # X, y = generate_X_y_speaker(files, winners)
     # print('X')
     # print(X.info())
     # print('y')
@@ -373,7 +384,8 @@ if __name__ == "__main__":
     # print(X.info())
 
     # print('\nBy Speaker per Debate')
-    # # X.to_csv('xys/all_x_per_speaker.csv', index=False)
+    # X, y = generate_X_y_speaker(files, winners)
+    # X.to_csv('xys/all_x_per_speaker.csv', index=False)
     # X = pd.read_csv('xys/all_x_per_speaker.csv')
     # y = pd.read_csv('xys/y_per_speaker.csv')
     # # y.to_csv('xys/y_per_speaker.csv', index=False)
@@ -384,21 +396,20 @@ if __name__ == "__main__":
     # # print('mean:', y.mean())
     # logreg(X, y)
 
-
     # print('Pronoun')
     # X, y = generate_pronouns_y_speaker(files, winners)
-    # # X.to_csv('xys/pronouns_x_per_speaker.csv', index=False)
-    # # y.to_csv('xys/y_per_speaker.csv', index=False)
-    # X = pd.read_csv('xys/pronouns_x_per_speaker.csv')
-    # y = pd.read_csv('xys/y_per_speaker.csv')
+    # X.to_csv('xys/pronouns_x_per_speaker.csv', index=False)
+    # y.to_csv('xys/y_per_speaker.csv', index=False)
+    # # X = pd.read_csv('xys/pronouns_x_per_speaker.csv')
+    # # y = pd.read_csv('xys/y_per_speaker.csv')
     # logreg(X, y)
 
     # print('\nReg on Specific PoS (ex: Singular Noun)')
-    # # X, y = generate_pos_y_speaker(files, winners)
-    # # X.to_csv('xys/pos_x_per_speaker.csv', index=False)
-    # X = pd.read_csv('xys/pos_x_per_speaker.csv')
-    # y = pd.read_csv('xys/y_per_speaker.csv')
-    # # print(X[:20])
+    # X, y = generate_pos_y_speaker(files, winners)
+    # X.to_csv('xys/pos_x_per_speaker.csv', index=False)
+    # # X = pd.read_csv('xys/pos_x_per_speaker.csv')
+    # # y = pd.read_csv('xys/y_per_speaker.csv')
+    # # # print(X[:20])
     # logreg(X, y)
 
     # print('\nReg on PoS Family (ex: Noun)')
@@ -410,33 +421,34 @@ if __name__ == "__main__":
     # logreg(X, y)
 
     # print('\nNoun')
-    # # X, y = generate_X_y_pos_5_speaker(files, winners, 'N')
-    # # X.to_csv('xys/t5nouns_x_per_speaker.csv', index=False)
-    # X = pd.read_csv('xys/t5nouns_x_per_speaker.csv')
-    # y = pd.read_csv('xys/y_per_speaker.csv')
-    # # print(X[:20])
+    # X, y = generate_X_y_pos_5_speaker(files, winners, 'N')
+    # X.to_csv('xys/t10nouns_x_per_speaker.csv', index=False)
+    # # # X = pd.read_csv('xys/t10nouns_x_per_speaker.csv')
+    # # # y = pd.read_csv('xys/y_per_speaker.csv')
+    # # # print(X[:20])
     # logreg(X, y)
 
     # print('\nVerb')
-    # # X, y = generate_X_y_pos_5_speaker(files, winners, 'V')
-    # # X.to_csv('xys/t5verbs_x_per_speaker.csv', index=False)
-    # X = pd.read_csv('xys/t5verbs_x_per_speaker.csv')
-    # y = pd.read_csv('xys/y_per_speaker.csv')
-    # # print(X[:20])
+    # X, y = generate_X_y_pos_5_speaker(files, winners, 'V')
+    # X.to_csv('xys/t10verbs_x_per_speaker.csv', index=False)
+    # # # X = pd.read_csv('xys/t10verbs_x_per_speaker.csv')
+    # # # y = pd.read_csv('xys/y_per_speaker.csv')
+    # # # print(X[:20])
     # logreg(X, y)
 
     # print('\nAdj')
-    # # X, y = generate_X_y_pos_5_speaker(files, winners, 'J')
-    # # X.to_csv('xys/t5adjs_x_per_speaker.csv', index=False)
-    # X = pd.read_csv('xys/t5adjs_x_per_speaker.csv')
-    # y = pd.read_csv('xys/y_per_speaker.csv')
+    # X, y = generate_X_y_pos_5_speaker(files, winners, 'J')
+    # X.to_csv('xys/t10adjs_x_per_speaker.csv', index=False)
+    # # X = pd.read_csv('xys/t10adjs_x_per_speaker.csv')
+    # # y = pd.read_csv('xys/y_per_speaker.csv')
     # # print(X[:20])
     # logreg(X, y)
 
     # print('\nAdv')
-    # # X, y = generate_X_y_pos_5_speaker(files, winners, 'R')
-    # # X.to_csv('xys/t5advs_x_per_speaker.csv', index=False)
-    # X = pd.read_csv('xys/t5advs_x_per_speaker.csv')
-    # y = pd.read_csv('xys/y_per_speaker.csv')
+    # X, y = generate_X_y_pos_5_speaker(files, winners, 'R')
+    # X.to_csv('xys/t10advs_x_per_speaker.csv', index=False)
+    # # X = pd.read_csv('xys/t10advs_x_per_speaker.csv')
+    # # y = pd.read_csv('xys/y_per_speaker.csv')
     # # print(X[:20])
     # logreg(X, y)
+

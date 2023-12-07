@@ -8,7 +8,7 @@ from sklearn.model_selection import train_test_split
 import pandas as pd
 
 def main():
-    X = pd.read_csv('xys/all_x_text_per_speaker.csv')
+    X = pd.read_cosv('xys/all_x_text_per_speaker.csv')
     y = pd.read_csv('xys/y_per_speaker.csv')
 
     x_train, x_test, y_train, y_test = train_test_split(X, y, test_size=0.25, random_state=0)
