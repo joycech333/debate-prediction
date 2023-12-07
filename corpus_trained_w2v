@@ -15,7 +15,6 @@ from gensim.utils import simple_preprocess
 import nltk
 import os
 import re
-nltk.download('punkt')  # Ensure you've downloaded the punkt tokenizer
 
 # Sample debate transcripts (replace this with your actual debate transcripts)
 files = [f.name for f in os.scandir("scraped-data/transcripts")]
@@ -30,15 +29,16 @@ def preprocess_text(line):
     tokens = word_tokenize(cleaned_line.lower())
     stop_words = set(stopwords.words('english'))
     filtered_tokens = [word for word in tokens if word not in stop_words]
-    return filtered_tokens
+    return tokens
 
 # We want speech level splits: use split_speakers
 def tokenized_small_speeches(files):
     tokenized_input = []
     for file_path in files:
-        speaker_dict = util.split_speakers(file_path)
-        for _, lines in speaker_dict:
+        speaker_dict = util.split_speakers(f'scraped-data/transcripts/{file_path}')
+        for speaker, lines in speaker_dict.items():
             [tokenized_input.append(preprocess_text(line)) for line in lines]
+    return tokenized_input
 
 # Tokenize and preprocess the transcripts
 # tokenized_transcripts = [preprocess_text(transcript) for transcript in transcripts]
@@ -71,6 +71,13 @@ def make_speakers_dict(files):
                 i += 1
 
     return speakers_words
+'''
+Test make_speakers_dict
+'''
+# dict = make_speakers_dict(files)
+# print(dict.keys())
+# print(list(dict.values())[0])
+
 
 '''
 Input: dictionary of tokenized speakers' words.
@@ -79,20 +86,21 @@ Takes mean of the word embeddings to calculate feature vector for that speaker.
 Output: numpy array of feature vectors, one for each speaker. These are the Xs.
 '''
 def make_features(speakers_words):
-    vocab = list(model.index_to_key)
+    vocab = list(model.wv.index_to_key)
     
     features = []
     for speaker, tokens in speakers_words.items():
         speaker_vec = []
         for word in tokens:
             if word in vocab: 
-                speaker_vec.append(model[word])
-            else:
-                # This speaker word is not in the pre-train vocab
-                speaker_vec.append(np.zeros(300))
-        speaker_feature = np.mean(speaker_vec, axis=0)
-        features.append(speaker_feature)
-    return features
+                speaker_vec.append(model.wv[word])
+            # else:
+            #     # This speaker word is not in the pre-train vocab
+            #     speaker_vec.append(np.zeros(100))
+        if speaker_vec:
+            speaker_feature = np.mean(speaker_vec, axis=0)
+            features.append(np.array(speaker_feature))
+    return np.array(features)
 
 '''
 Test whether embed worked
@@ -106,14 +114,15 @@ Run models
 # # THIS LINE IS CAUSING ERROR: inhomogeneous shape
 features = make_features(make_speakers_dict(files))
 labels = np.array(util.ys_by_speaker())
-model = LogisticRegression()
+# print(len(labels))
+# model = LogisticRegression()
 # model = XGBClassifier(n_estimators=100, random_state=42)
-# model = RandomForestClassifier(n_estimators=100, random_state=42)
+model = RandomForestClassifier(n_estimators=100, random_state=42)
 
 def cross_val_accuracy(features, labels, model):
 
     # Perform 10-fold cross-validation
-    cv_scores = cross_val_score(model, features, labels, cv=10)
+    cv_scores = cross_val_score(model, features, labels.ravel(), cv=10)
 
     # Print accuracy for each fold
     print("Accuracy for each fold:", cv_scores)
