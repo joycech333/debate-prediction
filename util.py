@@ -55,6 +55,21 @@ def split_by_era():
 
     return pre2000, early2000, post2010
 
+def get_two_cand_debates():
+    result = []
+    for f in FILES:
+        if len(PARTICIPANTS[f]) == 2:
+            result.append(f)
+
+    return result
+
+def get_mult_cand_debates():
+    result = []
+    for f in FILES:
+        if len(PARTICIPANTS[f]) > 2:
+            result.append(f)
+
+    return result
 
 # be careful and make sure your X's generate with the exact same number of rows (exception handling)
 def generate_ys_per_line():
@@ -190,7 +205,7 @@ def create_data_tsv(file_paths, out_file):
                 file.write("win" + "\t" + full_speech + "\n")
             else:
                 for sent in sentences:
-                    full_speech += sent
+                    full_speech += " " + sent
                     
                 file.write("lose" + "\t" + full_speech + "\n")
 

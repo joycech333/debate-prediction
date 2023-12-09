@@ -367,7 +367,11 @@ def main():
 
     era1, era2, era3 = util.split_by_era()
 
-    for era in [era1, era2, era3]:
+    two_cand = util.get_two_cand_debates()
+
+    mult_cand = util.get_mult_cand_debates()
+
+    for era in [mult_cand]:
         full_paths = [f'scraped-data/transcripts/{file}' for file in era]
 
         print("DATA SIZE", len(full_paths))
