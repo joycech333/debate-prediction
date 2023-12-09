@@ -1,5 +1,5 @@
 """
-bag of words with logreg
+bag of words and pos with logreg
 """
 
 import util
@@ -7,13 +7,15 @@ import json
 import pandas as pd
 import sklearn
 from sklearn.feature_extraction.text import CountVectorizer
-from sklearn.linear_model import LogisticRegression
-from sklearn.linear_model import LogisticRegressionCV
-from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LogisticRegression, LogisticRegressionCV
+from sklearn.model_selection import train_test_split, cross_val_predict, StratifiedKFold
+from sklearn.metrics import confusion_matrix, accuracy_score
 import re
 import nltk
 import os
 import numpy as np
+import seaborn as sns
+import matplotlib.pyplot as plt
 # nltk.download('averaged_perceptron_tagger')
 # nltk.download('universal_tagset')
 
@@ -335,14 +337,16 @@ def generate_text_speaker(files):
     return X
 
 
-def logreg(X, y):
+def logreg(X, y, name):
     # split data
     # x_train, x_test, y_train, y_test = train_test_split(X, y, test_size=0.25, random_state=0) # , random_state=0
+
+    y = y.values.ravel()
 
     # fit regression
     logisticRegr = LogisticRegressionCV(cv=10, random_state=0, max_iter=1000) # solver='saga', C=10.0
     # logisticRegr.fit(x_train, y_train.values.ravel())
-    logisticRegr.fit(X, y.values.ravel())
+    # logisticRegr.fit(X, y)
 
     # predict
     # predictions = logisticRegr.predict(x_test)
@@ -351,9 +355,26 @@ def logreg(X, y):
     # score = logisticRegr.score(x_test, y_test)
     # print('logreg test score:', score)
     # print("Optimal C:", logisticRegr.C_)
-    means = np.mean(logisticRegr.scores_[1], axis=0)
-    print("Mean accuracy on 10-fold CV:", means)
-    print("Average accuracy:", np.mean(means))
+    # means = np.mean(logisticRegr.scores_[1], axis=0)
+    # print("Mean accuracy on 10-fold CV:", means)
+    # print("Average accuracy:", np.mean(means))
+
+    # PLOTS
+    y_pred = cross_val_predict(logisticRegr, X, y, cv=10) # StratifiedKFold(n_splits=10, shuffle=True, random_state=0)
+    cm = confusion_matrix(y, y_pred)
+    accuracy = accuracy_score(y, y_pred)
+
+    print('Average Accuracy:', accuracy)
+
+    # Plot confusion matrix
+    plt.figure()
+    sns.heatmap(cm, annot=True, fmt='d', cmap='Blues', xticklabels=['Predicted Lose', 'Predicted Win'], yticklabels=['True Lose', 'True Win'])
+    plt.title(f'Confusion Matrix for Log Reg on BoW')
+    plt.xlabel('Predicted Label')
+    plt.ylabel('True Label')
+    plt.savefig(f'xys/logreg_matrix_{name}.png')
+
+    
 
 
 if __name__ == "__main__":
@@ -364,7 +385,7 @@ if __name__ == "__main__":
     # files = [f.name for f in os.scandir("scraped-data/transcripts")]
     files = util.FILES
 
-    print(util.PARTICIPANTS)
+    # print(util.PARTICIPANTS)
 
     X, y = generate_X_y_speaker(files, winners)
     print(1 - y.mean())
@@ -383,26 +404,21 @@ if __name__ == "__main__":
     # X = pd.read_csv('xys/all_x_text_per_speaker.csv')
     # print(X.info())
 
-    # print('\nBy Speaker per Debate')
+    print('\nBy Speaker per Debate')
     # X, y = generate_X_y_speaker(files, winners)
     # X.to_csv('xys/all_x_per_speaker.csv', index=False)
-    # X = pd.read_csv('xys/all_x_per_speaker.csv')
-    # y = pd.read_csv('xys/y_per_speaker.csv')
+    X = pd.read_csv('xys/all_x_per_speaker.csv')
+    y = pd.read_csv('xys/y_per_speaker.csv')
     # # y.to_csv('xys/y_per_speaker.csv', index=False)
-    # # print('X')
-    # # print(X.info())
-    # # print('y')
-    # # print(y.info())
-    # # print('mean:', y.mean())
-    # logreg(X, y)
+    logreg(X, y, 'all')
 
     # print('Pronoun')
-    # X, y = generate_pronouns_y_speaker(files, winners)
-    # X.to_csv('xys/pronouns_x_per_speaker.csv', index=False)
-    # y.to_csv('xys/y_per_speaker.csv', index=False)
-    # # X = pd.read_csv('xys/pronouns_x_per_speaker.csv')
-    # # y = pd.read_csv('xys/y_per_speaker.csv')
-    # logreg(X, y)
+    # # X, y = generate_pronouns_y_speaker(files, winners)
+    # # X.to_csv('xys/pronouns_x_per_speaker.csv', index=False)
+    # # y.to_csv('xys/y_per_speaker.csv', index=False)
+    # X = pd.read_csv('xys/pronouns_x_per_speaker.csv')
+    # y = pd.read_csv('xys/y_per_speaker.csv')
+    # logreg(X, y, 'pronoun')
 
     # print('\nReg on Specific PoS (ex: Singular Noun)')
     # X, y = generate_pos_y_speaker(files, winners)
@@ -410,7 +426,7 @@ if __name__ == "__main__":
     # # X = pd.read_csv('xys/pos_x_per_speaker.csv')
     # # y = pd.read_csv('xys/y_per_speaker.csv')
     # # # print(X[:20])
-    # logreg(X, y)
+    # logreg(X, y, 'pos')
 
     # print('\nReg on PoS Family (ex: Noun)')
     # # X, y = generate_pos_uni_y_speaker(files, winners)
@@ -418,7 +434,7 @@ if __name__ == "__main__":
     # X = pd.read_csv('xys/pos_fam_x_per_speaker.csv')
     # y = pd.read_csv('xys/y_per_speaker.csv')
     # # print(X[:20])
-    # logreg(X, y)
+    # logreg(X, y, 'posfamily')
 
     # print('\nNoun')
     # X, y = generate_X_y_pos_5_speaker(files, winners, 'N')
@@ -426,7 +442,7 @@ if __name__ == "__main__":
     # # # X = pd.read_csv('xys/t10nouns_x_per_speaker.csv')
     # # # y = pd.read_csv('xys/y_per_speaker.csv')
     # # # print(X[:20])
-    # logreg(X, y)
+    # logreg(X, y, 'noun')
 
     # print('\nVerb')
     # X, y = generate_X_y_pos_5_speaker(files, winners, 'V')
@@ -434,7 +450,7 @@ if __name__ == "__main__":
     # # # X = pd.read_csv('xys/t10verbs_x_per_speaker.csv')
     # # # y = pd.read_csv('xys/y_per_speaker.csv')
     # # # print(X[:20])
-    # logreg(X, y)
+    # logreg(X, y, 'verb')
 
     # print('\nAdj')
     # X, y = generate_X_y_pos_5_speaker(files, winners, 'J')
@@ -442,7 +458,7 @@ if __name__ == "__main__":
     # # X = pd.read_csv('xys/t10adjs_x_per_speaker.csv')
     # # y = pd.read_csv('xys/y_per_speaker.csv')
     # # print(X[:20])
-    # logreg(X, y)
+    # logreg(X, y, 'adj')
 
     # print('\nAdv')
     # X, y = generate_X_y_pos_5_speaker(files, winners, 'R')
@@ -450,5 +466,5 @@ if __name__ == "__main__":
     # # X = pd.read_csv('xys/t10advs_x_per_speaker.csv')
     # # y = pd.read_csv('xys/y_per_speaker.csv')
     # # print(X[:20])
-    # logreg(X, y)
+    # logreg(X, y, 'adv')
 

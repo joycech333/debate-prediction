@@ -201,6 +201,7 @@ def create_data_tsv(file_paths, out_file):
     return just_participants
 
 
+
 if __name__ == "__main__":
     # file_paths = ['data/pres/09_26_2008.txt', 'data/pres/10_07_2008.txt', 'data/pres/10_15_2008.txt']
     # split_dicts = []

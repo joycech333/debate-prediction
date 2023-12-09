@@ -1,16 +1,19 @@
+import nltk
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
+# nltk.download('vader_lexicon')
 from sklearn.linear_model import LogisticRegression
 import numpy as np
 import util
 import os
 from sklearn.model_selection import KFold, cross_val_score
 
+
 def process_debate(file_paths):
     X = []
     y = []
     for file_path in file_paths:
         file_date = file_path[25:]
-        print(file_date)
+        # print(file_date)
 
         all_speakers = util.split_speakers(file_path)
 
@@ -44,19 +47,22 @@ def process_debate(file_paths):
 
     return X, y
 
-files = [f.name for f in os.scandir("scraped-data/transcripts")]
-#files = ["September_26_2008.txt", "November_28_2007.txt", "September_25_1988.txt", "September_16_2015.txt", "April_26_2007.txt", "October_06_1976.txt"]
 
-full_paths = [f'scraped-data/transcripts/{file}' for file in files]
+if __name__ == "__main__":
 
-# Process the debate file
-X, y = process_debate(full_paths)
+    files = [f.name for f in os.scandir("scraped-data/transcripts")]
+    #files = ["September_26_2008.txt", "November_28_2007.txt", "September_25_1988.txt", "September_16_2015.txt", "April_26_2007.txt", "October_06_1976.txt"]
 
-K = 10
+    full_paths = [f'scraped-data/transcripts/{file}' for file in files]
 
-k_folds = KFold(n_splits = K)
-logisticRegr = LogisticRegression()
-scores = cross_val_score(logisticRegr, np.reshape(X, (-1, 1)), y, cv = k_folds)
-print(scores)
-print(scores.mean())
+    # Process the debate file
+    X, y = process_debate(full_paths)
+
+    K = 10
+
+    k_folds = KFold(n_splits = K)
+    logisticRegr = LogisticRegression()
+    scores = cross_val_score(logisticRegr, np.reshape(X, (-1, 1)), y, cv = k_folds)
+    print(scores)
+    print(scores.mean())
 
