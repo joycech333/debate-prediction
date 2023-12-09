@@ -1,16 +1,19 @@
+import nltk
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
+# nltk.download('vader_lexicon')
 from sklearn.linear_model import LogisticRegression
 import numpy as np
 import util
 import os
 from sklearn.model_selection import KFold, cross_val_score
 
+
 def process_debate(file_paths):
     X = []
     y = []
     for file_path in file_paths:
         file_date = file_path[25:]
-        print(file_date)
+        # print(file_date)
 
         all_speakers = util.split_speakers(file_path)
 
@@ -45,9 +48,6 @@ def process_debate(file_paths):
     return X, y
 
 
-
-
-
 files = [f.name for f in os.scandir("scraped-data/transcripts")]
 print(len(files))
 
@@ -60,6 +60,7 @@ files = era1
 files = util.get_mult_cand_debates()
 
 full_paths = [f'scraped-data/transcripts/{file}' for file in files]
+
 
 #print(full_paths)
 
@@ -75,10 +76,10 @@ print(y)
 print(y.shape)
 
 
-
 np.savetxt("sentiment_multcand_data.csv", X, delimiter = ",")
 np.savetxt("sentiment_multcand_label.csv", y, delimiter = ",")
 
+# don't want to run any of the code below
 assert False
 
 """
@@ -90,27 +91,18 @@ scores = cross_val_score(logisticRegr, np.reshape(X, (-1, 1)), y, cv = k_folds)
 print(scores)
 print(scores.mean())
 """
+files = [f.name for f in os.scandir("scraped-data/transcripts")]
+#files = ["September_26_2008.txt", "November_28_2007.txt", "September_25_1988.txt", "September_16_2015.txt", "April_26_2007.txt", "October_06_1976.txt"]
 
-from sklearn.preprocessing import OrdinalEncoder
-from sklearn.model_selection import train_test_split
-X = np.reshape(X, (-1, 1))
-y_encoded = OrdinalEncoder().fit_transform(np.reshape(y, (-1, 1)))
-import xgboost as xgb
+full_paths = [f'scraped-data/transcripts/{file}' for file in files]
 
-X_train, X_test, y_train, y_test = train_test_split(X, y_encoded, random_state=1, stratify=y_encoded)
+# Process the debate file
+X, y = process_debate(full_paths)
 
+K = 10
 
-dtrain_clf = xgb.DMatrix(X_train, y_train, enable_categorical=True)
-dtest_clf = xgb.DMatrix(X_test, y_test, enable_categorical=True)
-
-params = {"objective": "multi:softprob", "tree_method": "gpu_hist", "num_class": 5}
-n = 1000
-
-results = xgb.cv(
-   params, dtrain_clf,
-   num_boost_round=n,
-   nfold=5,
-   metrics=["mlogloss", "auc", "merror"],
-)
-
-print(results['test-auc-mean'].max())
+k_folds = KFold(n_splits = K)
+logisticRegr = LogisticRegression()
+scores = cross_val_score(logisticRegr, np.reshape(X, (-1, 1)), y, cv = k_folds)
+print(scores)
+print(scores.mean())
